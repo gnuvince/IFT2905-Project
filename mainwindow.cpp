@@ -32,6 +32,8 @@
 #include "cartewidget.h"
 #include "cartescene.h"
 
+#include "userinterface.h"
+
 #include <QtGui>
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -150,6 +152,12 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //important tout le monde partage la scène !
     CarteWidget::setScene(scene);
+
+
+
+
+    UserInterface *userInterface = new UserInterface(this);
+    userInterface->show();
 }
 
 MainWindow::~MainWindow()

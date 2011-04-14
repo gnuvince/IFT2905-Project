@@ -34,9 +34,13 @@ HEADERS += geoposition.h \
 	   reservationproxymodel.h \
            cartescene.h \
            carteelements.h \
-           cartewidget.h
+           cartewidget.h \
+    userinterface.h \
+    page.h \
+    mainmenupage.h
 FORMS += mainwindow.ui \
-    cartewidget.ui
+    cartewidget.ui \
+    userinterface.ui
 SOURCES += geoposition.cpp \
            geopositiondelegate.cpp \
            main.cpp \
@@ -57,7 +61,10 @@ SOURCES += geoposition.cpp \
 	   robot.cpp \
            cartescene.cpp \
            carteelements.cpp \
-           cartewidget.cpp
+           cartewidget.cpp \
+    userinterface.cpp \
+    page.cpp \
+    mainmenupage.cpp
 
 RESOURCES += \
     icones.qrc

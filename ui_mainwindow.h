@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Thu Apr 14 11:33:52 2011
+** Created: Thu Apr 14 14:37:37 2011
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -446,7 +446,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 695, 22));
+        menuBar->setGeometry(QRect(0, 0, 695, 23));
         menu_Fichier = new QMenu(menuBar);
         menu_Fichier->setObjectName(QString::fromUtf8("menu_Fichier"));
         MainWindow->setMenuBar(menuBar);
