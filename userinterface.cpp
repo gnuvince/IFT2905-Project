@@ -3,8 +3,11 @@
 #include "page.h"
 #include "mainmenupage.h"
 #include "findstationpage.h"
+#include "selectpositionpage.h"
 
 #include <QDebug>
+
+#define DEFAULT_PAGE "selectPosition"
 
 UserInterface::UserInterface(QWidget *parent) :
     QMainWindow(parent),
@@ -18,6 +21,7 @@ UserInterface::UserInterface(QWidget *parent) :
 
     pages->insert(QString("mainMenu"), new MainMenuPage(this));
     pages->insert(QString("findStation"), new FindStationPage(this));
+    pages->insert(QString("selectPosition"), new SelectPositionPage(this));
 
     QMapIterator<QString, Page*> iter(*pages);
     while (iter.hasNext()) {
@@ -25,7 +29,7 @@ UserInterface::UserInterface(QWidget *parent) :
         ui->stackedWidget->addWidget(iter.value());
     }
 
-    ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(getPage("mainMenu")));
+    ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(getPage(DEFAULT_PAGE)));
 
     connect(getPage("mainMenu"), SIGNAL(BookCar()), this, SLOT(gotoFindStationPage()));
     connect(getPage("findStation"), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));

@@ -54,7 +54,7 @@ CarteWidget::CarteWidget(QWidget *parent) :
 
     flag = new QGraphicsEllipseItem;
     flag->setRect(0,0,30,30);
-    flag->setPen(QPen(Qt::green));
+    flag->setPen(QPen(Qt::red));
     flag->setVisible(false);
     gscene->addItem(flag);
 }
