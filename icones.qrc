@@ -1,7 +1,11 @@
 <RCC>
-  <qresource prefix="icones">
-    <file>data/images/icons/home.png</file>
-    <file>data/images/icons/zoom_in.png</file>
-    <file>data/images/icons/zoom_out.png</file>
-  </qresource>
+    <qresource prefix="/icones">
+        <file>data/images/icons/home.png</file>
+        <file>data/images/icons/zoom_in.png</file>
+        <file>data/images/icons/zoom_out.png</file>
+        <file>data/icons/car_add.png</file>
+        <file>data/icons/error.png</file>
+        <file>data/icons/pencil.png</file>
+        <file>data/icons/table_multiple.png</file>
+    </qresource>
 </RCC>

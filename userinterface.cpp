@@ -12,7 +12,7 @@ UserInterface::UserInterface(QWidget *parent) :
     ui->setupUi(this);
 
     MainMenuPage *mmp = new MainMenuPage(this);
-    QVBoxLayout *layout = new QVBoxLayout;
+    connect(mmp, SIGNAL(BookCar()), this, SLOT(close()));
     ui->stackedWidget->addWidget(mmp);
     ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(mmp));
 }
