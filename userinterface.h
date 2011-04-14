@@ -4,6 +4,9 @@
 #include <QtGui>
 #include <QMainWindow>
 #include <QStackedWidget>
+#include <QMap>
+
+#include "page.h"
 
 namespace Ui {
     class UserInterface;
@@ -19,6 +22,13 @@ public:
 
 private:
     Ui::UserInterface *ui;
+    QMap<QString, Page*> *pages;
+    Page* getPage(const char *s);
+
+public slots:
+    void gotoFindStationPage();
+    void gotoPage(const char *s);
+    void gotoMainMenu();
 };
 
 #endif // USERINTERFACE_H

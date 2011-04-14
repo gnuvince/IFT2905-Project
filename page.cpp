@@ -1,6 +1,6 @@
 #include "page.h"
 
-#include <QDebug>
+#include <QtGui>
 
 Page::Page(QWidget *parent) :
     QWidget(parent),
@@ -11,6 +11,15 @@ Page::Page(QWidget *parent) :
 
 void Page::addWidget(QWidget *widget) {
     layout->addWidget(widget);
+}
+
+void Page::addTitle(QString s) {
+    QLabel *label = new QLabel(s);
+    label->setAlignment(Qt::AlignCenter);
+    QFont font = label->font();
+    font.setPointSize(12);
+    label->setFont(font);
+    addWidget(label);
 }
 
 void Page::addBottomButtons(QPushButton *left, QPushButton *middle, QPushButton *right) {
@@ -27,5 +36,6 @@ void Page::addBottomButtons(QPushButton *left, QPushButton *middle, QPushButton 
 
     QWidget *widget = new QWidget;
     widget->setLayout(bottomLayout);
+    layout->addStretch();
     addWidget(widget);
 }

@@ -37,7 +37,8 @@ HEADERS += geoposition.h \
            cartewidget.h \
     userinterface.h \
     page.h \
-    mainmenupage.h
+    mainmenupage.h \
+    findstationpage.h
 FORMS += mainwindow.ui \
     cartewidget.ui \
     userinterface.ui
@@ -64,7 +65,8 @@ SOURCES += geoposition.cpp \
            cartewidget.cpp \
     userinterface.cpp \
     page.cpp \
-    mainmenupage.cpp
+    mainmenupage.cpp \
+    findstationpage.cpp
 
 RESOURCES += \
     icones.qrc

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'userinterface.ui'
 **
-** Created: Thu Apr 14 14:09:48 2011
+** Created: Thu Apr 14 16:56:23 2011
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -62,6 +62,9 @@ public:
 
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
+        QFont font;
+        font.setPointSize(14);
+        label_2->setFont(font);
 
         horizontalLayout->addWidget(label_2);
 
@@ -103,8 +106,8 @@ public:
 
     void retranslateUi(QMainWindow *UserInterface)
     {
-        UserInterface->setWindowTitle(QApplication::translate("UserInterface", "MainWindow", 0, QApplication::UnicodeUTF8));
-        lblEnveloppe->setText(QApplication::translate("UserInterface", "[  ]", 0, QApplication::UnicodeUTF8));
+        UserInterface->setWindowTitle(QApplication::translate("UserInterface", "Auto-Partage", 0, QApplication::UnicodeUTF8));
+        lblEnveloppe->setText(QString());
         label_2->setText(QApplication::translate("UserInterface", "Auto-Partage", 0, QApplication::UnicodeUTF8));
         lblUserName->setText(QApplication::translate("UserInterface", "Tania", 0, QApplication::UnicodeUTF8));
     } // retranslateUi

@@ -15,7 +15,7 @@ public:
 protected:
     void addWidget(QWidget *widget);
     void addBottomButtons(QPushButton *left, QPushButton *middle, QPushButton *right);
-
+    void addTitle(QString s);
 
 signals:
 

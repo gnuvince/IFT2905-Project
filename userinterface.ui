@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Auto-Partage</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -20,7 +20,7 @@
       <item>
        <widget class="QLabel" name="lblEnveloppe">
         <property name="text">
-         <string>[  ]</string>
+         <string/>
         </property>
        </widget>
       </item>
@@ -39,6 +39,11 @@
       </item>
       <item>
        <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>Auto-Partage</string>
         </property>

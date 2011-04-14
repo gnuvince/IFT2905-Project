@@ -40,6 +40,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+    /*
     ui->setupUi(this);
 
     QString abs_path;
@@ -154,7 +155,7 @@ MainWindow::MainWindow(QWidget *parent) :
     CarteWidget::setScene(scene);
 
 
-
+    */
 
     UserInterface *userInterface = new UserInterface(this);
     userInterface->show();

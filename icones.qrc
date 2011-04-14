@@ -7,5 +7,6 @@
         <file>data/icons/error.png</file>
         <file>data/icons/pencil.png</file>
         <file>data/icons/table_multiple.png</file>
+        <file>data/icons/email.png</file>
     </qresource>
 </RCC>
