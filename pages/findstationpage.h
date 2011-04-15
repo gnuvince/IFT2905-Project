@@ -12,7 +12,6 @@ public:
     explicit FindStationPage(QWidget *parent = 0);
 
 signals:
-    void Menu();
     void UseCurrentPosition();
     void SelectPosition();
 

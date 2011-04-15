@@ -39,7 +39,11 @@ HEADERS += geoposition.h \
     pages/page.h \
     pages/mainmenupage.h \
     pages/findstationpage.h \
-    pages/selectpositionpage.h
+    pages/selectpositionpage.h \
+    pages/selectstationpage.h \
+    pages/selecttimepage.h \
+    pages/selectcarpage.h \
+    pages/confirmpage.h
 FORMS += mainwindow.ui \
     cartewidget.ui \
     userinterface.ui
@@ -68,7 +72,11 @@ SOURCES += geoposition.cpp \
     pages/page.cpp \
     pages/mainmenupage.cpp \
     pages/findstationpage.cpp \
-    pages/selectpositionpage.cpp
+    pages/selectpositionpage.cpp \
+    pages/selectstationpage.cpp \
+    pages/selecttimepage.cpp \
+    pages/selectcarpage.cpp \
+    pages/confirmpage.cpp
 
 RESOURCES += \
     icones.qrc

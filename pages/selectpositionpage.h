@@ -11,9 +11,7 @@ public:
     explicit SelectPositionPage(QWidget *parent = 0);
 
 signals:
-    void Menu();
-    void Previous();
-    void Next();
+
 
 public slots:
 

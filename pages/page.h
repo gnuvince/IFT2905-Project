@@ -18,6 +18,9 @@ protected:
     void addTitle(QString s);
 
 signals:
+    void Menu();
+    void Previous();
+    void Next();
 
 public slots:
 

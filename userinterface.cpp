@@ -5,6 +5,10 @@
 #include "pages/mainmenupage.h"
 #include "pages/findstationpage.h"
 #include "pages/selectpositionpage.h"
+#include "pages/selectstationpage.h"
+#include "pages/selecttimepage.h"
+#include "pages/selectcarpage.h"
+#include "pages/confirmpage.h"
 
 #include <QDebug>
 
@@ -24,6 +28,10 @@ UserInterface::UserInterface(QWidget *parent) :
     pages->insert(Page_MainMenu, new MainMenuPage(this));
     pages->insert(Page_FindStation, new FindStationPage(this));
     pages->insert(Page_SelectPosition, new SelectPositionPage(this));
+    pages->insert(Page_SelectStation, new SelectStationPage(this));
+    pages->insert(Page_SelectTime, new SelectTimePage(this));
+    pages->insert(Page_SelectCar, new SelectCarPage(this));
+    pages->insert(Page_Confirm, new ConfirmPage(this));
 
     QMapIterator<PageName, Page*> iter(*pages);
     while (iter.hasNext()) {
@@ -33,13 +41,38 @@ UserInterface::UserInterface(QWidget *parent) :
 
     ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(getPage(DEFAULT_PAGE)));
 
-    // Signals for mainMenu
+    // Connections for main menu
     connect(getPage(Page_MainMenu), SIGNAL(BookCar()), this, SLOT(gotoFindStationPage()));
 
-    // Signals for findStation
+    // Connections for find station
     connect(getPage(Page_FindStation), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
     connect(getPage(Page_FindStation), SIGNAL(SelectPosition()), this, SLOT(gotoSelectPosition()));
     connect(getPage(Page_FindStation), SIGNAL(UseCurrentPosition()), this, SLOT(gotoSelectStation()));
+
+    // Connections for select position
+    connect(getPage(Page_SelectPosition), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
+    connect(getPage(Page_SelectPosition), SIGNAL(Previous()), this, SLOT(gotoFindStationPage()));
+    connect(getPage(Page_SelectPosition), SIGNAL(Next()), this, SLOT(gotoSelectStation()));
+
+    // Connections for select station
+    connect(getPage(Page_SelectStation), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
+    connect(getPage(Page_SelectStation), SIGNAL(Previous()), this, SLOT(gotoSelectPosition()));
+    connect(getPage(Page_SelectStation), SIGNAL(Next()), this, SLOT(gotoSelectTime()));
+
+    // Connections for select time
+    connect(getPage(Page_SelectTime), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
+    connect(getPage(Page_SelectTime), SIGNAL(Previous()), this, SLOT(gotoSelectStation()));
+    connect(getPage(Page_SelectTime), SIGNAL(Next()), this, SLOT(gotoSelectCar()));
+
+    // Connections for select car
+    connect(getPage(Page_SelectCar), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
+    connect(getPage(Page_SelectCar), SIGNAL(Previous()), this, SLOT(gotoSelectTime()));
+    connect(getPage(Page_SelectCar), SIGNAL(Next()), this, SLOT(gotoConfirm()));
+
+    // Connections for confirm
+    connect(getPage(Page_Confirm), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
+    connect(getPage(Page_Confirm), SIGNAL(Previous()), this, SLOT(gotoSelectCar()));
+    connect(getPage(Page_Confirm), SIGNAL(Confirm()), this, SLOT(gotoMainMenu()));
 }
 
 UserInterface::~UserInterface()

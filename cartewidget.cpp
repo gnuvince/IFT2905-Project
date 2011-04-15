@@ -53,7 +53,7 @@ CarteWidget::CarteWidget(QWidget *parent) :
     ui->graphicsView->viewport()->installEventFilter(this);
 
     flag = new QGraphicsEllipseItem;
-    flag->setRect(0,0,30,30);
+    flag->setRect(0,0,60,60);
     flag->setPen(QPen(Qt::red));
     flag->setVisible(false);
     gscene->addItem(flag);

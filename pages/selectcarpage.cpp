@@ -1,21 +1,16 @@
 #include <QtGui>
+#include <QTableView>
 
 #include "page.h"
-#include "selectpositionpage.h"
+#include "selectcarpage.h"
 
-#include "cartewidget.h"
-#include "cartescene.h"
-
-SelectPositionPage::SelectPositionPage(QWidget *parent) :
+SelectCarPage::SelectCarPage(QWidget *parent) :
     Page(parent)
 {
-    addTitle(trUtf8("Choisir une position\n(2 / 5)"));
+    addTitle(trUtf8("Choisir le véhicule\n(5 / 5)"));
 
-    CarteScene *scene = CarteScene::readSceneFile("data/xml/map_montreal.osm");
-    CarteWidget::setScene(scene);
-
-    CarteWidget *mapWidget = new CarteWidget(this);
-    addWidget(mapWidget);
+    QTableView *view = new QTableView(this);
+    addWidget(view);
 
     QPushButton *btnPrevious = new QPushButton(this);
     btnPrevious->setIcon(QIcon(":/icones/data/icons/arrow_left.png"));
