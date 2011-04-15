@@ -1,9 +1,10 @@
 #include "userinterface.h"
 #include "ui_userinterface.h"
-#include "page.h"
-#include "mainmenupage.h"
-#include "findstationpage.h"
-#include "selectpositionpage.h"
+
+#include "pages/page.h"
+#include "pages/mainmenupage.h"
+#include "pages/findstationpage.h"
+#include "pages/selectpositionpage.h"
 
 #include <QDebug>
 

@@ -6,7 +6,7 @@
 #include <QStackedWidget>
 #include <QMap>
 
-#include "page.h"
+#include "pages/page.h"
 
 namespace Ui {
     class UserInterface;
