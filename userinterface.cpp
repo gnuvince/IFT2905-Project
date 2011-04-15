@@ -8,7 +8,8 @@
 
 #include <QDebug>
 
-#define DEFAULT_PAGE "selectPosition"
+#define DEFAULT_PAGE Page_MainMenu
+
 
 UserInterface::UserInterface(QWidget *parent) :
     QMainWindow(parent),
@@ -18,13 +19,13 @@ UserInterface::UserInterface(QWidget *parent) :
     ui->lblEnveloppe->setPixmap(QPixmap(":/icones/data/icons/email.png"));
     ui->lblEnveloppe->setCursor(QCursor(Qt::PointingHandCursor));
 
-    pages = new QMap<QString, Page*>;
+    pages = new QMap<PageName, Page*>;
 
-    pages->insert(QString("mainMenu"), new MainMenuPage(this));
-    pages->insert(QString("findStation"), new FindStationPage(this));
-    pages->insert(QString("selectPosition"), new SelectPositionPage(this));
+    pages->insert(Page_MainMenu, new MainMenuPage(this));
+    pages->insert(Page_FindStation, new FindStationPage(this));
+    pages->insert(Page_SelectPosition, new SelectPositionPage(this));
 
-    QMapIterator<QString, Page*> iter(*pages);
+    QMapIterator<PageName, Page*> iter(*pages);
     while (iter.hasNext()) {
         iter.next();
         ui->stackedWidget->addWidget(iter.value());
@@ -32,8 +33,13 @@ UserInterface::UserInterface(QWidget *parent) :
 
     ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(getPage(DEFAULT_PAGE)));
 
-    connect(getPage("mainMenu"), SIGNAL(BookCar()), this, SLOT(gotoFindStationPage()));
-    connect(getPage("findStation"), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
+    // Signals for mainMenu
+    connect(getPage(Page_MainMenu), SIGNAL(BookCar()), this, SLOT(gotoFindStationPage()));
+
+    // Signals for findStation
+    connect(getPage(Page_FindStation), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
+    connect(getPage(Page_FindStation), SIGNAL(SelectPosition()), this, SLOT(gotoSelectPosition()));
+    connect(getPage(Page_FindStation), SIGNAL(UseCurrentPosition()), this, SLOT(gotoSelectStation()));
 }
 
 UserInterface::~UserInterface()
@@ -41,20 +47,42 @@ UserInterface::~UserInterface()
     delete ui;
 }
 
-void UserInterface::gotoPage(const char *s) {
-    int i = ui->stackedWidget->indexOf(getPage(s));
+
+Page* UserInterface::getPage(PageName name) {
+    return pages->value(name);
+}
+
+
+void UserInterface::gotoPage(PageName name) {
+    int i = ui->stackedWidget->indexOf(getPage(name));
     ui->stackedWidget->setCurrentIndex(i);
 }
 
-void UserInterface::gotoFindStationPage() {
-    gotoPage("findStation");
-}
 
 void UserInterface::gotoMainMenu() {
-    gotoPage("mainMenu");
+    gotoPage(Page_MainMenu);
 }
 
+void UserInterface::gotoFindStationPage() {
+    gotoPage(Page_FindStation);
+}
 
-Page* UserInterface::getPage(const char *s) {
-    return pages->value(QString(s));
+void UserInterface::gotoSelectStation() {
+    gotoPage(Page_SelectStation);
+}
+
+void UserInterface::gotoSelectPosition() {
+    gotoPage(Page_SelectPosition);
+}
+
+void UserInterface::gotoSelectTime() {
+    gotoPage(Page_SelectTime);
+}
+
+void UserInterface::gotoSelectCar() {
+    gotoPage(Page_SelectCar);
+}
+
+void UserInterface::gotoConfirm() {
+    gotoPage(Page_Confirm);
 }

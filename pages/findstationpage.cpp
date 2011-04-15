@@ -16,5 +16,5 @@ FindStationPage::FindStationPage(QWidget *parent) :
 
     connect(btnMenu, SIGNAL(clicked()), SIGNAL(Menu()));
     connect(btnUseCurrentPosition, SIGNAL(clicked()), SIGNAL(UseCurrentPosition()));
-    connect(btnChoosePosition, SIGNAL(clicked()), SIGNAL(ChoosePosition()));
+    connect(btnChoosePosition, SIGNAL(clicked()), SIGNAL(SelectPosition()));
 }

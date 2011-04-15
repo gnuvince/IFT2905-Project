@@ -14,7 +14,7 @@ public:
 signals:
     void Menu();
     void UseCurrentPosition();
-    void ChoosePosition();
+    void SelectPosition();
 
 public slots:
 
