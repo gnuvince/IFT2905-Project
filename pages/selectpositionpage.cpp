@@ -19,13 +19,19 @@ SelectPositionPage::SelectPositionPage(QWidget *parent) :
 
     QPushButton *btnPrevious = new QPushButton(this);
     btnPrevious->setIcon(QIcon(":/icones/data/icons/arrow_left.png"));
-    QPushButton *btnNext = new QPushButton(this);
+    btnNext = new QPushButton(this);
     btnNext->setIcon(QIcon(":/icones/data/icons/arrow_right.png"));
     QPushButton *btnMenu = new QPushButton(trUtf8("Menu"), this);
+    btnNext->setEnabled(false);
 
     addBottomButtons(btnPrevious, btnMenu, btnNext);
 
+    connect(mapWidget, SIGNAL(editFinished()), this, SLOT(enableNextButton()));
     connect(btnPrevious, SIGNAL(clicked()), SIGNAL(Previous()));
     connect(btnMenu, SIGNAL(clicked()), SIGNAL(Menu()));
     connect(btnNext, SIGNAL(clicked()), SIGNAL(Next()));
+}
+
+void SelectPositionPage::enableNextButton() {
+    btnNext->setEnabled(true);
 }

@@ -10,13 +10,18 @@
 #include "pages/selectcarpage.h"
 #include "pages/confirmpage.h"
 
+#include "stationmodel.h"
+
 #include <QDebug>
 
 #define DEFAULT_PAGE Page_MainMenu
 
 
-UserInterface::UserInterface(QWidget *parent) :
+UserInterface::UserInterface(
+    StationModel *smodel,
+    QWidget *parent) :
     QMainWindow(parent),
+    stationModel(smodel),
     ui(new Ui::UserInterface)
 {
     ui->setupUi(this);
@@ -28,7 +33,7 @@ UserInterface::UserInterface(QWidget *parent) :
     pages->insert(Page_MainMenu, new MainMenuPage(this));
     pages->insert(Page_FindStation, new FindStationPage(this));
     pages->insert(Page_SelectPosition, new SelectPositionPage(this));
-    pages->insert(Page_SelectStation, new SelectStationPage(this));
+    pages->insert(Page_SelectStation, new SelectStationPage(stationModel, this));
     pages->insert(Page_SelectTime, new SelectTimePage(this));
     pages->insert(Page_SelectCar, new SelectCarPage(this));
     pages->insert(Page_Confirm, new ConfirmPage(this));

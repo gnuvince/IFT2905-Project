@@ -1,12 +1,25 @@
 #include "selectstationpage.h"
 #include "page.h"
+#include "stationmodel.h"
 
 #include <QtGui>
 
-SelectStationPage::SelectStationPage(QWidget *parent) :
-    Page(parent)
+SelectStationPage::SelectStationPage(
+    StationModel *smodel,
+    QWidget *parent) :
+    Page(parent),
+    stationModel(smodel)
 {
     QTableView *view = new QTableView(this);
+    view->setModel(stationModel);
+    view->setSelectionBehavior(QAbstractItemView::SelectRows);
+
+    QList<qint32> hiddenColumns;
+    hiddenColumns << 0 << 2 << 3 << 4 << 5 << 6;
+    foreach (qint32 col, hiddenColumns) {
+        view->hideColumn(col);
+    }
+
 
     QPushButton *btnPrevious = new QPushButton(this);
     btnPrevious->setIcon(QIcon(":/icones/data/icons/arrow_left.png"));

@@ -69,7 +69,7 @@ bool CarteWidget::eventFilter(QObject *, QEvent *ev)
             flag->setVisible(true);
             _flagPos = CarteScene::PointToGPS(pos);
             //pour etre propre on devrait emettre le signal mais bon ...
-            //emit editFinished();
+            emit editFinished();
         }
     }
     return false;

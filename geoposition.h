@@ -39,6 +39,8 @@ public:
     qreal getLon() const { return lon; }
     void setLon(qreal lon) { this->lon = lon; }
 
+    qreal distanceFrom(GeoPosition *other);
+
 private:
     qreal lat, lon;
 

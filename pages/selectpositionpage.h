@@ -14,6 +14,10 @@ signals:
 
 
 public slots:
+    void enableNextButton();
+
+private:
+    QPushButton *btnNext;
 
 };
 

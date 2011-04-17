@@ -7,6 +7,8 @@
 #include <QMap>
 
 #include "pages/page.h"
+#include "station.h"
+#include "stationmodel.h"
 
 enum PageName { Page_MainMenu,
                 Page_FindStation, Page_SelectPosition, Page_SelectStation, Page_SelectTime, Page_SelectCar, Page_Confirm,
@@ -21,13 +23,16 @@ class UserInterface : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit UserInterface(QWidget *parent = 0);
+    explicit UserInterface(
+        StationModel *smodel,
+        QWidget *parent = 0);
     ~UserInterface();
 
 private:
     Ui::UserInterface *ui;
     QMap<PageName, Page*> *pages;
     Page* getPage(PageName name);
+    StationModel *stationModel;
 
 public slots:
     void gotoPage(PageName name);

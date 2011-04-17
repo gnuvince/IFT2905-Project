@@ -18,9 +18,27 @@
 
 #include "geoposition.h"
 
+#include <cmath>
+
 GeoPosition::GeoPosition(qreal lat, qreal lon) :
     lat(lat), lon(lon)
 {
+}
+
+
+qreal toRad(double deg) {
+    return deg * M_PI / 180.0;
+}
+
+qreal GeoPosition::distanceFrom(GeoPosition *other) {
+    qreal R = 6371; // Diameter of the Earth
+    qreal lat1 = toRad(this->getLat()),
+            lat2 = toRad(other->getLat()),
+            lon1 = toRad(this->getLon()),
+            lon2 = toRad(other->getLon());
+    return acos(sin(lat1) * sin(lat2) +
+                cos(lat1) * cos(lat2) *
+                cos(lon2 - lon1)) * R;
 }
 
 QDataStream& operator<<(QDataStream &ds, const GeoPosition &pos)
