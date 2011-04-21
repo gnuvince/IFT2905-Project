@@ -26,10 +26,7 @@
 StationModel::StationModel(QObject *parent) :
     QAbstractTableModel(parent)
 {
-    currentPosition->setLat(45.525);
-    currentPosition->setLon(-73.561);
-    qDebug() << currentPosition->getLat();
-    qDebug() << currentPosition->getLon();
+    currentPosition = new GeoPosition(45.525, -73.561);
 }
 
 QVariant StationModel::fieldAt(const QModelIndex &index, int role) const
@@ -39,10 +36,12 @@ QVariant StationModel::fieldAt(const QModelIndex &index, int role) const
 
     qint64 id = stations.keys()[row];
     Station *s = stations[id];
-    if (column == Station::COL_DIST) {
+
+    if (column == Station::COL_DIST && role == Qt::DisplayRole) {
         qreal distance = s->getPosition().distanceFrom(currentPosition);
-        return QVariant(distance);
+        return QVariant(QString("%1 km").arg(distance, 0, 'g', 2));
     }
+
     return s->field(column, role);
 }
 
@@ -50,6 +49,7 @@ QVariant StationModel::data(const QModelIndex &index, int role) const
 {
     if (!index.isValid())
         return QVariant();
+
     return fieldAt(index, role);
 }
 

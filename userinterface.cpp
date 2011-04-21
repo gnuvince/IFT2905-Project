@@ -11,6 +11,7 @@
 #include "pages/confirmpage.h"
 
 #include "stationmodel.h"
+#include "stationsortproxy.h"
 
 #include <QDebug>
 
@@ -28,12 +29,16 @@ UserInterface::UserInterface(
     ui->lblEnveloppe->setPixmap(QPixmap(":/icones/data/icons/email.png"));
     ui->lblEnveloppe->setCursor(QCursor(Qt::PointingHandCursor));
 
+    StationSortProxy *stationProxy = new StationSortProxy(this);
+    stationProxy->setSourceModel(stationModel);
+    stationProxy->sort(1);
+
     pages = new QMap<PageName, Page*>;
 
     pages->insert(Page_MainMenu, new MainMenuPage(this));
     pages->insert(Page_FindStation, new FindStationPage(this));
     pages->insert(Page_SelectPosition, new SelectPositionPage(this));
-    pages->insert(Page_SelectStation, new SelectStationPage(stationModel, this));
+    pages->insert(Page_SelectStation, new SelectStationPage(stationProxy, this));
     pages->insert(Page_SelectTime, new SelectTimePage(this));
     pages->insert(Page_SelectCar, new SelectCarPage(this));
     pages->insert(Page_Confirm, new ConfirmPage(this));
