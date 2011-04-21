@@ -35,7 +35,8 @@ QStringList& Station::headers() {
                trUtf8("coffret") <<
                trUtf8("position") <<
                trUtf8("photo") <<
-               trUtf8("carte");
+               trUtf8("carte") <<
+               trUtf8("distance");
     return _headers;
 }
 

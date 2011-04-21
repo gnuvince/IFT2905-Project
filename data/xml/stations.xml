@@ -1,0 +1,2830 @@
+<?xml version='1.0' encoding='utf-8'?>
+<stations>
+ <station>
+  <num>002</num>
+  <nom>St-Sacrement</nom>
+  <lat>45.5246</lat>
+  <lng>-73.5805</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Rue Berri, juste au sud de la rue Mont-Royal, dans le stationnement qui se trouve en face de la station de métro.</description>
+  <coffret>Sur l'un des poteaux métalliques soutenant le passage suspendu qui va de l'église St-Sacrement à la résidence des Pères. Chaque coffret est identifié par un chiffre et une couleur, afin de faciliter le classement des clés des véhicules de cette station.</coffret>
+ </station>
+ <station>
+  <num>003</num>
+  <nom>Garnier</nom>
+  <lat>45.532228</lat>
+  <lng>-73.576052</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé derrière les commerces qui bordent l'avenue Mont-Royal, entre les rues Marquette et Fabre. L'entrée du stationnement donne sur la rue Marquette.</description>
+  <coffret>Fixé sur le poteau portant l'indication « Réservé aux détenteurs de permis », sur le côté nord du site.</coffret>
+ </station>
+ <station>
+  <num>004</num>
+  <nom>Parc Lafontaine</nom>
+  <lat>45.5224</lat>
+  <lng>-73.5665</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Côté nord-est de l'intersection des rues Cherrier et du Parc-Lafontaine (face à l'ancienne Bibliothèque centrale de Montréal).</description>
+  <coffret>Sur un petit poteau près de l'abribus, du côté de la rue Cherrier (la piste cyclable passe tout près).</coffret>
+ </station>
+ <station>
+  <num>005</num>
+  <nom>Jeanne D'Arc</nom>
+  <lat>45.512561</lat>
+  <lng>-73.574039</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé à l'intersection des rues Saint-Urbain et Prince-Arthur Ouest, du côté nord-ouest de l'intersection (en face de l'édifice situé au 110, rue Prince-Arthur Ouest).</description>
+  <coffret>Sur le grand poteau central.</coffret>
+ </station>
+ <station>
+  <num>008</num>
+  <nom>Plaza et Beaubien</nom>
+  <lat>45.53706</lat>
+  <lng>-73.60246</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé à l'intersection des rues Beaubien Est et Boyer, face à la SAQ.</description>
+  <coffret>Sur le poteau portant le panneau identifiant le stationnement (côté Beaubien).</coffret>
+ </station>
+ <station>
+  <num>012</num>
+  <nom>Lajeunesse</nom>
+  <lat>45.54</lat>
+  <lng>-73.616</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de la centrale de taxi située au 7294, rue Lajeunesse, près de l'intersection avec la rue De Castelnau.</description>
+  <coffret>Sur le mur de la cabine qui se trouve au centre du terrain, tout près des anciennes pompes à essence.</coffret>
+ </station>
+ <station>
+  <num>013</num>
+  <nom>6e Avenue</nom>
+  <lat>45.5485</lat>
+  <lng>-73.5751</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Derrière les commerces qui bordent le nord de la rue Masson, entre la 6e et la 7e Avenue</description>
+  <coffret>Sur le lampadaire noir, le plus près</coffret>
+ </station>
+ <station>
+  <num>014</num>
+  <nom>Rachel et Papineau</nom>
+  <lat>45.5298</lat>
+  <lng>-73.5696</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur la rue Rachel Est, entre les avenues Papineau et Émile-Duployé, du côté sud de l'intersection.</description>
+  <coffret>Fixé sur le poteau identifiant le stationnement, du côté de l'entrée qui donne sur l'avenue Émile-Duployé.</coffret>
+ </station>
+ <station>
+  <num>016</num>
+  <nom>Jean-de-Brébeuf</nom>
+  <lat>45.4999</lat>
+  <lng>-73.6229</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>5625, rue Decelles, coin Decelles et Édouard-Montpetit (section sud du stationnement).</description>
+  <coffret>Sur le grand lampadaire à droite de l'entrée, coin Decelles/Édouard-Montpetit.</coffret>
+ </station>
+ <station>
+  <num>018</num>
+  <nom>Beaudry et Robin</nom>
+  <lat>45.5201</lat>
+  <lng>-73.559</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du Comité social Centre-sud, coin des rues Beaudry et Robin.</description>
+  <coffret>Sur un poteau de la clôture longeant la rue Beaudry, entre les espaces de stationnement #8 et #9.</coffret>
+ </station>
+ <station>
+  <num>019</num>
+  <nom>Laurier et Papineau</nom>
+  <lat>45.5361</lat>
+  <lng>-73.5817</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Coin Laurier et Papineau (côté nord-ouest de l'intersection), sur le terrain de la station service Pétro-Canada.</description>
+  <coffret />
+ </station>
+ <station>
+  <num>020</num>
+  <nom>Bernard et Saint-Laurent</nom>
+  <lat>45.52744</lat>
+  <lng>-73.601969</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Coin Bernard et St-Laurent, sur le terrain de la station service Ultramar.</description>
+  <coffret>Sur le mur entre les deux portes de garage.</coffret>
+ </station>
+ <station>
+  <num>021</num>
+  <nom>Coolbrook</nom>
+  <lat>45.48264</lat>
+  <lng>-73.62952</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Sur Coolbrook (une rue à l'ouest de Décarie), coté est, entre Queen Mary et Snowdon.</description>
+  <coffret>Sur le poteau au milieu du stationnement portant l'indication "Réservé Titulaire De Permis".</coffret>
+ </station>
+ <station>
+  <num>022</num>
+  <nom>Place St-Henri</nom>
+  <lat>45.4773</lat>
+  <lng>-73.5853</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur la rue Saint-Henri, entre les rues Saint-Ferdinand et Notre-Dame Ouest, tout juste à la sortie de la station de métro Place-Saint-Henri.</description>
+  <coffret>Fixé sur le poteau qui soutient l'enseigne du stationnement, à l'entrée qui donne sur la rue Saint-Henri.</coffret>
+ </station>
+ <station>
+  <num>023</num>
+  <nom>Métro Rosemont</nom>
+  <lat>45.531428</lat>
+  <lng>-73.597648</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Coin St-Denis et Rosemont (section du stationnement située à l'est de l'édicule du métro).</description>
+  <coffret>Sur le lampadaire noir, du côté est du métro.</coffret>
+ </station>
+ <station>
+  <num>024</num>
+  <nom>Centre St-Pierre</nom>
+  <lat>45.518941</lat>
+  <lng>-73.553071</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé à l';intersection de la rue Panet et du boulevard René-Lévesque Est. L';entrée du stationnement se trouve face au 1201, rue Panet. Pour actionner l'ouverture de la barrière, utiliser la carte magnétique qui a été déposée dans le coffre à gants.</description>
+  <coffret>Sur le muret de béton, à gauche, dans l'entrée.</coffret>
+ </station>
+ <station>
+  <num>025</num>
+  <nom>Christophe-Colomb et Rachel</nom>
+  <lat>45.5257</lat>
+  <lng>-73.575</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Derrière les postes de pompiers et de police qui bordent le nord de la rue Rachel, entre Boyer et Christophe-Colomb.</description>
+  <coffret>Sur le poteau de Stationnement de Montréal situé à l'entrée du stationnement, du côté de la ruelle.</coffret>
+ </station>
+ <station>
+  <num>027</num>
+  <nom>St-Joseph et De Bullion</nom>
+  <lat>45.52408</lat>
+  <lng>-73.59042</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé près de l'intersection de la rue De Bullion et du boulevard Saint-Joseph Ouest, derrière l'église. L'entrée du stationnement se trouve face à la ruelle Villiotte. Pour actionner l'ouverture de la barrière, utiliser la carte magnétique qui a été déposée dans le coffre à gants.</description>
+  <coffret>Sur le poteau de la clôture, à gauche de l'entrée.</coffret>
+ </station>
+ <station>
+  <num>028</num>
+  <nom>St-Antoine et Atwater</nom>
+  <lat>45.4855</lat>
+  <lng>-73.58099</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Derrière le magasin Sheinhart's (3001, St-Antoine), côté nord-ouest de l'intersection.</description>
+  <coffret>Sur un poteau au coin du bâtiment (Sheinhart's), du côté de la rue Atwater, derrière la borne-fontaine.</coffret>
+ </station>
+ <station>
+  <num>030</num>
+  <nom>Iberville et Mont-Royal</nom>
+  <lat>45.5392</lat>
+  <lng>-73.5683</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Chez Pro-Shop. Au bout de Mont-Royal, entre Frontenac et Iberville (en face du Journal de Montréal).</description>
+  <coffret>Sur l'un des deux poteaux jaunes (celui de gauche en entrant) qui bordent l'entrée du stationnement, du côté de la rue Iberville.</coffret>
+ </station>
+ <station>
+  <num>032</num>
+  <nom>Van Horne et Dollard</nom>
+  <lat>45.5193</lat>
+  <lng>-73.6156</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Dans le stationnement du Pharmaprix, situé à l'intersection des avenues Van Horne et Dollard (de l'autre côté de la rue, en face de la pharmacie).</description>
+  <coffret>Fixé sur le poteau qui soutient l'enseigne publicitaire, dans le fond du stationnement, à gauche.</coffret>
+ </station>
+ <station>
+  <num>034</num>
+  <nom>Boyer et St-Zotique</nom>
+  <lat>45.5383</lat>
+  <lng>-73.6055</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Dans le stationnement municipal, sur Boyer, côté ouest, juste au sud de St-Zotique (derrière le IGA).</description>
+  <coffret>Sur le poteau portant le panneau qui identifie l'entrée du stationnement face au 6665, Boyer.</coffret>
+ </station>
+ <station>
+  <num>035</num>
+  <nom>Métro Iberville</nom>
+  <lat>45.5537</lat>
+  <lng>-73.6015</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Sur le terrain du Couche-Tard, au coin des rues Jean-Talon et D'Iberville, face à la station de métro.</description>
+  <coffret>Sur le mur donnant sur la rue D'Iberville, à gauche des portes de service.</coffret>
+ </station>
+ <station>
+  <num>037</num>
+  <nom>Goyer</nom>
+  <lat>45.50971</lat>
+  <lng>-73.63027</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Sur le terrain de la station-service au coin des rues Goyer et Darlington, côté sud-ouest de l'intersection.</description>
+  <coffret>Près de la porte d'entrée du bureau du garage.</coffret>
+ </station>
+ <station>
+  <num>038</num>
+  <nom>Chambord et Fleury</nom>
+  <lat>45.55998</lat>
+  <lng>-73.65828</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement municipal, sur Fleury, côté nord, juste au coin de Chambord.</description>
+  <coffret>Sur le poteau portant le panneau qui identifie l'entrée du stationnement (à gauche en entrant).</coffret>
+ </station>
+ <station>
+  <num>039</num>
+  <nom>Place d'Youville</nom>
+  <lat>45.50037</lat>
+  <lng>-73.55649</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement municipal situé à l'intersection de la place d'Youville et de la rue McGill.</description>
+  <coffret>Derrière la distributrice de permis de stationnement qui se trouve du côté ouest du stationnement (le plus près de la rue McGill).</coffret>
+ </station>
+ <station>
+  <num>041</num>
+  <nom>Métro Angrignon</nom>
+  <lat>45.446</lat>
+  <lng>-73.6012</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Coin Lacroix et boulevard des Trinitaires. Tout près du métro. L'entrée du stationnement est en continuité avec la rue Lacroix.</description>
+  <coffret>Fixé sur le support de la 2e affiche identifiant le stationnement municipal (sur le coin de l'intersection menant à l'aire d'attente des taxis).</coffret>
+ </station>
+ <station>
+  <num>042</num>
+  <nom>Plantagenet</nom>
+  <lat>45.5073</lat>
+  <lng>-73.6201</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'édifice des Pères Dominicains (section située à l'est du bâtiment). L'entrée du stationnement est située en face du 2620, Côte-Ste-Catherine, entre les rues Plantagenet et Woodbury.</description>
+  <coffret>Fixé sur le coin du mur qui protège l'entrée de l'Institut de Pastorale.</coffret>
+ </station>
+ <station>
+  <num>043</num>
+  <nom>Remembrance et 32e avenue</nom>
+  <lat>45.43777</lat>
+  <lng>-73.69164</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Sur le terrain du Pétro-Canada, coin de Remembrance et de la 32e Avenue (juste au sud du stationnement des Galeries Lachine).</description>
+  <coffret>Fixé au lampadaire qui supporte l'affiche " 24 h ", à côté de l'arrêt d'autobus, en face du 455, 32e Avenue.</coffret>
+ </station>
+ <station>
+  <num>044</num>
+  <nom>Nicolet et Hochelaga</nom>
+  <lat>45.549</lat>
+  <lng>-73.5533</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Dans le stationnement du centre communautaire sportif NDA situé au 2570, rue Nicolet. Cette station est située juste au nord d'Hochelaga, tout près du cégep Maisonneuve.</description>
+  <coffret>Fixé sur le mur du centre communautaire.</coffret>
+ </station>
+ <station>
+  <num>045</num>
+  <nom>Evelyn</nom>
+  <lat>45.4634</lat>
+  <lng>-73.5705</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement municipal situé sur la rue du même nom (en face du 4066, Evelyn), près de l'intersection avec la rue de l'Église.</description>
+  <coffret>Fixé sur le lampadaire qui se trouve sur le bord du trottoir, à l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>047</num>
+  <nom>Peel et Dr Penfield</nom>
+  <lat>45.50294</lat>
+  <lng>-73.579</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur situé sur la rue Peel (côté ouest), juste au sud de l'avenue Dr Penfield (à l'arrière du 1100, avenue Dr Penfield).</description>
+  <coffret>Fixé sur le mur extérieur, à droite, en entrant dans le stationnement (mur opposé à la guérite).</coffret>
+ </station>
+ <station>
+  <num>048</num>
+  <nom>St-Jacques et St-Jean</nom>
+  <lat>45.50328</lat>
+  <lng>-73.55901</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur situé face au 231, rue St-Jacques, juste à l'est de la rue St-Jean, à deux pas du Centre de commerce mondial. Si vous arrivez par le métro, choisir cette direction pour la sortie.</description>
+  <coffret>Fixé sur le mur extérieur, à droite, en empruntant l'entrée des piétons.</coffret>
+ </station>
+ <station>
+  <num>049</num>
+  <nom>Monk et Jolicoeur</nom>
+  <lat>45.458</lat>
+  <lng>-73.5955</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Sur Monk, entre Jacques-Hertel et Jolicoeur, juste à côté de la Bibliothèque Marie-Uguay.</description>
+  <coffret>Fixé sur le lampadaire qui se trouve à droite en entrant dans le stationnement par la rue Monk.</coffret>
+ </station>
+ <station>
+  <num>050</num>
+  <nom>Parc Ahuntsic</nom>
+  <lat>45.5577</lat>
+  <lng>-73.6654</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur la rue St-Hubert, du côté ouest (juste à côté de l'aréna), entre le boulevard Henri-Bourassa et la rue Prieur.</description>
+  <coffret>Fixé sur le lampadaire qui se trouve sur la rue Saint-Hubert, tout près de l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>051</num>
+  <nom>Aréna St-Louis</nom>
+  <lat>45.52739</lat>
+  <lng>-73.60021</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Sur St-Dominique, côté est (à côté de l'aréna). Juste au sud de la rue Bernard.</description>
+  <coffret>Fixé sur le lampadaire qui se trouve à côté de la distributrice de vignettes de stationnement, au centre du terre-plein.</coffret>
+ </station>
+ <station>
+  <num>052</num>
+  <nom>Old Orchard</nom>
+  <lat>45.4767</lat>
+  <lng>-73.6224</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé au 4311, rue Old Orchard, au coin de Monkland (coin nord-est de l'intersection).</description>
+  <coffret>Fixé sur le mur de l'immeuble qui donne sur le stationnement, près de la rue Old Orchard.</coffret>
+ </station>
+ <station>
+  <num>056</num>
+  <nom>Hutchison et Milton</nom>
+  <lat>45.50925</lat>
+  <lng>-73.57496</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur situé au 3524 rue Hutchison. La clé qui se trouve avec la clé de la voiture (sur le même porte-clé) permet de déverrouiller la porte d'entrée du bâtiment. Une fois à l'intérieur, empruntez la porte de droite (il est écrit " SORTIE " au dessus). Celle-ci vous donne accès à l'escalier de service. Empruntez cet escalier et descendez jusqu'au garage. Nos véhicules sont garés sur les lots #20, 21 et 22. Vous trouverez, dans le coffre à gants, la clé qui commande l'ouverture de la porte de garage.</description>
+  <coffret>Dans le vestibule du 3524 Hutchison, sur le mur de gauche, à côté de la porte donnant accès à l'immeuble.</coffret>
+ </station>
+ <station>
+  <num>058</num>
+  <nom>Cartier et Rosemont</nom>
+  <lat>45.54135</lat>
+  <lng>-73.5909</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Au 1871, boul. Rosemont, derrière le presbytère de la Paroisse St-Jean-Berchmans. Les deux entrées du stationnement sont situées du côté est de la rue Cartier, juste au nord de Rosemont. Utilisez la petite clé qui se trouve avec la clé du véhicule pour déverrouiller le cadenas de la chaîne qui obstrue l'entrée du stationnement (ne pas oublier de le reverrouiller ensuite, à défaut de quoi une pénalité de 20 $ sera appliquée).</description>
+  <coffret>Sur le poteau noir, à gauche de l'entrée (côté presbytère). Le coffret est fixé face au stationnement.</coffret>
+ </station>
+ <station>
+  <num>059</num>
+  <nom>Tour Penfield</nom>
+  <lat>45.4978</lat>
+  <lng>-73.5851</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur situé au 1530, Dr Penfield, juste à l'ouest de l'intersection avec la rue Simpson.</description>
+  <coffret>Fixé sur le mur de brique qui se trouve à votre droite lorsque vous vous engagez dans l'allée du stationnement (du côté du dépanneur).</coffret>
+ </station>
+ <station>
+  <num>060</num>
+  <nom>Victoria et 17e avenue</nom>
+  <lat>45.436</lat>
+  <lng>-73.679</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Dans le stationnement du parc du Rail, coin Victoria, vis-à-vis de la 17e Avenue.</description>
+  <coffret>Sur le poteau d'Hydro-Québec qui se trouve vis-à-vis de l'intersection avec la 17e Avenue.</coffret>
+ </station>
+ <station>
+  <num>061</num>
+  <nom>Berri et Notre-Dame</nom>
+  <lat>45.51303</lat>
+  <lng>-73.5518</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <localisation />
+  <coffret />
+ </station>
+ <station>
+  <num>062</num>
+  <nom>4e avenue et Wellington</nom>
+  <lat>45.45692</lat>
+  <lng>-73.5677</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <localisation />
+  <coffret />
+ </station>
+ <station>
+  <num>064</num>
+  <nom>Métro Sauvé</nom>
+  <lat>45.5518</lat>
+  <lng>-73.655</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du club vidéo Superclub Vidéotron situé au coin des rues Lajeunesse et Sauvé.</description>
+  <coffret />
+ </station>
+ <station>
+  <num>065</num>
+  <nom>Provost</nom>
+  <lat>45.4422</lat>
+  <lng>-73.6661</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du Parc Curé-Provost, situé entre la 2e et la 3e Avenue, au nord de la rue Provost.</description>
+  <coffret />
+ </station>
+ <station>
+  <num>068</num>
+  <nom>Métro Longueuil-Port-de-Mer</nom>
+  <lat>45.5261</lat>
+  <lng>-73.52092</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement extérieur situé derrière l'édifice à logements Port-de-Mer qui fait face à l'édicule du métro lorsque nous sortons du côté où attendent les taxis.</description>
+  <coffret>Fixé sur un des petits poteaux jaunes tout près de la guérite du stationnement.</coffret>
+ </station>
+ <station>
+  <num>069</num>
+  <nom>Bossuet et Sherbrooke</nom>
+  <lat>45.5762</lat>
+  <lng>-73.548</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du Sanctuaire Marie-Reine-des-Coeurs situé au 4000, rue Bossuet, juste au nord de la rue Sherbrooke.</description>
+  <coffret>Sur un poteau de la clôture, au fond du terrain, entre les espaces de stationnement # 41 et # 42.</coffret>
+ </station>
+ <station>
+  <num>070</num>
+  <nom>Masson et De Lorimier</nom>
+  <lat>45.53978</lat>
+  <lng>-73.58154</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement clôturé qui se trouve juste à droite du 2125 Masson, entre les rues de Lorimier et des Érables. Utilisez la petite clé qui se trouve avec la clé du véhicule pour déverrouiller le cadenas de la clôture. Assurez-vous de toujours fermer la porte de la clôture et le cadenas lorsque vous quittez.</description>
+  <coffret>Fixé sur le petit poteau qui se trouve devant la clôture (près du trottoir), à votre gauche quand vous faites face à l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>073</num>
+  <nom>Grant et LeMoyne</nom>
+  <lat>45.5354</lat>
+  <lng>-73.499</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé au 760, rue Grant (au coin de la rue Le Moyne Ouest).</description>
+  <coffret>Sur le poteau de bois soutenant l'abri (le toit du garage), du côté gauche de l'allée.</coffret>
+ </station>
+ <station>
+  <num>074</num>
+  <nom>St-Jean et St-Laurent</nom>
+  <lat>45.5358</lat>
+  <lng>-73.5086</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>S</description>
+  <coffret>Fixé sur le poteau portant l'enseigne " Stationnement Chez Vincent ", juste à côté de la cabane en bois.</coffret>
+ </station>
+ <station>
+  <num>076</num>
+  <nom>Bernard et de L'Épée</nom>
+  <lat>45.52141</lat>
+  <lng>-73.6082</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Terrains de stationnement situés derrière les commerces qui bordent le nord de l'avenue Bernard Ouest, de part et d'autre de l'avenue De l'Épée. Deux des espaces réservés à Communauto sont situés sur le terrain de stationnement #17 (du côté ouest de l'avenue De l'Épée), et les deux autres espaces réservés à Communauto sont situés sur le terrain de stationnement #7 (du côté est de l'avenue De l'Épée).</description>
+  <coffret>Sur le terrain #17 (du côté ouest de l'avenue De l'Épée), fixé sur le lampadaire au fond du stationnement, près des installations d'Hydro-Québec.</coffret>
+ </station>
+ <station>
+  <num>077</num>
+  <nom>Bernard et Wiseman</nom>
+  <lat>45.5187</lat>
+  <lng>-73.6104</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <localisation />
+  <coffret />
+ </station>
+ <station>
+  <num>078</num>
+  <nom>Laurier et Durocher</nom>
+  <lat>45.51808</lat>
+  <lng>-73.59788</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Terrains de stationnement situés derrière les commerces qui bordent le nord de l'avenue Laurier Ouest, de part et d'autre de la rue Durocher. Un des espaces réservés à Communauto est situé sur le terrain de stationnement #14 (du côté ouest de la rue Durocher), tandis que l'autre espace réservé à Communauto est situé sur le terrain de stationnement #13 (du côté est de la rue Durocher).</description>
+  <coffret>Fixé sur le lampadaire qui est au centre du terrain de stationnement #14, situé à l'ouest de la rue Durocher.</coffret>
+ </station>
+ <station>
+  <num>080</num>
+  <nom>Napoléon et St-Dominique</nom>
+  <lat>45.517</lat>
+  <lng>-73.5771</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'Édifice Warshaw adjacent à celui du Pharmaprix situé sur St-Dominique, juste au sud de Napoléon (coin sud-est de l'intersection).</description>
+  <coffret />
+ </station>
+ <station>
+  <num>081</num>
+  <nom>St-Vallier et Jean-Talon</nom>
+  <lat>45.5388</lat>
+  <lng>-73.6139</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <localisation />
+  <coffret>Sur le poteau de Stationnement de Montréal, près de l'abribus, du côté de la rue Jean-Talon.</coffret>
+ </station>
+ <station>
+  <num>082</num>
+  <nom>Berri et De Castelnau</nom>
+  <lat>45.5402</lat>
+  <lng>-73.6174</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du Centre communautaire Lajeunesse, sur la rue Berri, juste au nord de la rue De Castelnau Est. Utiliser la petite clé qui se trouve avec la clé du véhicule pour déverrouiller le cadenas de la clôture qui borde le stationnement (ne pas oublier de le reverrouiller ensuite, à défaut de quoi une pénalité de 50 $ sera appliquée).</description>
+  <coffret>Sur le poteau de la clôture, à gauche de la porte d'entrée.</coffret>
+ </station>
+ <station>
+  <num>083</num>
+  <nom>Aréna Jean Rougeau</nom>
+  <lat>45.549</lat>
+  <lng>-73.6226</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur De Normanville, juste au sud de la rue Jarry (face à l'école Georges-Vanier).</description>
+  <coffret>Sur le poteau de bois (un lampadaire y est fixé) qui se trouve dans la section nord du terrain (du côté de la rue Jarry).</coffret>
+ </station>
+ <station>
+  <num>084</num>
+  <nom>Centre St-Mathieu</nom>
+  <lat>45.5561</lat>
+  <lng>-73.59791</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé au 7110, 8e Avenue, entre les rues Jean-Talon Est et Bélanger.</description>
+  <coffret>Sur la clôture délimitant le côté sud du terrain, dans la zone réservée à</coffret>
+ </station>
+ <station>
+  <num>085</num>
+  <nom>François-Perrault</nom>
+  <lat>45.5616</lat>
+  <lng>-73.6005</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de la Maison du Citoyen situé au 7501, rue François-Perreault. Pour accéder rapidement aux espaces réservés à</description>
+  <coffret>Fixé à l'un des deux poteaux de signalisation qui délimitent la zone réservée à</coffret>
+ </station>
+ <station>
+  <num>086</num>
+  <nom>Parc Père-Marquette</nom>
+  <lat>45.540165</lat>
+  <lng>-73.596472</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur la rue De Drucourt, entre les rues De Lanaudière et Garnier.</description>
+  <coffret>Fixé sur le lampadaire gris situé à gauche de la zone réservée à</coffret>
+ </station>
+ <station>
+  <num>087</num>
+  <nom>Parc Beaubien</nom>
+  <lat>45.5526</lat>
+  <lng>-73.5891</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur la 6e Avenue, entre les rues Saint-Zotique Est et Beaubien Est.</description>
+  <coffret>Sur le lampadaire noir près de l'allée piétonnière et de la borne-fontaine, à gauche de la zone réservée à Communauto.</coffret>
+ </station>
+ <station>
+  <num>088</num>
+  <nom>Parc Laurier</nom>
+  <lat>45.5318</lat>
+  <lng>-73.586</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement sur rue. Situé sur la rue De Mentana, entre l'avenue Laurier Est et la rue Boucher. La zone 103, qui est réservée à Communauto, se trouve du côté de la rue qui longe le parc Laurier.</description>
+  <coffret>Fixé sur le lampadaire qui est situé près du chemin piétonnier, sur la rue de Mentana, non loin de l'intersection avec la rue Boucher.</coffret>
+ </station>
+ <station>
+  <num>090</num>
+  <nom>Sewell et des Pins</nom>
+  <lat>45.5151</lat>
+  <lng>-73.577</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <localisation />
+  <coffret />
+ </station>
+ <station>
+  <num>091</num>
+  <nom>Lucien-L'Allier</nom>
+  <lat>45.4943</lat>
+  <lng>-73.5692</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <localisation />
+  <coffret />
+ </station>
+ <station>
+  <num>092</num>
+  <nom>Laprairie et Centre</nom>
+  <lat>45.4802</lat>
+  <lng>-73.5661</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <localisation />
+  <coffret />
+ </station>
+ <station>
+  <num>093</num>
+  <nom>Appartements Rockhill</nom>
+  <lat>45.4952</lat>
+  <lng>-73.6142</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé du côté sud de l'immeuble " Les Appartements Rockhill " situé au 4850, chemin de la Côte-des-Neiges, juste au sud de l'intersection avec l'avenue Decelles.</description>
+  <coffret>Sur le pilier de béton qui se trouve à droite de la porte d'entrée du bâtiment.</coffret>
+ </station>
+ <station>
+  <num>094</num>
+  <nom>La Fontaine et Pie-IX</nom>
+  <lat>45.54976</lat>
+  <lng>-73.53888</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé derrière le Pavillon d'Éducation Communautaire (PEC), à l'intersection de la rue La Fontaine et du boulevard Pie-IX. L';entrée du stationnement donne sur la rue La Fontaine. Les espaces réservés à Communauto sont situés au fond de la cour, à gauche, entre le terrain de pétanque et le bâtiment.</description>
+  <coffret>Fixé sur le mur du bâtiment, juste à côté de la porte bleue qui se trouve près des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>095</num>
+  <nom>Drolet et Marie-Anne</nom>
+  <lat>45.5226</lat>
+  <lng>-73.5814</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur la rue Drolet, à l'intersection de la rue Marie-Anne Est. L'entrée du stationnement se trouve sur la rue Drolet.</description>
+  <coffret>Sur le poteau métallique, à droite, en entrant dans le stationnement.</coffret>
+ </station>
+ <station>
+  <num>096</num>
+  <nom>Collège Notre-Dame</nom>
+  <lat>45.4947</lat>
+  <lng>-73.6225</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du Collège Notre-Dame situé au 3791, chemin Queen Mary. Les espaces qui nous sont réservés se trouvent à l'arrière du collège, face à l'aréna, dans la zone # 3 du stationnement. Un passage piétonnier vous permet également d'accéder au stationnement à partir de la rue Jean-Brillant. Celui-ci débute à côté du 3800, rue Jean-Brillant.</description>
+  <coffret>Sur le mur de brique, à droite de la sortie de secours de l'aréna.</coffret>
+ </station>
+ <station>
+  <num>097</num>
+  <nom>Roland-Therrien et De Gentilly</nom>
+  <lat>45.543</lat>
+  <lng>-73.4904</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Dans le stationnement de l'UPA situé au 555, boul. Roland-Therrien.</description>
+  <coffret>Sur le lampadaire le plus au sud du terrain de l'UPA, près de l'édifice fédéral.</coffret>
+ </station>
+ <station>
+  <num>099</num>
+  <nom>Hochelaga et Préfontaine</nom>
+  <lat>45.5427</lat>
+  <lng>-73.5542</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du Jaz-Zoo situé au 3173, rue Hochelaga, entre les rues Préfontaine et Dézéry.</description>
+  <coffret>Fixé sur le mur du bâtiment qui fait face au stationnement, près de la rampe d'escalier.</coffret>
+ </station>
+ <station>
+  <num>100</num>
+  <nom>St-Clément et Adam</nom>
+  <lat>45.5576</lat>
+  <lng>-73.5325</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'église Saints-Barnabé-et-Clément. L'entrée se trouve sur St-Clément, juste au nord de la rue Adam.</description>
+  <coffret>Sur le poteau de la clôture, à gauche, en entrant dans le stationnement.</coffret>
+ </station>
+ <station>
+  <num>101</num>
+  <nom>Métro Radisson</nom>
+  <lat>45.589146</lat>
+  <lng>-73.539939</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement dans l'aire d'attente de l'AMT, situé à la sortie de la station de métro Radisson, à l'intersection de la rue Des Groseilliers et de la rue Sherbrooke Est. Les espaces réservés à Communauto sont situés près de l'entrée du stationnement.</description>
+  <coffret>Fixé sur le montant d'une des deux affiches bleues de l'AMT, située près de l'édicule du métro.</coffret>
+ </station>
+ <station>
+  <num>102</num>
+  <nom>Métro Longueuil-Terminus</nom>
+  <lat>45.5226</lat>
+  <lng>-73.5203</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé immédiatement à la sortie de la station du Métro Longueuil, du côté du terminus d'autobus, juste après le débarcadère et l'aire d'attente des taxis. Les espaces réservés à Communauto se trouvent dans la zone du terrain réservée au stationnement " court terme ", près de la sortie. Pour accéder aux espaces de Communauto à pied, empruntez la sortie du métro du côté de la rue du Terminus et dirigez-vous vers la rue St-Charles en tournant à gauche en sortant du métro. Si vous êtes en voiture, empruntez le boul. La Fayette et suivez les indications vers le nouveau débarcadère et le stationnement "Courte durée".</description>
+  <coffret />
+ </station>
+ <station>
+  <num>104</num>
+  <nom>Dézéry et Ontario</nom>
+  <lat>45.5415</lat>
+  <lng>-73.5482</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de la coopérative d'habitation située au 2057, rue Dézéry.</description>
+  <coffret>Sur la clôture, à droite, en entrant dans le stationnement.</coffret>
+ </station>
+ <station>
+  <num>105</num>
+  <nom>Centre St-Donat</nom>
+  <lat>45.5841</lat>
+  <lng>-73.5385</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du centre St-Donat situé au coin des rues Arcand et Jean-Lecompte.</description>
+  <coffret />
+ </station>
+ <station>
+  <num>106</num>
+  <nom>Centre productions Jeun'Est</nom>
+  <lat>45.595</lat>
+  <lng>-73.5239</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <localisation />
+  <coffret />
+ </station>
+ <station>
+  <num>107</num>
+  <nom>Iberville et Ontario</nom>
+  <lat>45.53336</lat>
+  <lng>-73.55486</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <localisation />
+  <coffret />
+ </station>
+ <station>
+  <num>109</num>
+  <nom>Ethel</nom>
+  <lat>45.46841</lat>
+  <lng>-73.56733</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement municipal situé au coin des rues Éthel et Strathmore. Le stationnement est accessible par la rue Éthel ou par la ruelle Victor.</description>
+  <coffret>À l'entrée du stationnement du côté de la rue Éthel, sur le poteau portant le panneau identifiant le stationnement.</coffret>
+ </station>
+ <station>
+  <num>110</num>
+  <nom>Aréna Cartier</nom>
+  <lat>45.5593</lat>
+  <lng>-73.6842</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement municipal situé sur le site de l'Aréna Cartier, à l'intersection du boulevard Cartier Ouest et de la montée Major, en face de la station de métro Cartier. Les espaces réservés à Communauto sont situés le long du boulevard Cartier Ouest.</description>
+  <coffret>Fixé sur le mur de brique de l'aréna, à droite de la porte d'entrée.</coffret>
+ </station>
+ <station>
+  <num>111</num>
+  <nom>Ouimet et de L'Église</nom>
+  <lat>45.5124</lat>
+  <lng>-73.6786</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement municipal situé sur la rue Ouimet (côté ouest), juste au nord de De l'Église</description>
+  <coffret>Sur le poteau situé à droite de l'entrée du stationnement, du côté de la rue Ouimet.</coffret>
+ </station>
+ <station>
+  <num>112</num>
+  <nom>Métro Laurier</nom>
+  <lat>45.528</lat>
+  <lng>-73.5883</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Sur la rue Berri au sud de la rue Laurier.</description>
+  <coffret />
+ </station>
+ <station>
+  <num>113</num>
+  <nom>Jardin De Lorimier</nom>
+  <lat>45.53659</lat>
+  <lng>-73.57583</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Situé sur la rue De Lorimier au coin de la rue Gilford, face au jardin communautaire.</description>
+  <coffret>Fixé à l'un des deux poteaux de signalisation qui délimitent la zone réservée à</coffret>
+ </station>
+ <station>
+  <num>115</num>
+  <nom>Chez Magnan</nom>
+  <lat>45.4798</lat>
+  <lng>-73.5713</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du Restaurant et Taverne Magnan au coin des rues St-Patrick et Charlevoix. Les espaces réservés à Communauto sont localisés dans la partie du stationnement située du côté de la station-service.</description>
+  <coffret>Situé sur le poteau portant l'enseigne de Chez Magnan, près de la clôture, du côté de la station-service.</coffret>
+ </station>
+ <station>
+  <num>116</num>
+  <nom>Riverside et Birch</nom>
+  <lat>45.5065</lat>
+  <lng>-73.5175</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement municipal situé au parc de la Voie maritime au coin des rues Riverside et Birch. Les espaces réservés à</description>
+  <coffret>Sur le lampadaire, près des espaces réservés à</coffret>
+ </station>
+ <station>
+  <num>119</num>
+  <nom>Cartier et Lavoisier</nom>
+  <lat>45.5495</lat>
+  <lng>-73.7135</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement municipal situé à l'angle des rues Cartier et Lavoisier.</description>
+  <coffret>Sur le lampadaire du stationnement situé du côté de la rue Lavoisier, près de l'allée piétonnière (côté sud du site).</coffret>
+ </station>
+ <station>
+  <num>120</num>
+  <nom>Concorde et De Callières</nom>
+  <lat>45.591</lat>
+  <lng>-73.6696</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Situé au coin du boul. de la Concorde et du croissant De Callières, juste à côté de la bibliothèque Germaine-Guèvremont.</description>
+  <coffret>Sur le mur arrière de la bibliothèque, à côté de l'escalier de secours.</coffret>
+ </station>
+ <station>
+  <num>121</num>
+  <nom>Notre-Dame-de-Grâces et Perrault</nom>
+  <lat>45.5281</lat>
+  <lng>-73.5022</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Dans l'aire de stationnement de la résidence privée située au 916, rue Notre-Dame-de-Grâces, entre les rues Perrault et Martel.</description>
+  <coffret>Sur le mur de brique de la résidence, à gauche, en entrant dans le stationnement.</coffret>
+ </station>
+ <station>
+  <num>122</num>
+  <nom>Wolfe et Lavallée</nom>
+  <lat>45.53315</lat>
+  <lng>-73.4807</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Dans l'aire de stationnement de la résidence privée située au 1783, rue Lavallée. L'entrée du terrain se trouve sur la rue Wolfe.</description>
+  <coffret>Sur le poteau noir, à gauche, en entrant dans le stationnement.</coffret>
+ </station>
+ <station>
+  <num>123</num>
+  <nom>Woodland et de Verdun</nom>
+  <lat>45.4528</lat>
+  <lng>-73.5726</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Situé sur la rue Woodland, derrière les commerces qui bordent la rue de Verdun.</description>
+  <coffret>Sur le poteau en bois situé du côté de la ruelle (côté sud du site).</coffret>
+ </station>
+ <station>
+  <num>124</num>
+  <nom>Henri-Julien et De Castelnau</nom>
+  <lat>45.53776</lat>
+  <lng>-73.61847</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'église Ste-Cécile situé sur Henri-Julien juste au nord de la rue De Castelnau.</description>
+  <coffret>Fixé au poteau de la clôture, à l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>125</num>
+  <nom>Technopôle Angus</nom>
+  <lat>45.543045</lat>
+  <lng>-73.563127</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement qui borde la rue André-Laurendeau, derrière l'immeuble situé au 2600, rue William-Tremblay. Pour accéder au stationnement, emprunter l'entrée principale, qui donne sur la rue André-Laurendeau (face au Loblaws). Les espaces réservés à Communauto sont situés près de la rue André-Laurendeau.</description>
+  <coffret>Fixé sur le mur de brique qui délimite le stationnement, tout près de l'entrée.</coffret>
+ </station>
+ <station>
+  <num>126</num>
+  <nom>de la Visitation et La Fontaine</nom>
+  <lat>45.52167</lat>
+  <lng>-73.560195</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé immédiatement à côté du 1845, rue de la Visitation à l'intersection de la rue La Fontaine, à deux pas du théâtre de l'Usine C.</description>
+  <coffret>Sur un poteau de la clôture longeant la rue de la Visitation, à gauche en entrant dans le stationnement (juste à côté de l'espace réservé à Communauto).</coffret>
+ </station>
+ <station>
+  <num>127</num>
+  <nom>St-Florent et St-André</nom>
+  <lat>45.573229</lat>
+  <lng>-73.692828</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du Centre communautaire St-Louis-de-Montfort situé au 62, rue St-Florent entre le Boul. des Laurentides et la rue St-André.</description>
+  <coffret>Sur le mur du bâtiment situé du côté du stationnement, à gauche de la porte de service.</coffret>
+ </station>
+ <station>
+  <num>128</num>
+  <nom>Collège Ahuntsic</nom>
+  <lat>45.552219</lat>
+  <lng>-73.639608</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du Collège Ahuntsic situé au 825, rue Émile-Journault, juste à l'est de la rue St-Hubert.</description>
+  <coffret>À l'entrée du stationnement, du côté de la rue Émile-Journault, sur le poteau portant le panneau identifiant le pavillon des sports et de la bibliothèque.</coffret>
+ </station>
+ <station>
+  <num>129</num>
+  <nom>Parthenais et Sherbrooke</nom>
+  <lat>45.53283</lat>
+  <lng>-73.5629</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de la Coopérative d'habitation Rose et Bleu situé à côté du 3445, rue Parthenais, juste au nord de la rue Sherbrooke Est. et en face de l'église catholique lituanienne St-Casimir.</description>
+  <coffret>Le coffret est fixé au poteau de la clôture, à droite, en entrant dans le stationnement.</coffret>
+ </station>
+ <station>
+  <num>130</num>
+  <nom>Émery et Sanguinet</nom>
+  <lat>45.513618</lat>
+  <lng>-73.564191</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de la Corporation d'Habitations Jeanne-Mance situé au coin des rues Émery et Sanguinet (sur le terrain situé dans l'axe de la rue Émery). Les voitures de</description>
+  <coffret>Fixé sur le poteau portant l'enseigne de la Corporation d'Habitations Jeanne-Mance situé à l'intersection des rues Émery et Sanguinet.</coffret>
+ </station>
+ <station>
+  <num>131</num>
+  <nom>Benny et Monkland</nom>
+  <lat>45.467606</lat>
+  <lng>-73.632128</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de la Société d';Habitation et de Développement de Montréal (SHDM) situé au 4375, rue Benny. Le terrain se trouve face au parc Benny, juste au nord de la rue Monkland.</description>
+  <coffret>Sur le mur de l'immeuble, à droite de la porte d'entrée située au 4375, rue Benny.</coffret>
+ </station>
+ <station>
+  <num>132</num>
+  <nom>Beaumont et de l'Acadie</nom>
+  <lat>45.523258</lat>
+  <lng>-73.622866</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Situé au 1070, rue Beaumont, sur le terrain du Centre de l'Auto Beaumont, juste en face de l'édicule du métro Acadie.</description>
+  <coffret>Fixé sur le mur du lave-auto, à côté des espaces réservés à</coffret>
+ </station>
+ <station>
+  <num>133</num>
+  <nom>Tansley et Dorion</nom>
+  <lat>45.523867</lat>
+  <lng>-73.549729</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de la Coopérative d'habitations située au 2000, rue Tansley, entre les rues Dorion et De Lorimier (juste au sud de la rue Ste-Catherine).</description>
+  <coffret>Sur l'un des supports métalliques gris qui se trouvent à côté des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>134</num>
+  <nom>Gare de Westmount</nom>
+  <lat>45.47701</lat>
+  <lng>-73.597806</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l';ancienne gare de train Westmount située sur la rue Ste-Catherine juste au sud de la rue Victoria. Les espaces réservés à Communauto sont localisés sur le petit terrain à gauche de la bâtisse.</description>
+  <coffret>Sur le poteau noir situé à droite des espaces réservés à Communauto (du côté de la gare).</coffret>
+ </station>
+ <station>
+  <num>135</num>
+  <nom>Victoria Hall</nom>
+  <lat>45.481231</lat>
+  <lng>-73.60046</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Située au 4626, rue Sherbrooke Ouest au coin de l';avenue Arlington, à la Maison du Citoyen de la Ville de Westmount. Les espaces réservés à Communauto sont localisés près de l';aire d';attente des taxis.</description>
+  <coffret>Sur le lampadaire noir situé à gauche de l'aire d'attente des taxis. Le coffret est fixé du côté de l'allée, face au Victoria Hall.</coffret>
+ </station>
+ <station>
+  <num>136</num>
+  <nom>De Lanaudière et Marie-Anne</nom>
+  <lat>45.529651</lat>
+  <lng>-73.574832</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Derrière la Coopérative d'habitation Le Plateau située du côté nord de la rue Marie-Anne, entre les rues de Lanaudière et Garnier.</description>
+  <coffret>Sur le poteau de la clôture situé entre les espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>137</num>
+  <nom>13e Avenue et Beaubien</nom>
+  <lat>45.556227</lat>
+  <lng>-73.583277</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur des Habitations Étienne-Desmarteaux situé au 6355, 13e Avenue entre les rues Beaubien et de l'Ukraine.</description>
+  <coffret>Fixé sur le support du commutateur à clés, juste avant la descente donnant accès au stationnement.</coffret>
+ </station>
+ <station>
+  <num>138</num>
+  <nom>Hamelin et Henri-Bourassa</nom>
+  <lat>45.572389</lat>
+  <lng>-73.657966</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur des Habitations St-Firmin situé au 2025, Henri-Bourassa Est. L'entrée du stationnement se trouve sur la rue Hamelin, au nord du boul. Henri-Bourassa.</description>
+  <coffret>Fixé à gauche de la porte du garage.</coffret>
+ </station>
+ <station>
+  <num>139</num>
+  <nom>Maguire et St-Dominique</nom>
+  <lat>45.524826</lat>
+  <lng>-73.595151</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur des Habitations Émile-Nelligan, situé au 5230, St-Dominique. L'entrée du stationnement se trouve sur la rue Maguire, juste à l'ouest de la rue St-Dominique.</description>
+  <coffret>Fixé à droite de la porte du garage.</coffret>
+ </station>
+ <station>
+  <num>140</num>
+  <nom>Rachel et de Chambly</nom>
+  <lat>45.550459</lat>
+  <lng>-73.557938</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur des Habitations De Chambly. L'entrée du stationnement se trouve à droite du 3663, Rachel Est.</description>
+  <coffret>Fixé sur le mur de la bâtisse, à gauche de la porte du garage.</coffret>
+ </station>
+ <station>
+  <num>141</num>
+  <nom>Everett et de Bordeaux</nom>
+  <lat>45.551415</lat>
+  <lng>-73.608577</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Situé derrière le 7391, rue de Bordeaux. L'entrée du stationnement se trouve sur la rue Everett, juste à l'est de la rue de Bordeaux.</description>
+  <coffret>Fixé sur le mur de brique, juste à côté de l'escalier.</coffret>
+ </station>
+ <station>
+  <num>143</num>
+  <nom>Towers et Ste-Catherine</nom>
+  <lat>45.492895</lat>
+  <lng>-73.5816</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur situé au 1433, rue Towers, juste au nord de la rue Ste-Catherine.</description>
+  <coffret>Fixé à gauche du cadre de la porte de garage.</coffret>
+ </station>
+ <station>
+  <num>144</num>
+  <nom>13e Avenue et Laurier</nom>
+  <lat>45.551825</lat>
+  <lng>-73.57095</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Situé derrière le Centre de développement communautaire de Rosemont. L'entrée du stationnement se trouve sur la 13e Avenue, entre les rues Masson et Laurier.</description>
+  <coffret>Fixé au poteau de la clôture, près de la porte, lorsque vous empruntez l'entrée située le plus loin de la rue Laurier.</coffret>
+ </station>
+ <station>
+  <num>145</num>
+  <nom>Notre-Dame et de Courcelle</nom>
+  <lat>45.472392</lat>
+  <lng>-73.588611</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de la bibliothèque Notre-Dame, situé au 4700 Notre-Dame Ouest, juste à l'ouest de la rue de Courcelle.</description>
+  <coffret>Sur le mur de brique de la bibliothèque, près du coin adjacent aux espaces réservés à</coffret>
+ </station>
+ <station>
+  <num>147</num>
+  <nom>Drolet et Beaubien</nom>
+  <lat>45.5336</lat>
+  <lng>-73.6058</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur des Habitations de la Mennais, situé au 387, Beaubien Est, dont l';entrée se trouve sur la rue Drolet, juste au nord de la rue Beaubien.</description>
+  <coffret>Fixé à gauche de la porte du garage.</coffret>
+ </station>
+ <station>
+  <num>148</num>
+  <nom>Laurier et St-Urbain</nom>
+  <lat>45.522101</lat>
+  <lng>-73.593916</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement sur le terrain du Lave-Auto Laurier et St-Urbain, situé au 85, avenue Laurier Ouest, entre les rues Clark et St-Urbain.</description>
+  <coffret>Sur la colonne de métal de la rangée centrale de la marquise, du côté de la rue St-Urbain.</coffret>
+ </station>
+ <station>
+  <num>149</num>
+  <nom>St-Joseph et Henri-Valade</nom>
+  <lat>45.54774</lat>
+  <lng>-73.568699</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Situé derrière le 3030, boulevard St-Joseph Est. Le stationnement est accessible par la place Henri-Valade.</description>
+  <coffret>Fixé sur le mur sud de l'édifice le plus près de l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>150</num>
+  <nom>Beaubien et Christophe-Colomb</nom>
+  <lat>45.53786</lat>
+  <lng>-73.600715</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Situé derrière le 6425 Christophe-Colomb. Pour accéder au stationnement, vous devez emprunter la ruelle perpendiculaire à la rue Beaubien, dont l'entrée se trouve tout juste à l'est de l'avenue Christophe-Colomb.</description>
+  <coffret>Fixé au poteau de la clôture délimitant le stationnement, à l'opposé des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>152</num>
+  <nom>Tolhurst et Sauvé</nom>
+  <lat>45.543519</lat>
+  <lng>-73.66314</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Situé derrière le 10 005, rue Tolhurst, juste au nord de la rue Sauvé. Pour accéder au stationnement, vous devez emprunter l'allée Sauvé. Les espaces réservés à Communauto sont situés à votre gauche.</description>
+  <coffret>Fixé sur le mur de brique qui se trouve immédiatement à côté des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>153</num>
+  <nom>Boyer et Villeray</nom>
+  <lat>45.544848</lat>
+  <lng>-73.619336</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur des Habitations Boyer, situé au 1000, rue Villeray. L';entrée du stationnement se trouve sur la rue Boyer, juste au sud de la rue Villeray.</description>
+  <coffret>Fixé sur le muret de béton, tout près du commutateur, avant la descente.</coffret>
+ </station>
+ <station>
+  <num>154</num>
+  <nom>Parthenais et Logan</nom>
+  <lat>45.527477</lat>
+  <lng>-73.552514</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur des Habitations Parthenais, situé au 2177, rue Logan. L';entrée du stationnement se trouve sur la rue Parthenais, juste au nord de la rue Logan.</description>
+  <coffret>Fixé sur la clôture, tout près du commutateur, avant la descente.</coffret>
+ </station>
+ <station>
+  <num>155</num>
+  <nom>Panet et Larivière</nom>
+  <lat>45.523442</lat>
+  <lng>-73.563077</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur des Habitations Marguerite-Bourgeoys, situé au 2122, rue Panet. L';entrée du stationnement se trouve sur la rue Panet, juste au nord de la rue Larivière.</description>
+  <coffret>Fixé à gauche de la porte du garage.</coffret>
+ </station>
+ <station>
+  <num>156</num>
+  <nom>Alexandre-De-Sève et Ontario</nom>
+  <lat>45.523696</lat>
+  <lng>-73.559688</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé immédiatement à côté du 1902, rue Alexandre-De-Sève, au sud de la rue Ontario. La télécommande qui permet d';actionner la barrière du stationnement se trouve dans le coffre à gants.</description>
+  <coffret>Fixé sur le mur de brique de l'édifice, tout près de la barrière.</coffret>
+ </station>
+ <station>
+  <num>157</num>
+  <nom>Chabot et Gilford</nom>
+  <lat>45.535647</lat>
+  <lng>-73.577362</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur du 1901, rue Gilford. Le stationnement compte deux descentes; celle vous permettant d';accéder au stationnement est située le plus au nord. L'autre descente, de l'intérieur du garage, vous permettra d'en sortir. Le commutateur se trouve juste à gauche de cette porte, à l'intérieur du garage.</description>
+  <coffret>Fixé sur le poteau où se trouve le commutateur.</coffret>
+ </station>
+ <station>
+  <num>158</num>
+  <nom>Métro Crémazie</nom>
+  <lat>45.545524</lat>
+  <lng>-73.637634</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur du 8660, rue Berri. L';entrée du stationnement se trouve sur la rue Berri, juste au sud du boulevard Crémazie.</description>
+  <coffret>Fixé sur le mur de brique du bâtiment, tout en haut de la descente de stationnement.</coffret>
+ </station>
+ <station>
+  <num>159</num>
+  <nom>De Lanaudière et Gilford</nom>
+  <lat>45.531924</lat>
+  <lng>-73.580898</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur du 1315, rue Gilford. L';entrée du stationnement se trouve sur la rue De Lanaudière, juste au nord de la rue Gilford.</description>
+  <coffret>Fixé sur le poteau où se trouve le commutateur.</coffret>
+ </station>
+ <station>
+  <num>160</num>
+  <nom>Napoléon et de Mentana</nom>
+  <lat>45.522468</lat>
+  <lng>-73.570903</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Situé derrière le 3878, rue de Mentana. Le stationnement est accessible par la rue Napoléon.</description>
+  <coffret>Fixé sur le poteau en bois à l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>161</num>
+  <nom>Rosemont et Saint-Denis</nom>
+  <lat>45.5309</lat>
+  <lng>-73.5966</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur des Habitations Saint-Vallier, situées entre les rues Saint-Denis et de Saint-Vallier, au sud du terminus de la station de métro Rosemont. L';entrée du stationnement est accessible par la rue de Saint-Vallier.</description>
+  <coffret>Fixé sur le poteau où se trouve le commutateur.</coffret>
+ </station>
+ <station>
+  <num>162</num>
+  <nom>Champagneur et Jean-Talon</nom>
+  <lat>45.527078</lat>
+  <lng>-73.624794</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Situé derrière le 7221, avenue Champagneur, juste au nord de la rue Jean-Talon Ouest. Le stationnement est accessible par la ruelle à côté du bâtiment.</description>
+  <coffret>Fixé sur le poteau de l'escalier vert, qui se trouve face aux espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>163</num>
+  <nom>Dublin et Wellington</nom>
+  <lat>45.47728</lat>
+  <lng>-73.55881</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Situé derrière le 2130, rue Wellington, entre les rues Dublin et Fortune. Le stationnement est accessible par la rue Dublin.</description>
+  <coffret>Fixé sur le poteau du commutateur, qui se trouve tout juste avant la descente du stationnement. À noter : ce site compte deux stationnements, l'un intérieur et l'autre extérieur. Les espaces réservés à Communauto sont situés à l'extérieur.</coffret>
+ </station>
+ <station>
+  <num>164</num>
+  <nom>Coursol et Georges-Vanier</nom>
+  <lat>45.488528</lat>
+  <lng>-73.575707</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Situé derrière le 825, boulevard Georges-Vanier, à l';angle de la rue Coursol. Le stationnement est accessible par la rue Coursol.</description>
+  <coffret>Fixé sur le mur de béton de l'édifice, à proximité des espaces réservés à Communauto, à côté de la porte verte.</coffret>
+ </station>
+ <station>
+  <num>165</num>
+  <nom>De Marseille et Du Quesne</nom>
+  <lat>45.576503</lat>
+  <lng>-73.541426</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur des Habitations de Marseille, situées au 6191, rue de Marseille, entre la rue Du Quesne et l';avenue de la Pépinière.</description>
+  <coffret>Fixé sur le poteau où se trouve le commutateur.</coffret>
+ </station>
+ <station>
+  <num>167</num>
+  <nom>St-Timothée et De Maisonneuve</nom>
+  <lat>45.517878</lat>
+  <lng>-73.560297</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé immédiatement à côté du 1650, rue St-Timothée, au nord du boulevard De Maisonneuve Est. La clé qui permet d';actionner la barrière à la sortie du stationnement se trouve dans le coffre à gants de la voiture.</description>
+  <coffret>Fixé sur le poteau où se trouve le commutateur.</coffret>
+ </station>
+ <station>
+  <num>168</num>
+  <nom>Fullum et Larivière</nom>
+  <lat>45.53127</lat>
+  <lng>-73.557377</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé à l';intersection des rues Fullum et Larivière.</description>
+  <coffret>Fixé sur le mur de brique de l'édifice adjacent au stationnement, à proximité du coin opposé à la rue Fullum.</coffret>
+ </station>
+ <station>
+  <num>169</num>
+  <nom>Hôtel de Ville de LaSalle</nom>
+  <lat>45.42895</lat>
+  <lng>-73.662348</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l';Hôtel de Ville de LaSalle, situé au 55, avenue Dupras, à l';intersection de la rue Airlie.</description>
+  <coffret>Sur le lampadaire situé à proximité de l'entrée donnant sur l'avenue Dupras, la plus éloignée de l'Hôtel de Ville.</coffret>
+ </station>
+ <station>
+  <num>170</num>
+  <nom>Aréna Jacques-Lemaire</nom>
+  <lat>45.418064</lat>
+  <lng>-73.623229</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l';aréna Jacques-Lemaire, situé au 8681, boulevard Champlain, à l';intersection de la rue Centrale. Les espaces réservés à Communauto sont situés dans la partie du stationnement longeant l';avenue Latour, dans la section se trouvant entre les deux entrées de stationnement.</description>
+  <coffret>Fixé sur le lampadaire situé à proximité de l'entrée donnant sur l'avenue Latour, le plus près de la rue Centrale.</coffret>
+ </station>
+ <station>
+  <num>171</num>
+  <nom>75e Avenue et Parent</nom>
+  <lat>45.42121</lat>
+  <lng>-73.629524</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du centre sportif Dollard-St-Laurent, situé au 707, 75e Avenue. Le stationnement se trouve entre la rue Parent et le boulevard De La Vérendrye. Les espaces réservés à Communauto sont situés dans la partie du stationnement longeant la 75e Avenue, dans la section du stationnement se trouvant à proximité du parc de planches à roulettes.</description>
+  <coffret>Fixé sur le lampadaire situé le long de la 75e Avenue, à proximité de l'entrée la plus près du parc de planches à roulettes.</coffret>
+ </station>
+ <station>
+  <num>172</num>
+  <nom>Aquadôme</nom>
+  <lat>45.435934</lat>
+  <lng>-73.608652</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de la piscine l';Aquadôme, situé au 1411, rue Lapierre, à proximité de la rue Leclerc.</description>
+  <coffret>Fixé sur le lampadaire situé le long de la rue Lapierre, entre les deux entrées du stationnement.</coffret>
+ </station>
+ <station>
+  <num>173</num>
+  <nom>Centrale et Raymond</nom>
+  <lat>45.420238</lat>
+  <lng>-73.60928</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du parc Riverside, situé à l';intersection des rues Centrale et Raymond.</description>
+  <coffret>Fixé sur le lampadaire situé à l'entrée du stationnement donnant sur la Centrale, à l'intersection de la rue Raymond.</coffret>
+ </station>
+ <station>
+  <num>174</num>
+  <nom>5e Avenue et Édouard</nom>
+  <lat>45.43045</lat>
+  <lng>-73.594019</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé derrière le centre Henri-Lemieux, qui se trouve à l';intersection de la rue Édouard et de la 5e Avenue. Le stationnement est accessible par la 5e Avenue.</description>
+  <coffret>Fixé sur le poteau en bois qui se trouve à l'entrée du stationnement, le long de la 5e Avenue.</coffret>
+ </station>
+ <station>
+  <num>175</num>
+  <nom>5e Avenue et Centrale</nom>
+  <lat>45.431012</lat>
+  <lng>-73.597341</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement municipal situé derrière les commerces qui bordent la rue Centrale, accessible par la 5e Avenue. Le stationnement se trouve entre les rues Centrale et Édouard.</description>
+  <coffret>Fixé sur le poteau en bois situé près de la 5e Avenue, à proximité de l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>176</num>
+  <nom>Lajeunesse et Jarry</nom>
+  <lat>45.54356</lat>
+  <lng>-73.627383</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur situé au 8055, rue Lajeunesse. Pour accéder au stationnement, entrez dans le bâtiment en utilisant la clé qui est accrochée avec celle de la voiture, sur le même porte-clés. Empruntez ensuite la première porte située à votre droite, descendez l'escalier et entrez dans le stationnement par la porte qui se trouve au pied de l'escalier.</description>
+  <coffret>Fixé à droite de la porte d'entrée du 8055, rue Lajeunesse.</coffret>
+ </station>
+ <station>
+  <num>177</num>
+  <nom>De Lanaudière et Mont-Royal</nom>
+  <lat>45.53032</lat>
+  <lng>-73.577862</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé derrière les commerces qui bordent le nord de l';avenue du Mont-Royal Est, entre les rues De Lanaudière et Chambord.</description>
+  <coffret>Fixé sur le poteau portant l'indication " Réservé aux détenteurs de permis ", sur le côté nord du site.</coffret>
+ </station>
+ <station>
+  <num>178</num>
+  <nom>Dézéry et Hochelaga</nom>
+  <lat>45.543545</lat>
+  <lng>-73.554667</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Derrière l';église Church in Montreal, située au 3201, rue Hochelaga, à l';intersection de la rue Dézéry. Le stationnement est accessible par les rues Dézéry et St-Germain. Une chaîne, munie d'un simple crochet, ferme l'entrée donnant sur la rue Dézéry. Pour entrer et sortir du stationnement en voiture, vous devrez donc retirer la chaîne, puis la replacer par la suite.</description>
+  <coffret>Fixé sur le mur de l'église, près de la porte d'entrée qui se trouve à gauche de la porte de garage.</coffret>
+ </station>
+ <station>
+  <num>179</num>
+  <nom>Decelles et Côte-Ste-Catherine</nom>
+  <lat>45.501054</lat>
+  <lng>-73.626397</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur situé au 5757, avenue Decelles.</description>
+  <coffret>Fixé sur le mur de l'immeuble, entre les deux portes de garage.</coffret>
+ </station>
+ <station>
+  <num>180</num>
+  <nom>Métro Square-Victoria</nom>
+  <lat>45.500929</lat>
+  <lng>-73.562275</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur situé au 629, rue Saint-Antoine Ouest, près de la rue Gauvin. Pour vous rendre au stationnement à partir de la station de métro Square-Victoria, empruntez la sortie St-Antoine.</description>
+  <coffret>Fixé sur la boîte rouge du commutateur, qui se trouve en haut de la descente de stationnement.</coffret>
+ </station>
+ <station>
+  <num>181</num>
+  <nom>St-André et Bélanger</nom>
+  <lat>45.539313</lat>
+  <lng>-73.608657</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement</description>
+  <coffret>Fixé sur la structure de béton à l'entrée du stationnement, juste avant le passage piétonnier.</coffret>
+ </station>
+ <station>
+  <num>182</num>
+  <nom>Jarry et Boyer</nom>
+  <lat>45.547555</lat>
+  <lng>-73.625063</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l';immeuble situé au 1000, rue Jarry Est, entre la rue Boyer et l';avenue Christophe-Colomb.</description>
+  <coffret>Fixé sur le lampadaire noir situé à proximité des espaces de stationnement.</coffret>
+ </station>
+ <station>
+  <num>183</num>
+  <nom>Gascon et Sherbrooke</nom>
+  <lat>45.536519</lat>
+  <lng>-73.559499</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement derrière l';église Notre-Dame de Czestochowa, situé à côté du 2550, avenue Gascon. Le stationnement se trouve entre les rues Sherbrooke Est et Hochelaga.</description>
+  <coffret>Fixé au poteau de la clôture, à droite de l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>184</num>
+  <nom>St-Denis et Sherbrooke</nom>
+  <lat>45.516728</lat>
+  <lng>-73.567961</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur de l';INRS, situé au 385, rue Sherbrooke Est. Pour accéder au stationnement, emprunter la descente située sur la rue Saint-Denis, tout près de la rue Sherbrooke Est.</description>
+  <coffret>Fixé sur le mur de béton, en bas de la descente de stationnement, à proximité du commutateur.</coffret>
+ </station>
+ <station>
+  <num>185</num>
+  <nom>Marché Maisonneuve</nom>
+  <lat>45.553426</lat>
+  <lng>-73.540899</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'ancien bâtiment du Marché Maisonneuve. L'édifice est situé au 4375, rue Ontario Est, près de l'intersection de l'avenue Morgan, tout juste à côté de l'actuel Marché Maisonneuve. Les espaces réservés à Communauto sont situés sur le côté du bâtiment le plus éloigné du Marché actuel.</description>
+  <coffret>Fixé sur le lampadaire sur lequel un des panneaux qui identifient les espaces de Communauto est installé.</coffret>
+ </station>
+ <station>
+  <num>186</num>
+  <nom>Centre de commerce mondial</nom>
+  <lat>45.502464</lat>
+  <lng>-73.560598</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur du Centre de commerce mondial de Montréal, situé au 380, rue Saint-Antoine Ouest. Pour accéder au stationnement, utilisez les ascenseurs qui se trouvent dans l'aire de restauration, de l'autre côté du kiosque d'information. Ceux-ci sont indiqués par des panneaux. Les espaces réservés à Communauto se trouvent au niveau P2, à l'arrière de la cage des ascenseurs. Lorsque vous sortez de l'ascenseur, dirigez-vous donc vers la droite jusqu'au coin, et de nouveau vers la droite.</description>
+  <coffret>Fixé sur le mur de béton à l'intérieur du stationnement, immédiatement à côté des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>187</num>
+  <nom>Aréna Mont-Royal</nom>
+  <lat>45.533199</lat>
+  <lng>-73.572645</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'aréna Mont-Royal situé au 4365, rue Cartier, près de la rue Marie-Anne Est.</description>
+  <coffret>Fixé sur le poteau de la clôture, à l'entrée du stationnement, tout près de la rue Cartier.</coffret>
+ </station>
+ <station>
+  <num>188</num>
+  <nom>McGill et du Président-Kennedy</nom>
+  <lat>45.503193</lat>
+  <lng>-73.573295</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur de l'immeuble situé à l'intersection de l'avenue McGill College et de l'avenue du Président-Kennedy. Pour accéder au stationnement, empruntez l'entrée située au 1981, avenue McGill College, et dirigez-vous vers le kiosque d'information. Signifiez simplement à l'agent en poste à l'accueil que vous vous rendez au stationnement pour utiliser un véhicule de Communauto. Celui-ci pourra par la suite vous indiquer où se trouve l'escalier menant au garage. Une fois au pied de l'escalier, prenez la porte qui vous mènera au 1er sous-sol et dirigez-vous vers la gauche. Les espaces réservés à Communauto se trouvent tout près de la guérite.</description>
+  <coffret>Fixé sur le mur de béton à l'intérieur du stationnement, immédiatement à côté des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>189</num>
+  <nom>Parc Nicolas-Viel</nom>
+  <lat>45.551584</lat>
+  <lng>-73.676145</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du parc Nicolas-Viel, situé à l'intersection du boulevard St-Laurent et de la rue Somerville.</description>
+  <coffret>Fixé sur le poteau qui se trouve à l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>190</num>
+  <nom>13e Avenue et de l'Ukraine</nom>
+  <lat>45.556163</lat>
+  <lng>-73.583692</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement arrière de l'immeuble situé au 3500, rue Beaubien Est. Pour accéder au stationnement, empruntez l'entrée se trouvant sur la 13e Avenue, tout près de la rue de l'Ukraine.</description>
+  <coffret>Fixé sur la colonne de béton qui fait face aux espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>191</num>
+  <nom>Square Dorchester</nom>
+  <lat>45.499718</lat>
+  <lng>-73.571787</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement sur rue. Sur la rue du Square-Dorchester, immédiatement à l'intersection de la rue Peel. La zone #126, qui est réservée à Communauto, se trouve du côté de la rue qui longe le square Dorchester.</description>
+  <coffret>Fixé sur le lampadaire où se trouve le panneau de signalisation délimitant la zone #126, réservée à Communauto.</coffret>
+ </station>
+ <station>
+  <num>192</num>
+  <nom>Sherbrooke et University</nom>
+  <lat>45.504736</lat>
+  <lng>-73.573873</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement sur rue. Sur la rue Sherbrooke Ouest, à l'intersection de la rue University. La zone #126, qui est réservée à Communauto, se trouve du côté nord de la rue Sherbrooke.</description>
+  <coffret>Fixé sur le lampadaire qui se trouve tout près du poteau qui délimite la zone #126, réservée à Communauto.</coffret>
+ </station>
+ <station>
+  <num>194</num>
+  <nom>Brennan et Duke</nom>
+  <lat>45.495581</lat>
+  <lng>-73.553341</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement sur rue. Sur la rue Brennan, tout près de la rue Duke. La zone #126, qui est réservée à Communauto, se trouve du côté sud de la rue Brennan.</description>
+  <coffret>Fixé sur le lampadaire qui se trouve à l'intersection des rues Brennan et Duke, tout près de la zone #126, réservée à Communauto.</coffret>
+ </station>
+ <station>
+  <num>195</num>
+  <nom>Préfontaine et Rachel</nom>
+  <lat>45.543352</lat>
+  <lng>-73.559976</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement à l'arrière de la coopérative d'habitation Loggia Préfontaine, qui est située sur la rue Préfontaine, tout près de la rue Rachel. Pour accéder au stationnement, emprunter l'entrée située immédiatement à côté du 3872, rue Préfontaine.</description>
+  <coffret>Fixé sur le mur de brique de l'édifice le plus près de l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>196</num>
+  <nom>1re Avenue et de Verdun</nom>
+  <lat>45.459058</lat>
+  <lng>-73.57373</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement à l'arrière de la mairie de l'arrondissement de Verdun, située au 4555, rue de Verdun, près de la 1re Avenue. Pour accéder au stationnement, emprunter l'entrée qui donne sur la 1re Avenue ou sur la rue Willibrord.</description>
+  <coffret>Fixé sur l'un des petits poteaux jaunes qui sont situés près des chalets, dans la partie la plus éloignée de la mairie de l'arrondissement.</coffret>
+ </station>
+ <station>
+  <num>197</num>
+  <nom>Hickson et Ross</nom>
+  <lat>45.464518</lat>
+  <lng>-73.566123</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement municipal situé à l'intersection des rues Hickson et Ross.</description>
+  <coffret>Fixé sur le lampadaire situé tout près de l'entrée du stationnement donnant sur la rue Hickson.</coffret>
+ </station>
+ <station>
+  <num>198</num>
+  <nom>Métro Bonaventure</nom>
+  <lat>45.498302</lat>
+  <lng>-73.566769</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur du 1000, rue de la Gauchetière Ouest. Pour accéder au stationnement, emprunter l'entrée principale, située au 1000, rue de la Gauchetière. Une fois à l'intérieur, pour atteindre les ascenseurs qui vous mèneront au stationnement, empruntez le corridor situé tout à gauche des escaliers, où se trouvent les kiosques des commerçants et d'alimentation, et tournez à droite une fois au bout du corridor. Les ascenseurs sont situés devant la patinoire intérieure ; descendre à l'étage P1 pour aller dans le garage. Les espaces réservés à Communauto se trouvent à gauche, lorsque vous sortez de l'ascenseur, près du panneau de signalisation Entrée interdite.</description>
+  <coffret>Fixé sur le mur de béton à l'intérieur du stationnement, immédiatement à côté des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>199</num>
+  <nom>Notre-Dame-de-Grâce et Prud'homme</nom>
+  <lat>45.476922</lat>
+  <lng>-73.616159</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'église Notre-Dame-de-Grâce,</description>
+  <coffret>Fixé sur le poteau planté dans la pelouse, entre les espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>200</num>
+  <nom>Westminster et Curzon</nom>
+  <lat>45.4533</lat>
+  <lng>-73.6469</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement municipal situé sur l'avenue Westminster Nord, près de l'intersection de la rue Curzon.</description>
+  <coffret>Fixé sur le lampadaire situé au centre du stationnement.</coffret>
+ </station>
+ <station>
+  <num>202</num>
+  <nom>Clark et de Liège</nom>
+  <lat>45.5401</lat>
+  <lng>-73.6383</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'église située à l'angle des rues Clark et de Liège Ouest. Les espaces réservés à Communauto sont situés près de l'entrée du stationnement donnant sur la rue Clark. Il est aussi possible d'accéder au stationnement par le boulevard St-Laurent.</description>
+  <coffret>Fixé sur le mur de brique de l'église, faisant face à la rue Clark. .</coffret>
+ </station>
+ <station>
+  <num>203</num>
+  <nom>Hampton et Monkland</nom>
+  <lat>45.4715</lat>
+  <lng>-73.6272</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du YMCA de Notre-Dame-de-Grâce, situé au 4335, avenue de Hampton, près de l'avenue de Monkland.</description>
+  <coffret>Fixé sur le mur de brique de l'édifice donnant sur le stationnement, à droite de la porte.</coffret>
+ </station>
+ <station>
+  <num>204</num>
+  <nom>De Lévis et Notre-Dame</nom>
+  <lat>45.4814</lat>
+  <lng>-73.5766</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé entre la rue de Lévis et l'avenue Atwater, au sud de la rue Notre-Dame Ouest. Les espaces réservés à Communauto se trouvent tout près de l'accès au stationnement donnant sur la rue de Lévis.</description>
+  <coffret>Fixé sur le lampadaire situé près des espaces réservés à Communauto, sur lequel se trouve l'affiche indiquant " Stationnement maximum 90 minutes ".</coffret>
+ </station>
+ <station>
+  <num>205</num>
+  <nom>Resther et Gilford</nom>
+  <lat>45.5273</lat>
+  <lng>-73.5861</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur la rue Resther, près de la rue Gilford, derrière l'immeuble à appartements qui se trouve à l'intersection de ces deux rues.</description>
+  <coffret>Fixé sur le mur de béton de l'immeuble, près de la porte de garage.</coffret>
+ </station>
+ <station>
+  <num>206</num>
+  <nom>Roy et Rivard</nom>
+  <lat>45.5197</lat>
+  <lng>-73.5721</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement sur rue. Sur la rue Roy Est, tout près de l'intersection de la rue Rivard. La zone 103, qui est réservée à Communauto, se trouve du côté sud de la rue Roy Est.</description>
+  <coffret>Fixé sur le lampadaire où se trouve l'un des deux panneaux de signalisation délimitant la zone 103, réservée à Communauto.</coffret>
+ </station>
+ <station>
+  <num>207</num>
+  <nom>Henri-Julien et Gilford</nom>
+  <lat>45.5235</lat>
+  <lng>-73.5852</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement sur rue. Sur l'avenue Henri-Julien, à proximité de l'intersection avec la rue Gilford. La zone 103, qui est réservée à Communauto, est située tout juste en face du parc Pierre-Boucher.</description>
+  <coffret>Fixé sur le lampadaire où se trouve l'un des deux panneaux de signalisation délimitant la zone 103, réservée à Communauto.</coffret>
+ </station>
+ <station>
+  <num>208</num>
+  <nom>Waverly et Fairmount</nom>
+  <lat>45.5223</lat>
+  <lng>-73.5969</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement sur rue. Sur la rue Waverly, entre l'avenue Fairmount Ouest et la rue Groll. La zone 103, qui est réservée à Communauto, se trouve du côté ouest de la rue Waverly.</description>
+  <coffret>Fixé sur le poteau d'Hydro-Québec où se trouve l'un des deux panneaux de signalisation délimitant la zone 103, réservée à Communauto.</coffret>
+ </station>
+ <station>
+  <num>209</num>
+  <nom>Émile-Journault et Henri-Julien</nom>
+  <lat>45.5458</lat>
+  <lng>-73.6434</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement accessible par la ruelle située tout juste à l'est de l'avenue Henri-Julien, entre les avenues Émile-Journault et Laflamme.</description>
+  <coffret>Fixé sur le petit poteau délimitant l'une des cases de stationnement, plus près de l'avenue Laflamme.</coffret>
+ </station>
+ <station>
+  <num>210</num>
+  <nom>Outremont et Ducharme</nom>
+  <lat>45.5224</lat>
+  <lng>-73.6164</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement municipal situé sur l'avenue d'Outremont, au nord de l'avenue Ducharme. Veuillez noter que cette station est temporaire, en attendant de relocaliser ultérieurement les véhicules dans le secteur.</description>
+  <coffret>Fixé sur le poteau qui se trouve au centre du stationnement.</coffret>
+ </station>
+ <station>
+  <num>211</num>
+  <nom>De Chateaubriand et Mistral</nom>
+  <lat>45.5464</lat>
+  <lng>-73.6284</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur l'avenue De Chateaubriand, près de l'intersection de la rue Mistral, derrière l'église Ste-Thérèse.</description>
+  <coffret>Fixé sur le mur de l'église qui donne sur le stationnement, tout près de l'accès piétonnier menant du stationnement à l'avenue De Chateaubriand.</coffret>
+ </station>
+ <station>
+  <num>212</num>
+  <nom>21e Avenue et Beaubien</nom>
+  <lat>45.561779</lat>
+  <lng>-73.580767</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement sur la 21e Avenue, près de la rue Beaubien Est, donnant sur le côté du dépanneur Couche-Tard.</description>
+  <coffret>Fixé sur le mur du bâtiment, près des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>213</num>
+  <nom>15e Avenue et Bélanger</nom>
+  <lat>45.559891</lat>
+  <lng>-73.590516</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'église Ste-Bernadette-Soubirous, accessible par la 15e Avenue, entre les rues Bélanger et Soubirous.</description>
+  <coffret>Fixé sur le cadre de la porte double située à proximité des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>214</num>
+  <nom>Aréna Doug-Harvey</nom>
+  <lat>45.471351</lat>
+  <lng>-73.637797</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'aréna Doug-Harvey, qui se trouve à l'intersection de l'avenue Biermans et de l'avenue West Hill. Le stationnement se trouve à l'arrière de l'aréna, et est accessible par l'avenue Biermans.</description>
+  <coffret>Fixé sur le poteau planté dans la pelouse, entre les espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>215</num>
+  <nom>Aréna Bill-Durnan</nom>
+  <lat>45.495115</lat>
+  <lng>-73.644615</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'aréna Bill-Durnan, situé à l'intersection des rues Vézina et Lemieux.</description>
+  <coffret>Fixé sur la rampe d'accès aux personnes à mobilité réduite.</coffret>
+ </station>
+ <station>
+  <num>216</num>
+  <nom>Bourget et St-Jacques</nom>
+  <lat>45.480667</lat>
+  <lng>-73.584077</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé en face du 711, rue Bourget, près de l'intersection avec la rue St-Jacques.</description>
+  <coffret>Fixé au poteau de la clôture, à gauche de l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>217</num>
+  <nom>Campus Loyola</nom>
+  <lat>45.459438</lat>
+  <lng>-73.640233</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'édifice de l'Université Concordia situé derrière les résidences de l'avenue Belmore, entre la rue de Terrebonne et la rue Sherbrooke Ouest. Pour vous y rendre à pied, empruntez l'accès au campus Loyola donnant sur la rue Sherbrooke Ouest ou sur la rue de Terrebonne. Les espaces réservés à Communauto sont situés tout près de l'horodateur.</description>
+  <coffret>Fixé sur le mur de brique du bâtiment, à proximité de l'horodateur.</coffret>
+ </station>
+ <station>
+  <num>218</num>
+  <nom>Métro Jean-Talon</nom>
+  <lat>45.538818</lat>
+  <lng>-73.614373</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur, situé immédiatement à côté du 7172, rue Berri, près de l'intersection de la rue Jean-Talon, tout près de la sortie de l'édicule de la station de métro Jean-Talon. Pour entrer à pied dans le garage, utiliser la clé électronique qui est accrochée avec la clé du véhicule, sur le même porte-clés, en la passant devant le lecteur qui se trouve à côté de la porte qui mène à l'accès piétonnier. Emprunter l'escalier pour vous rendre dans le garage. Pour sortir du stationnement, utiliser la télécommande qui a été laissée dans le coffre à gants pour activer l'ouverture de la porte.</description>
+  <coffret>Fixé sur le mur de brique, à droite de la porte qui permet l'accès piétonnier.</coffret>
+ </station>
+ <station>
+  <num>219</num>
+  <nom>Hôtel de ville de St-Laurent</nom>
+  <lat>45.507261</lat>
+  <lng>-73.68321</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'hôtel de ville de Saint-Laurent, situé au 777, boulevard Marcel-Laurin, entre les rues de l'Église et Beaudet. Les espaces réservés à Communauto sont situés dans le stationnement donnant sur le boulevard Marcel-Laurin, tout près</description>
+  <coffret>N.B. :</coffret>
+ </station>
+ <station>
+  <num>220</num>
+  <nom>Hôtel de ville de Mont-Royal</nom>
+  <lat>45.513497</lat>
+  <lng>-73.641894</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'hôtel de ville de Mont-Royal, situé au 90, avenue Roosevelt, près de l'intersection avec le chemin Alexander. Les espaces réservés à Communauto sont les premiers à partir de l'avenue Roosevelt, le long du parc Centre-des-Loisirs.</description>
+  <coffret>Fixé sur le mur de l'hôtel de ville donnant sur le stationnement, à gauche de la porte d'entrée secondaire.</coffret>
+ </station>
+ <station>
+  <num>221</num>
+  <nom>De l'Esplanade et Beaubien</nom>
+  <lat>45.529238</lat>
+  <lng>-73.613494</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur l'avenue de l'Esplanade, entre les rues Beaubien Ouest et St-Zotique Ouest.</description>
+  <coffret>Fixé sur le petit poteau jaune situé à côté de l'ancienne guérite qui se trouve à l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>222</num>
+  <nom>Du Havre et La Fontaine</nom>
+  <lat>45.532303</lat>
+  <lng>-73.54864</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé immédiatement à côté du 1717, rue du Havre, près de l'intersection avec la rue La Fontaine. Les espaces réservés à Communauto sont les premiers espaces à droite en entrant dans le stationnement.</description>
+  <coffret>Fixé sur le poteau de la clôture qui délimite le stationnement, immédiatement à côté des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>223</num>
+  <nom>Sherbrooke et Baldwin</nom>
+  <lat>45.603274</lat>
+  <lng>-73.530715</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du dépanneur situé au 8600, rue Sherbrooke Est, à l'intersection de la rue Baldwin. L'espace réservé à Communauto est situé près du coffret à clés, devant le dépanneur.</description>
+  <coffret>Fixé sur le mur de l'immeuble qui donne sur la rue Sherbrooke Est, près de la porte d'entrée du dépanneur.</coffret>
+ </station>
+ <station>
+  <num>225</num>
+  <nom>Rosemont et Lacordaire</nom>
+  <lat>45.577304</lat>
+  <lng>-73.560429</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du pavillon de l'hôpital Maisonneuve-Rosemont situé au 5690, boulevard Rosemont, un peu à l'ouest de la rue Lacordaire. Le stationnement est accessible par le boulevard Rosemont, à côté du couvent des Franciscains. Les espaces réservés à Communauto sont les premiers espaces situés dans la bande de stationnement qui se trouve juste avant la barrière d'accès.</description>
+  <coffret>Fixé sur le petit poteau jaune situé à côté de la barrière d'accès.</coffret>
+ </station>
+ <station>
+  <num>226</num>
+  <nom>20e Avenue et de Bellechasse</nom>
+  <lat>45.5599</lat>
+  <lng>-73.5776</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement sur rue. Sur la 20e Avenue, tout près de l'intersection de la rue de Bellechasse. La zone 131, qui est réservée à Communauto, longe le parc Étienne-Desmarteau.</description>
+  <coffret>Fixé à l'un des deux poteaux de signalisation qui délimitent la zone réservée à Communauto.</coffret>
+ </station>
+ <station>
+  <num>227</num>
+  <nom>35e Avenue et de Bellechasse</nom>
+  <lat>45.5688</lat>
+  <lng>-73.5699</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement sur rue. Sur la 35e Avenue, tout près de l'intersection de la rue de Bellechasse. La zone 131, qui est réservée à Communauto, longe le parc de la Louisiane.</description>
+  <coffret>Fixé au poteau de signalisation qui délimite la zone réservée à Communauto.</coffret>
+ </station>
+ <station>
+  <num>228</num>
+  <nom>41e Avenue et St-Zotique</nom>
+  <lat>45.5748</lat>
+  <lng>-73.5735</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement sur rue. Sur la 41e Avenue, tout près de l'intersection de la rue St-Zotique Est. La zone 131, qui est réservée à Communauto, longe le parc Joseph-Paré.</description>
+  <coffret>Fixé à l'un des deux poteaux de signalisation qui délimitent la zone réservée à Communauto.</coffret>
+ </station>
+ <station>
+  <num>229</num>
+  <nom>43e Avenue et St-Zotique</nom>
+  <lat>45.576</lat>
+  <lng>-73.5727</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement sur rue. Sur la 43e Avenue, tout près de l'intersection de la rue St-Zotique Est. La zone 131, qui est réservée à Communauto, longe le parc Joseph-Paré.</description>
+  <coffret>Fixé au poteau de signalisation qui délimite la zone réservée à Communauto.</coffret>
+ </station>
+ <station>
+  <num>230</num>
+  <nom>St-Grégoire et Marquette</nom>
+  <lat>45.537219</lat>
+  <lng>-73.58614</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'église baptiste hispanique situé sur la rue St-Grégoire, à l'intersection de la rue Marquette.</description>
+  <coffret>Fixé au poteau de la clôture, à l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>231</num>
+  <nom>Côte-des-Neiges et Côte-Ste-Catherine</nom>
+  <lat>45.499</lat>
+  <lng>-73.6289</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement adjacent au petit pavillon qui se trouve immédiatement à côté de l'entrée principale de l'hôpital général Juif de Montréal, sur le chemin de la Côte-des-Neiges, près de l'intersection avec le chemin de la Côte-Ste-Catherine. Les espaces réservés à Communauto sont situés près de la cabine des préposés au stationnement principal. Pour entrer et sortir du stationnement en voiture, il faudra passer par la guérite du stationnement. Le préposé qui s'y trouve actionnera simplement l'ouverture de la barrière. Si personne ne se trouve à la guérite, veuillez alors appuyer sur le bouton de l'interphone et signifier au gardien qui vous répondra que vous utilisez un véhicule de Communauto. Celui-ci actionnera la barrière.</description>
+  <coffret>Fixé sur le muret de brique de l'édifice entre les espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>232</num>
+  <nom>Métro Jarry</nom>
+  <lat>45.544</lat>
+  <lng>-73.6286</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé à l'intersection des rues Jarry Est et Lajeunesse, en biais avec l'édicule de la station de métro Jarry.</description>
+  <coffret>Fixé sur le poteau de bois, à l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>233</num>
+  <nom>St-Gérard et Jarry</nom>
+  <lat>45.5439</lat>
+  <lng>-73.6279</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement extérieur, situé derrière le 566, rue Jarry Est, à l'intersection de la rue St-Gérard.</description>
+  <coffret>Fixé sur le mur du bâtiment, près du coin de l'immeuble sur lequel sont installés les panneaux pour les espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>234</num>
+  <nom>CEPSUM</nom>
+  <lat>45.5083</lat>
+  <lng>-73.6136</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du CEPSUM, le complexe sportif de l'Université de Montréal, situé au 2100 boulevard Édouard-Montpetit, tout près de la station de métro Édouard-Montpetit. Les espaces réservés à Communauto sont situés dans la partie recouverte du stationnement, dans la section la plus éloignée de l'entrée principale du CEPSUM.</description>
+  <coffret />
+ </station>
+ <station>
+  <num>235</num>
+  <nom>Jean-Brillant et McKenna</nom>
+  <lat>45.5001</lat>
+  <lng>-73.6178</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement étagé de l'Université de Montréal, situé sur la rue Jean-Brillant, à l'intersection de la rue McKenna. Les espaces réservés à Communauto se trouvent au premier niveau, dans la section 103, qui est visible de la rue. Pour y accéder facilement à pied, emprunter l'allée qui mène en voiture au stationnement, ou encore emprunter l'accès par la bibliothèque Samuel-Bronfman, tel qu'indiqué par des affiches.</description>
+  <coffret />
+ </station>
+ <station>
+  <num>236</num>
+  <nom>Brown et Bannantyne</nom>
+  <lat>45.4484</lat>
+  <lng>-73.5783</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du Centre culturel de Verdun, situé sur l'avenue Brown, près de l'intersection avec la rue Bannantyne. L'espace réservé à Communauto est identifié avec le panneau " Réservé véhicule en autopartage ".</description>
+  <coffret />
+ </station>
+ <station>
+  <num>237</num>
+  <nom>Island et Richardson</nom>
+  <lat>45.481843</lat>
+  <lng>-73.565424</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé derrière l'église St-Charles, à l'intersection des rues Island et Richardson.</description>
+  <coffret>Fixé sur la clôture qui se trouve à l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>238</num>
+  <nom>Resther et Boucher</nom>
+  <lat>45.529181</lat>
+  <lng>-73.589659</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur la rue Resther, un peu au sud de la rue Boucher. Le stationnement est également accessible à pied par la rue Berri.</description>
+  <coffret />
+ </station>
+ <station>
+  <num>239</num>
+  <nom>Mont-Royal et De Bullion</nom>
+  <lat>45.521953</lat>
+  <lng>-73.585202</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé derrière le 163, avenue du Mont-Royal Est, entre la rue De Bullion et l'avenue de l'Hôtel-de-Ville.</description>
+  <coffret />
+ </station>
+ <station>
+  <num>240</num>
+  <nom>Henri-Julien et Beaubien</nom>
+  <lat>45.532708</lat>
+  <lng>-73.606533</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur l'avenue Henri-Julien, tout juste au nord de la rue Beaubien Est.</description>
+  <coffret>Fixé sur le petit poteau qui se trouve entre les deux espaces de stationnement réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>241</num>
+  <nom>Place Bonaventure</nom>
+  <lat>45.499713</lat>
+  <lng>-73.565315</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur de la Place Bonaventure. Pour accéder au stationnement à pied, emprunter l'entrée située au 800, rue De La Gauchetière Ouest, et suivre les indications à l'intérieur de l'édifice, sur les panneaux de signalisation, qui vous mèneront au stationnement. Prendre l'ascenseur et descendre au P1. L'espace réservé à Communauto est situé tout près de la sortie de l'ascenseur, à gauche. Pour entrer et sortir du stationnement en voiture, utiliser la carte magnétique qui a été déposée dans le coffre à gants. L'accès au stationnement en voiture est situé sur la rue Mansfield, entre les rues De La Gauchetière et St-Antoine.</description>
+  <coffret>Fixé sur la colonne située à côté de l'espace réservé à Communauto.</coffret>
+ </station>
+ <station>
+  <num>242</num>
+  <nom>Rosemont et D'Iberville</nom>
+  <lat>45.546148</lat>
+  <lng>-73.586199</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de la station-service Esso, située à l'intersection du boulevard Rosemont et de la rue D'Iberville. Les voitures de cette station doivent obligatoirement être garées dans les espaces situés sur le côté ou à l'arrière de la station-service</description>
+  <coffret>Fixé sur le cabanon, sur le côté de la station-service.</coffret>
+ </station>
+ <station>
+  <num>244</num>
+  <nom>Querbes et Laurier</nom>
+  <lat>45.517441</lat>
+  <lng>-73.598274</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé derrière les commerces qui bordent le nord de l'avenue Laurier Ouest, près de l'intersection avec l'avenue Querbes.</description>
+  <coffret>Fixé sur le lampadaire qui est au centre du terrain de stationnement.</coffret>
+ </station>
+ <station>
+  <num>245</num>
+  <nom>De l'Épée et Van Horne</nom>
+  <lat>45.523142</lat>
+  <lng>-73.612018</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé derrière les commerces qui bordent le sud de l'avenue Van Horne, près de l'intersection avec l'avenue De l'Épée.</description>
+  <coffret>Fixé sur le lampadaire situé à proximité des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>246</num>
+  <nom>Dollard et Ducharme</nom>
+  <lat>45.52026</lat>
+  <lng>-73.619065</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du Centre communautaire intergénérationnel, accessible par la rue Dollard, au nord de l'avenue Ducharme. Les espaces réservés à Communauto sont situés tout près du terrain de baseball.</description>
+  <coffret>Fixé sur le lampadaire situé près de la rue Ducharme, dans la même section du stationnement que celle où se trouvent les espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>247</num>
+  <nom>St-Just et Outremont</nom>
+  <lat>45.517915</lat>
+  <lng>-73.607886</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur le côté de la caserne de pompiers, au 32, rue De Saint-Just, près de l'intersection avec l'avenue d'Outremont.</description>
+  <coffret>Fixé sur le poteau d'Hydro-Québec, à proximité des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>248</num>
+  <nom>Jeanne-Mance et Sherbrooke</nom>
+  <lat>45.508688</lat>
+  <lng>-73.570321</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de la coopérative d'habitation Jeanne-Mance, situé derrière le 2090, rue Jeanne-Mance. Pour accéder au stationnement, emprunter l'entrée qui donne sur la rue Jeanne-Mance, juste au sud de la rue Sherbrooke Ouest. L'espace réservé à Communauto est situé parmi les espaces qui longent la clôture de bois, immédiatement derrière la cour de la coopérative.</description>
+  <coffret>Fixé sur le mur du bâtiment, tout près de l'espace réservé à Communauto.</coffret>
+ </station>
+ <station>
+  <num>250</num>
+  <nom>Cuvillier et Ontario</nom>
+  <lat>45.543198</lat>
+  <lng>-73.545435</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé derrière les condos qui se trouvent le long de la rue Cuvillier, au sud de la rue Ontario Est. Le stationnement est également accessible par la rue Davidson.</description>
+  <coffret>Fixé sur le poteau de l'escalier qui se trouve immédiatement à côté des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>251</num>
+  <nom>Valois et Ontario</nom>
+  <lat>45.547449</lat>
+  <lng>-73.544374</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur l'avenue Valois, tout juste au nord de la rue Ontario Est (tout près de la place Valois).</description>
+  <coffret>Fixé sur le poteau qui se trouve entre deux des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>252</num>
+  <nom>Sherbrooke et Benny</nom>
+  <lat>45.465087</lat>
+  <lng>-73.626867</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé derrière le garage qui se trouve à l'intersection de la rue Sherbrooke Ouest et de l'avenue Benny.</description>
+  <coffret>Fixé sur l'un des poteaux rouges sur le côté du bâtiment.</coffret>
+ </station>
+ <station>
+  <num>253</num>
+  <nom>Parc des Hirondelles</nom>
+  <lat>45.576556</lat>
+  <lng>-73.646024</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Dans les espaces situés à proximité du chalet du parc. Pour y accéder, empruntez l'entrée donnant sur la rue Fleury Est, qui est vis-à-vis de la rue Sackville. Même si la signalisation indique qu'il est interdit de circuler en voiture dans le parc, les véhicules de Communauto y sont autorisés.</description>
+  <coffret>Fixé sur le lampadaire noir situé près des escaliers, derrière le chalet, à proximité des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>254</num>
+  <nom>Frontenac et Marie-Anne</nom>
+  <lat>45.538334</lat>
+  <lng>-73.565691</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du dépanneur Couche-Tard, situé à l'intersection des rues Frontenac et Marie-Anne Est. L'espace réservé à Communauto est situé près de l'accès donnant sur la rue Frontenac, à proximité de la cabine téléphonique.</description>
+  <coffret>Fixé sur le lampadaire qui se trouve à proximité de l'espace réservé à Communauto.</coffret>
+ </station>
+ <station>
+  <num>255</num>
+  <nom>Trans Island et Queen-Mary</nom>
+  <lat>45.484429</lat>
+  <lng>-73.628884</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur situé au 5115, avenue Trans Island. Pour entrer à pied dans le garage : emprunter l'accès piétonnier qui se trouve tout juste à côté de la descente de stationnement, en utilisant la carte magnétique accrochée avec la clé du véhicule et en la glissant devant le lecteur (le montant gris). Ceci permettra d'ouvrir la porte. Pour entrer et sortir du stationnement en voiture : utiliser la télécommande qui a été déposée dans le coffre à gants.</description>
+  <coffret>Fixé sur un des blocs de béton situés entre la descente de stationnement et l'accès piétonnier.</coffret>
+ </station>
+ <station>
+  <num>256</num>
+  <nom>Allard et Beaulieu</nom>
+  <lat>45.451024</lat>
+  <lng>-73.594545</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du dépanneur Couche-Tard situé à l'intersection des rues Allard et Beaulieu, à deux pas de la station de métro Monk.</description>
+  <coffret>Fixé sur le mur de côté du dépanneur, entre les deux espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>257</num>
+  <nom>40e Avenue et Rosemont</nom>
+  <lat>45.571516</lat>
+  <lng>-73.565438</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'église Notre-Dame-du-Foyer, situé entre les 40e et 41e Avenues, tout près du boulevard Rosemont.</description>
+  <coffret>Fixé sur le balcon qui soutient les escaliers, dans le stationnement.</coffret>
+ </station>
+ <station>
+  <num>258</num>
+  <nom>De Maisonneuve et St-Mathieu</nom>
+  <lat>45.493921</lat>
+  <lng>-73.581034</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Terrain de stationnement extérieur situé sur le boulevard De Maisonneuve Ouest, entre les rues Saint-Mathieu et Saint-Marc. Les espaces réservés à Communauto sont situés tout près de l'entrée du stationnement.</description>
+  <coffret>Fixé sur le poteau qui soutient l'enseigne, immédiatement à l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>259</num>
+  <nom>Brébeuf et Curé-Poirier</nom>
+  <lat>45.52625</lat>
+  <lng>-73.482516</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé derrière le 350, boulevard Curé-Poirier Ouest. L'accès au stationnement se fait par la rue Brébeuf. Les espaces réservés à Communauto sont situés tout près de la rue Brébeuf, et longent le parc.</description>
+  <coffret>Fixé sur l'un des poteaux bruns qui soutiennent l'immeuble municipal, et qui donnent sur le stationnement.</coffret>
+ </station>
+ <station>
+  <num>260</num>
+  <nom>Quai de l'Horloge</nom>
+  <lat>45.509781</lat>
+  <lng>-73.549865</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du quai de l'Horloge, situé vis-à-vis de la rue Bonsecours, au sud de la rue de la Commune (en vous dirigeant vers le fleuve). Les espaces réservés à Communauto sont situés immédiatement à côté de la guérite. Pour entrer et sortir du stationnement en voiture : utiliser la carte magnétique qui a été déposée dans le coffre à gants, la glisser devant le lecteur pour actionner la barrière.</description>
+  <coffret>Fixé sur le lampadaire qui se trouve tout près des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>261</num>
+  <nom>Vieux-Port et De Callière</nom>
+  <lat>45.502534</lat>
+  <lng>-73.552495</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du quai Alexandra, situé sur la promenade du Vieux-Port, vis-à-vis de la rue De Callière (en vous dirigeant vers le fleuve). Une fois franchies les colonnes de béton à l'entrée, les espaces réservés à Communauto sont situés immédiatement à gauche.</description>
+  <coffret>Fixé sur le muret de béton le long duquel sont situés les espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>262</num>
+  <nom>Saint-Julien et de Charleroi</nom>
+  <lat>45.593359</lat>
+  <lng>-73.638528</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Terrain de stationnement municipal situé à l'intersection de l'avenue Saint-Julien et de la</description>
+  <coffret>Fixé sur le petit poteau qui se trouve entre les deux espaces de stationnement réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>263</num>
+  <nom>Bibliothèque Belleville</nom>
+  <lat>45.581861</lat>
+  <lng>-73.642409</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de la bibliothèque Belleville, située au 10 400, avenue de Belleville, près de l'intersection avec la rue Fleury Est. Le stationnement se trouve à l'arrière de la bibliothèque, et est aussi accessible en passant par le parc Ottawa.</description>
+  <coffret>Fixé sur le petit poteau brun situé tout près de la bibliothèque, dans le stationnement.</coffret>
+ </station>
+ <station>
+  <num>265</num>
+  <nom>Maison des arts de Laval</nom>
+  <lat>45.557953</lat>
+  <lng>-73.716454</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé devant la Maison des arts de Laval, au 1395, boulevard de la Concorde Ouest. L'espace réservé à Communauto est situé dans le tournebride, près de la porte d'entrée de la Maison. Pour actionner la barrière, et pouvoir entrer dans le stationnement en voiture, appuyer sur le bouton de l'interphone et signifiez simplement à la personne qui vous répondra que vous utilisez un véhicule de Communauto. Celle-ci actionnera la barrière. Pour sortir du stationnement, approcher de la barrière, celle-ci s'actionnera automatiquement.</description>
+  <coffret>Fixé sur le poteau planté dans la pelouse, à proximité de l'espace réservé à Communauto.</coffret>
+ </station>
+ <station>
+  <num>266</num>
+  <nom>Hôtel de Ville de Laval</nom>
+  <lat>45.552455</lat>
+  <lng>-73.743938</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'Hôtel de ville de Laval, situé au 1, place du Souvenir, près de l'intersection avec le boulevard Chomedey. L'espace réservé à Communauto se trouve dans la troisième allée du stationnement à partir du boulevard du Souvenir, dans l'emplacement le plus près de la caserne de pompiers (bâtiment avec de grandes portes de garage vitrées).</description>
+  <coffret>Fixé sur le mur de la caserne de pompiers tout près des grandes portes de garage, à proximité de l'espace réservé à Communauto.</coffret>
+ </station>
+ <station>
+  <num>267</num>
+  <nom>Lionel-Groulx et Vinet</nom>
+  <lat>45.485052</lat>
+  <lng>-73.575835</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement intérieur du 2365, avenue Lionel-Groulx, situé à proximité de l'intersection de la rue Vinet. Pour accéder au stationnement à pied, utiliser la clé accrochée avec la clé du véhicule, sur le même porte-clés, pour ouvrir la porte qui se trouve à droite de l'entrée du garage. Pour entrer et sortir du garage en voiture, utiliser la télécommande qui a été déposée dans le coffre à gants pour actionner la porte de garage.</description>
+  <coffret>Fixé sur le montant de la porte du garage, du côté droit.</coffret>
+ </station>
+ <station>
+  <num>269</num>
+  <nom>Calixa-Lavallée et Sherbrooke</nom>
+  <lat>45.5248</lat>
+  <lng>-73.565733</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur l'avenue Calixa-Lavallée, au nord de la rue Sherbrooke Est, derrière l'immeuble de la Direction de santé publique de Montréal.</description>
+  <coffret>Fixé sur le poteau de bois du lampadaire qui se trouve tout près de l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>270</num>
+  <nom>De Maisonneuve et De Bleury</nom>
+  <lat>45.507796</lat>
+  <lng>-73.568927</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Terrain de stationnement situé sur le boulevard De Maisonneuve Ouest, entre les rues De Bleury et Jeanne-Mance.</description>
+  <coffret>Fixé sur le poteau qui soutient le lampadaire, derrière l'horodateur.</coffret>
+ </station>
+ <station>
+  <num>272</num>
+  <nom>D'Orléans et de Rouen</nom>
+  <lat>45.549529</lat>
+  <lng>-73.546334</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du garage situé à l'intersection de l'avenue d'Orléans et de la rue de Rouen.</description>
+  <coffret>Fixé sur le petit poteau jaune situé près des portes de garage.</coffret>
+ </station>
+ <station>
+  <num>273</num>
+  <nom>Joliette et Hochelaga</nom>
+  <lat>45.546645</lat>
+  <lng>-73.549884</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé derrière le 2335, rue Joliette, près de l'intersection avec la rue Hochelaga. Pour accéder au stationnement, emprunter la ruelle qui donne tout juste derrière la station de métro Joliette.</description>
+  <coffret>Fixé sur le poteau de l'escalier, près d'un des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>274</num>
+  <nom>Sicard et Hochelaga</nom>
+  <lat>45.558619</lat>
+  <lng>-73.543976</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de la station-service située à l'intersection des rues Sicard et Hochelaga.</description>
+  <coffret>Fixé sur le mur de côté de la station-service, près de la porte des toilettes.</coffret>
+ </station>
+ <station>
+  <num>275</num>
+  <nom>Saint-Laurent et Duvernay</nom>
+  <lat>45.52628</lat>
+  <lng>-73.513858</lng>
+  <district>1</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'édifice de Santé Canada, situé au 1001, rue Saint-Laurent Ouest. Le stationnement est situé sur le côté de l'édifice, vis-à-vis avec la rue Duvernay.</description>
+  <coffret>Fixé sur le lampadaire situé le long du chemin piétonnier, en biais avec les espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>276</num>
+  <nom>De la Montagne et Sherbrooke</nom>
+  <lat>45.500338</lat>
+  <lng>-73.580115</lng>
+  <district>2</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du Club Sommet, situé 3475, rue de la Montagne, un peu au nord de la rue Sherbrooke Ouest. L'un des espaces réservés à Communauto se trouve dans le stationnement extérieur sur le côté ; l'autre espace est situé dans le garage intérieur. Pour accéder au garage à pied, rendez-vous dans l'entrée de l'édifice, et signifiez au gardien qui vous répondra que vous vous rendez au stationnement pour utiliser un véhicule de Communauto. Celui-ci vous ouvrira la porte. Pour entrer et sortir du garage en voiture, utilisez la télécommande qui a été déposée dans le coffre à gants.</description>
+  <coffret>Fixé sur le mur de l'édifice, à côté de la porte de garage.</coffret>
+ </station>
+ <station>
+  <num>277</num>
+  <nom>Gordon et Wellington</nom>
+  <lat>45.460981</lat>
+  <lng>-73.568133</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement municipal situé sur la rue Gordon, entre les rues Wellington et de Verdun.</description>
+  <coffret>Fixé sur le lampadaire, dans le stationnement, le plus près de la rue.</coffret>
+ </station>
+ <station>
+  <num>278</num>
+  <nom>18e Avenue et Dandurand</nom>
+  <lat>45.556489</lat>
+  <lng>-73.572247</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur la 18e Avenue, derrière l'église, entre les rues Dandurand et Masson. Pour accéder au stationnement, utilisez la petite clé qui se trouve avec la clé du véhicule pour déverrouiller le cadenas de la clôture. Assurez-vous aussi de toujours fermer la porte de la clôture et le cadenas lorsque vous quittez. Les espaces #22 et #23 sont réservés à Communauto.</description>
+  <coffret>Fixé sur la clôture, à l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>279</num>
+  <nom>30e Avenue et Bélanger</nom>
+  <lat>45.569385</lat>
+  <lng>-73.583126</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du dépanneur situé à l'intersection de la 30e Avenue et de la rue Bélanger. Les espaces réservés à Communauto sont situés sur le côté du dépanneur qui donne sur la 30e Avenue.</description>
+  <coffret>Fixé sur le mur du dépanneur qui donne sur la 30e Avenue.</coffret>
+ </station>
+ <station>
+  <num>280</num>
+  <nom>St-Hubert et du Rosaire</nom>
+  <lat>45.544937</lat>
+  <lng>-73.6226</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du garage situé sur la rue Saint-Hubert, près de l'intersection avec la rue du Rosaire.</description>
+  <coffret>Fixé sur le mur du garage, près de la porte d'entrée.</coffret>
+ </station>
+ <station>
+  <num>281</num>
+  <nom>De Verdun et Caisse</nom>
+  <lat>45.469972</lat>
+  <lng>-73.570597</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement sur le côté du dépanneur situé au 3360, rue de Verdun, non loin de l'intersection avec la rue Caisse.</description>
+  <coffret>Fixé sur le poteau de l'escalier situé devant l'immeuble.</coffret>
+ </station>
+ <station>
+  <num>282</num>
+  <nom>Lajoie et Deacon</nom>
+  <lat>45.511741</lat>
+  <lng>-73.61862</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur l'avenue Lajoie, entre le chemin Deacon et l'avenue de Vimy, en face de l'église St-Raphael.</description>
+  <coffret>Fixé sur le poteau de la clôture, à l'entrée du stationnement qui se trouve le plus près de l'avenue de Vimy.</coffret>
+ </station>
+ <station>
+  <num>283</num>
+  <nom>Crémazie et Fabre</nom>
+  <lat>45.553085</lat>
+  <lng>-73.623844</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé devant le 1460, boulevard Crémazie Est, entre les rues Fabre et Rousselot. Le stationnement est en forme de U, et l'espace réservé à Communauto est situé dans la partie du stationnement qui se trouve le plus près de la rue Fabre.</description>
+  <coffret>Fixé sur le lampadaire situé le plus près de l'espace réservé à Communauto.</coffret>
+ </station>
+ <station>
+  <num>284</num>
+  <nom>Jarry et Henri-Julien</nom>
+  <lat>45.541096</lat>
+  <lng>-73.630312</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur la rue Jarry Est, entre les avenues Henri-Julien et De Gaspé, à côté du dépanneur et du club vidéo.</description>
+  <coffret>Fixé sur le mur de brique de l'immeuble, dans le stationnement.</coffret>
+ </station>
+ <station>
+  <num>285</num>
+  <nom>Bourret et Lavoie</nom>
+  <lat>45.495538</lat>
+  <lng>-73.632865</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé à côté du 4585, avenue Bourret, près de l'intersection avec la rue Lavoie.</description>
+  <coffret>Fixé sur le poteau de la clôture qui longe le stationnement, près des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>286</num>
+  <nom>Gladstone et Dorchester</nom>
+  <lat>45.486811</lat>
+  <lng>-73.586342</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement public situé du côté ouest de l'avenue Gladstone, à l'intersection avec le boulevard Dorchester. Les espaces réservés à Communauto sont situés dans la série d'espaces qui longent la ruelle, près de l'avenue Gladstone.</description>
+  <coffret>Fixé sur le lampadaire situé tout près de l'escalier, à proximité des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>287</num>
+  <nom>De l'Assomption et Sherbrooke</nom>
+  <lat>45.570271</lat>
+  <lng>-73.550199</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé derrière le 3315-3325 boulevard de l'Assomption, près de l'intersection avec la rue Sherbrooke Est. Les espaces réservés à Communauto sont situés près du centre du stationnement.</description>
+  <coffret>Fixé sur le mur de brique qui donne sur le stationnement, près de l'entrée de l'immeuble.</coffret>
+ </station>
+ <station>
+  <num>288</num>
+  <nom>Sauvé et Papineau</nom>
+  <lat>45.565946</lat>
+  <lng>-73.64696</lng>
+  <district>3</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de la station-service situé à l'intersection de la rue Sauvé Est et de l'avenue Papineau.</description>
+  <coffret>Fixé sur le mur de côté du dépanneur, près de la distributrice de sacs de glace.</coffret>
+ </station>
+ <station>
+  <num>289</num>
+  <nom>Côte-des-Neiges et Van Horne</nom>
+  <lat>45.500235</lat>
+  <lng>-73.631899</lng>
+  <district>4</district>
+  <nouvelle>0</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé derrière le 6100, chemin de la Côte-des-Neiges. Pour accéder au stationnement, emprunter le passage qui donne tout juste à côté du 6100, chemin de la Côte-des-Neiges, ou celui qui donne sur l'avenue Van Horne.</description>
+  <coffret>Fixé sur le poteau de l'escalier de l'immeuble, tout près des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>290</num>
+  <nom>St-André et Ste-Catherine</nom>
+  <lat>45.515828</lat>
+  <lng>-73.557214</lng>
+  <district>1</district>
+  <nouvelle>1</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé sur la rue Saint-André, au sud de la rue Sainte-Catherine Est. Le stationnement est accessible par les rues Saint-André et Saint-Christophe.</description>
+  <coffret>Fixé sur le poteau, à l'entrée du stationnement qui donne sur la rue Saint-André.</coffret>
+ </station>
+ <station>
+  <num>291</num>
+  <nom>Gare de Saint-Lambert</nom>
+  <lat>45.499024</lat>
+  <lng>-73.506878</lng>
+  <district>1</district>
+  <nouvelle>1</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de la gare de train de Saint-Lambert. L'accès au stationnement de la gare se trouve en biais avec le 730, avenue Victoria, près de l'intersection avec la rue Grand Trunk. Le stationnement est aussi accessible par l'avenue Saint-Laurent. Si vous arrivez en train, vous trouverez les espaces de stationnement tout près de la sortie de la gare. Dirigez-vous vers l'avenue Victoria (à gauche en sortant de la gare), les espaces réservés à Communauto sont situés près des espaces réservés à VIA Rail.</description>
+  <coffret>Fixé sur le lampadaire où est affichée l'enseigne VIA Rail Saint-Lambert.</coffret>
+ </station>
+ <station>
+  <num>292</num>
+  <nom>Lambert-Closse et Ste-Catherine</nom>
+  <lat>45.490518</lat>
+  <lng>-73.58409</lng>
+  <district>2</district>
+  <nouvelle>1</nouvelle>
+  <cityid>59</cityid>
+  <description>Terrain de stationnement extérieur situé sur la rue Lambert-Closse, entre la rue Sainte-Catherine Ouest et le boulevard De Maisonneuve Ouest.</description>
+  <coffret>Fixé sur le poteau qui soutient l'enseigne identifiant le stationnement, près de l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>293</num>
+  <nom>Bélanger et D'Iberville</nom>
+  <lat>45.552235</lat>
+  <lng>-73.598071</lng>
+  <district>3</district>
+  <nouvelle>1</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de la station-service Shell, située à l'intersection des rues Bélanger et D'Iberville.</description>
+  <coffret>Fixé sur un des lampadaires qui se trouvent du côté de la clôture, près de la rue Bélanger.</coffret>
+ </station>
+ <station>
+  <num>294</num>
+  <nom>St-Zotique et Papineau</nom>
+  <lat>45.544993</lat>
+  <lng>-73.600122</lng>
+  <district>3</district>
+  <nouvelle>1</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du restaurant Al's, situé à l'intersection de la rue Saint-Zotique Est et de l'avenue Papineau. Les espaces réservés à Communauto sont situés le long de la rue Saint-Zotique.</description>
+  <coffret>Fixé sur le lampadaire, tout près des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>295</num>
+  <nom>De Grosbois et Pierre-Bernard</nom>
+  <lat>45.60751</lat>
+  <lng>-73.532495</lng>
+  <district>3</district>
+  <nouvelle>1</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'église Saint-Justin, situé sur la rue De Grosbois, entre le boulevard Pierre-Bernard et la rue Joffre.</description>
+  <coffret>Fixé sur la colonne de béton qui se trouve près de l'entrée de l'église qui donne sur le stationnement, à proximité de la rampe d'accès en fauteuil roulant.</coffret>
+ </station>
+ <station>
+  <num>296</num>
+  <nom>Isabella et Victoria</nom>
+  <lat>45.490264</lat>
+  <lng>-73.628063</lng>
+  <district>4</district>
+  <nouvelle>1</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'Institut universitaire de gériatrie de Montréal, situé sur l'avenue Isabella, à l'intersection de l'avenue Victoria. Les espaces réservés à Communauto sont ceux situés le plus près de l'avenue Victoria.</description>
+  <coffret>Fixé sur le lampadaire, près des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>297</num>
+  <nom>Sherbrooke et du Fort</nom>
+  <lat>45.493301</lat>
+  <lng>-73.585357</lng>
+  <district>2</district>
+  <nouvelle>1</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du Grand Séminaire de Montréal, situé au 2065, rue Sherbrooke Ouest. L'accès au stationnement est situé entre les rues du Fort et Chomedey. Les espaces réservés à Communauto sont situés tout de suite à gauche, lorsque vous accédez au stationnement par l'entrée principale (il y a aussi un accès piétonnier), en haut du petit escalier.</description>
+  <coffret>Fixé sur le lampadaire situé près de l'accès piétonnier.</coffret>
+ </station>
+ <station>
+  <num>298</num>
+  <nom>Baldwin et Ste-Claire</nom>
+  <lat>45.60178</lat>
+  <lng>-73.52559</lng>
+  <district>3</district>
+  <nouvelle>1</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement de l'église Sainte-Claire, accessible par la rue Baldwin, entre les rues Sainte-Claire et de Marseille. Les espaces réservés à Communauto sont situés à côté de l'escalier qui se trouve dans le stationnement.</description>
+  <coffret>Fixé sur le muret de la descente d'escalier, immédiatement à côté des espaces réservés à Communauto.</coffret>
+ </station>
+ <station>
+  <num>299</num>
+  <nom>Jeanne-d'Arc et Sherbrooke</nom>
+  <lat>45.553515</lat>
+  <lng>-73.553976</lng>
+  <district>3</district>
+  <nouvelle>1</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du Musée du Château Dufresne, situé au 2929, avenue Jeanne-d'Arc, tout juste au sud de la rue Sherbrooke Est. Les espaces réservés à Communauto sont situés tout de suite à droite en entrant dans le stationnement. Il s'agit des deux places isolées des autres.</description>
+  <coffret>Fixé sur la clôture en fer forgé qui borde le stationnement, tout de suite à droite en entrant dans le stationnement.</coffret>
+ </station>
+ <station>
+  <num>300</num>
+  <nom>Papineau et Lalonde</nom>
+  <lat>45.525158</lat>
+  <lng>-73.558371</lng>
+  <district>1</district>
+  <nouvelle>1</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement situé derrière l'immeuble sis au 1900, avenue Papineau, qui se trouve entre la rue Ontario Est et l'avenue Lalonde.</description>
+  <coffret>Fixé sur le poteau de la clôture qui entoure la porte qui donne sur l'immeuble, tout près du stationnement.</coffret>
+ </station>
+ <station>
+  <num>301</num>
+  <nom>Wolfe et Sherbrooke</nom>
+  <lat>45.521385</lat>
+  <lng>-73.564714</lng>
+  <district>1</district>
+  <nouvelle>1</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement extérieur situé derrière l'immeuble sis au 1100, rue Sherbrooke Est. Pour accéder au stationnement, emprunter la rue Wolfe, juste au sud de la rue Sherbrooke.</description>
+  <coffret>Fixé sur le petit poteau qui se trouve à l'entrée du stationnement.</coffret>
+ </station>
+ <station>
+  <num>302</num>
+  <nom>Panet et Ontario</nom>
+  <lat>45.522645</lat>
+  <lng>-73.560982</lng>
+  <district>1</district>
+  <nouvelle>1</nouvelle>
+  <cityid>59</cityid>
+  <description>Stationnement du restaurant Palais Montcalm, situé au 1314, rue Ontario Est, entre les rues Panet et de la Visitation.</description>
+  <coffret>Fixé sur le mur de brique, sur le côté du bâtiment faisant face à la rue Panet.</coffret>
+ </station>
+</stations>

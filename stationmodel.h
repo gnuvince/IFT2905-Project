@@ -45,8 +45,15 @@ public:
 
     Station* getStation(qint64 id) const { return stations.value(id,0); }
 
+    void setPos(GeoPosition *gp) {
+        currentPosition->setLat(gp->getLat());
+        currentPosition->setLon(gp->getLon());
+    }
+    GeoPosition* getPos() { return currentPosition; }
+
 private:
     QVariant fieldAt(const QModelIndex &index, int role) const;
+    GeoPosition *currentPosition;
 
 signals:
 

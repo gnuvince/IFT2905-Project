@@ -1,6 +1,7 @@
 #include "selectstationpage.h"
 #include "page.h"
 #include "stationmodel.h"
+#include "station.h"
 
 #include <QtGui>
 
@@ -15,7 +16,12 @@ SelectStationPage::SelectStationPage(
     view->setSelectionBehavior(QAbstractItemView::SelectRows);
 
     QList<qint32> hiddenColumns;
-    hiddenColumns << 0 << 2 << 3 << 4 << 5 << 6;
+    hiddenColumns << Station::COL_CARTE
+                  << Station::COL_COFF
+                  << Station::COL_DESCR
+                  << Station::COL_ID
+                  << Station::COL_PHOTO
+                  << Station::COL_POS;
     foreach (qint32 col, hiddenColumns) {
         view->hideColumn(col);
     }

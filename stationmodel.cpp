@@ -19,10 +19,17 @@
 #include "stationmodel.h"
 #include <QFile>
 #include <QXmlStreamReader>
+#include "geoposition.h"
+#include "station.h"
+#include <QDebug>
 
 StationModel::StationModel(QObject *parent) :
     QAbstractTableModel(parent)
 {
+    currentPosition->setLat(45.525);
+    currentPosition->setLon(-73.561);
+    qDebug() << currentPosition->getLat();
+    qDebug() << currentPosition->getLon();
 }
 
 QVariant StationModel::fieldAt(const QModelIndex &index, int role) const
@@ -32,7 +39,10 @@ QVariant StationModel::fieldAt(const QModelIndex &index, int role) const
 
     qint64 id = stations.keys()[row];
     Station *s = stations[id];
-
+    if (column == Station::COL_DIST) {
+        qreal distance = s->getPosition().distanceFrom(currentPosition);
+        return QVariant(distance);
+    }
     return s->field(column, role);
 }
 
