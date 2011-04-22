@@ -14,6 +14,11 @@ public:
 signals:
 
 public slots:
+    void setMinimalEndDateTime(QDateTime time);
+
+private:
+    QDateTimeEdit *startTime;
+    QDateTimeEdit *endTime;
 
 };
 
