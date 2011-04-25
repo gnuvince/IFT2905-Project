@@ -13,6 +13,7 @@
 #include "pages/unexpectedpage.h"
 #include "pages/bookingspage.h"
 #include "pages/mymessagespage.h"
+#include "pages/writecommentpage.h"
 
 #include "stationmodel.h"
 #include "stationsortproxy.h"
@@ -49,7 +50,8 @@ UserInterface::UserInterface(
     pages->insert(Page_SelectCar, new SelectCarPage(this));
     pages->insert(Page_Confirm, new ConfirmPage(this));
     pages->insert(Page_Bookings, new BookingsPage(this));
-    pages->insert(Page_Comments, new CommentsPage(this));
+    pages->insert(Page_Comments, new CommentsPage(this));           // comments main page
+    pages->insert(Page_WriteComment, new WriteCommentPage(this));   // comment editing
     pages->insert(Page_Unexpected, new UnexpectedPage(this));
     pages->insert(Page_Email, new MyMessagesPage(this));
 
@@ -108,6 +110,15 @@ UserInterface::UserInterface(
 
     // Connections for comments
     connect(getPage(Page_Comments), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
+    connect(getPage(Page_Comments), SIGNAL(VehiculeComment()), this, SLOT(gotoWriteComment()));
+    connect(getPage(Page_Comments), SIGNAL(StationComment()), this, SLOT(gotoWriteComment()));
+    connect(getPage(Page_Comments), SIGNAL(ReservationComment()), this, SLOT(gotoWriteComment()));
+    //connect(getPage(Page_Comments), SIGNAL(ToUserComment()), this, SLOT(gotoWriteComment()));
+
+    // Connections for writecomment
+    connect(getPage(Page_WriteComment), SIGNAL(Previous()), this, SLOT(gotoCommentPage()));
+    connect(getPage(Page_WriteComment), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
+    connect(getPage(Page_WriteComment), SIGNAL(Send()), this, SLOT(gotoMainMenu()));
 
     // Connections for unexpected
     connect(getPage(Page_Unexpected), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
@@ -151,6 +162,10 @@ void UserInterface::gotoBookings() {
 
 void UserInterface::gotoCommentPage() {
     gotoPage(Page_Comments);
+}
+
+void UserInterface::gotoWriteComment() {
+    gotoPage(Page_WriteComment);
 }
 
 void UserInterface::gotoUnexpected() {

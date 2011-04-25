@@ -14,7 +14,7 @@
 
 enum PageName { Page_MainMenu,
                 Page_FindStation, Page_SelectPosition, Page_SelectStation, Page_SelectTime, Page_SelectCar, Page_Confirm,
-                Page_Bookings, Page_Comments, Page_Unexpected, Page_Email
+                Page_Bookings, Page_Comments, Page_Unexpected, Page_Email, Page_WriteComment
               };
 
 namespace Ui {
@@ -53,6 +53,7 @@ public slots:
     void gotoBookings();
     void gotoEmailPage();
     void setCurrentPosition(GeoPosition pos);
+    void gotoWriteComment();
 };
 
 #endif // USERINTERFACE_H
