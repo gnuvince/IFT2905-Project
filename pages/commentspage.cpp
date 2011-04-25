@@ -10,7 +10,7 @@ CommentsPage::CommentsPage(QWidget *parent):
 
     QPushButton *btnVehicule = new QPushButton(trUtf8("Véhicule"));
     QPushButton *btnStation = new QPushButton(trUtf8("Station"));
-    QPushButton *btnReservation = new QPushButton(trUtf8("Reservation"));
+    QPushButton *btnReservation = new QPushButton(trUtf8("Réservation"));
     QPushButton *btnToUser = new QPushButton(trUtf8("Usager"));
 
     btnVehicule->setIcon(QIcon(":/icones/data/icons/car_add.png"));
