@@ -3,6 +3,8 @@
 
 #include <QtGui>
 #include "page.h"
+#include "geoposition.h"
+#include "cartewidget.h"
 
 class SelectPositionPage : public Page
 {
@@ -11,13 +13,14 @@ public:
     explicit SelectPositionPage(QWidget *parent = 0);
 
 signals:
-
+    void positionSelected(GeoPosition gp);
 
 public slots:
     void enableNextButton();
 
 private:
     QPushButton *btnNext;
+    CarteWidget *mapWidget;
 
 };
 

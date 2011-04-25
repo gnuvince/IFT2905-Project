@@ -14,7 +14,7 @@ SelectPositionPage::SelectPositionPage(QWidget *parent) :
     CarteScene *scene = CarteScene::readSceneFile("data/xml/map_montreal.osm");
     CarteWidget::setScene(scene);
 
-    CarteWidget *mapWidget = new CarteWidget(this);
+    mapWidget = new CarteWidget(this);
     addWidget(mapWidget);
 
     QPushButton *btnPrevious = new QPushButton(this);
@@ -33,5 +33,6 @@ SelectPositionPage::SelectPositionPage(QWidget *parent) :
 }
 
 void SelectPositionPage::enableNextButton() {
+    emit positionSelected(mapWidget->getFlagPosition());
     btnNext->setEnabled(true);
 }
