@@ -17,6 +17,7 @@
 #include <QtGui/QHBoxLayout>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
+#include <QtGui/QPushButton>
 #include <QtGui/QMainWindow>
 #include <QtGui/QSpacerItem>
 #include <QtGui/QStackedWidget>
@@ -31,7 +32,7 @@ public:
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
-    QLabel *lblEnveloppe;
+    QPushButton *btnEnveloppe;
     QSpacerItem *horizontalSpacer;
     QLabel *label_2;
     QSpacerItem *horizontalSpacer_2;
@@ -51,10 +52,12 @@ public:
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        lblEnveloppe = new QLabel(centralwidget);
-        lblEnveloppe->setObjectName(QString::fromUtf8("lblEnveloppe"));
+        btnEnveloppe = new QPushButton(centralwidget);
+        btnEnveloppe->setFlat(1);
+        btnEnveloppe->setIcon(QIcon(":/icones/data/icons/email.png"));
 
-        horizontalLayout->addWidget(lblEnveloppe);
+
+        horizontalLayout->addWidget(btnEnveloppe);
 
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -107,7 +110,7 @@ public:
     void retranslateUi(QMainWindow *UserInterface)
     {
         UserInterface->setWindowTitle(QApplication::translate("UserInterface", "Auto-Partage", 0, QApplication::UnicodeUTF8));
-        lblEnveloppe->setText(QString());
+        //lblEnveloppe->setText(QString());
         label_2->setText(QApplication::translate("UserInterface", "Auto-Partage", 0, QApplication::UnicodeUTF8));
         lblUserName->setText(QApplication::translate("UserInterface", "Tania", 0, QApplication::UnicodeUTF8));
     } // retranslateUi

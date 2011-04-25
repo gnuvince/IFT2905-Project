@@ -44,7 +44,12 @@ HEADERS += geoposition.h \
     pages/selecttimepage.h \
     pages/selectcarpage.h \
     pages/confirmpage.h \
-    stationsortproxy.h
+    stationsortproxy.h \
+    pages/commentspage.h \
+    pages/unexpectedpage.h \
+    pages/myrsvppage.h \
+    pages/bookingspage.h \
+    pages/mymessagespage.h
 FORMS += mainwindow.ui \
     cartewidget.ui \
     userinterface.ui
@@ -78,7 +83,11 @@ SOURCES += geoposition.cpp \
     pages/selecttimepage.cpp \
     pages/selectcarpage.cpp \
     pages/confirmpage.cpp \
-    stationsortproxy.cpp
+    stationsortproxy.cpp \
+    pages/commentspage.cpp \
+    pages/unexpectedpage.cpp \
+    pages/bookingspage.cpp \
+    pages/mymessagespage.cpp
 
 RESOURCES += \
     icones.qrc

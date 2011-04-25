@@ -9,6 +9,10 @@
 #include "pages/selecttimepage.h"
 #include "pages/selectcarpage.h"
 #include "pages/confirmpage.h"
+#include "pages/commentspage.h"
+#include "pages/unexpectedpage.h"
+#include "pages/bookingspage.h"
+#include "pages/mymessagespage.h"
 
 #include "stationmodel.h"
 #include "stationsortproxy.h"
@@ -26,8 +30,8 @@ UserInterface::UserInterface(
     ui(new Ui::UserInterface)
 {
     ui->setupUi(this);
-    ui->lblEnveloppe->setPixmap(QPixmap(":/icones/data/icons/email.png"));
-    ui->lblEnveloppe->setCursor(QCursor(Qt::PointingHandCursor));
+    //ui->lblEnveloppe->setPixmap(QPixmap(":/icones/data/icons/email.png"));
+    //ui->lblEnveloppe->setCursor(QCursor(Qt::PointingHandCursor));
 
     StationSortProxy *stationProxy = new StationSortProxy(this);
     stationProxy->setSourceModel(stationModel);
@@ -42,6 +46,10 @@ UserInterface::UserInterface(
     pages->insert(Page_SelectTime, new SelectTimePage(this));
     pages->insert(Page_SelectCar, new SelectCarPage(this));
     pages->insert(Page_Confirm, new ConfirmPage(this));
+    pages->insert(Page_Bookings, new BookingsPage(this));
+    pages->insert(Page_Comments, new CommentsPage(this));
+    pages->insert(Page_Unexpected, new UnexpectedPage(this));
+    pages->insert(Page_Email, new MyMessagesPage(this));
 
     QMapIterator<PageName, Page*> iter(*pages);
     while (iter.hasNext()) {
@@ -51,8 +59,14 @@ UserInterface::UserInterface(
 
     ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(getPage(DEFAULT_PAGE)));
 
+    // Connections for email
+    connect(ui->btnEnveloppe, SIGNAL(clicked()), this, SLOT(gotoEmailPage()));
+
     // Connections for main menu
     connect(getPage(Page_MainMenu), SIGNAL(BookCar()), this, SLOT(gotoFindStationPage()));
+    connect(getPage(Page_MainMenu), SIGNAL(ViewBookings()), this, SLOT(gotoBookings()));
+    connect(getPage(Page_MainMenu), SIGNAL(LeaveComment()), this, SLOT(gotoCommentPage()));
+    connect(getPage(Page_MainMenu), SIGNAL(ReportUnexpected()), this, SLOT(gotoUnexpected()));
 
     // Connections for find station
     connect(getPage(Page_FindStation), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
@@ -83,6 +97,18 @@ UserInterface::UserInterface(
     connect(getPage(Page_Confirm), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
     connect(getPage(Page_Confirm), SIGNAL(Previous()), this, SLOT(gotoSelectCar()));
     connect(getPage(Page_Confirm), SIGNAL(Confirm()), this, SLOT(gotoMainMenu()));
+
+    // Connections for bookings
+    connect(getPage(Page_Bookings), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
+
+    // Connections for comments
+    connect(getPage(Page_Comments), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
+
+    // Connections for unexpected
+    connect(getPage(Page_Unexpected), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
+
+    // Connections for email
+    connect(getPage(Page_Email), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
 }
 
 UserInterface::~UserInterface()
@@ -102,12 +128,28 @@ void UserInterface::gotoPage(PageName name) {
 }
 
 
+void UserInterface::gotoEmailPage() {
+    gotoPage(Page_Email);
+}
+
 void UserInterface::gotoMainMenu() {
     gotoPage(Page_MainMenu);
 }
 
 void UserInterface::gotoFindStationPage() {
     gotoPage(Page_FindStation);
+}
+
+void UserInterface::gotoBookings() {
+    gotoPage(Page_Bookings);
+}
+
+void UserInterface::gotoCommentPage() {
+    gotoPage(Page_Comments);
+}
+
+void UserInterface::gotoUnexpected() {
+    gotoPage(Page_Unexpected);
 }
 
 void UserInterface::gotoSelectStation() {
