@@ -18,9 +18,17 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QLabel" name="lblEnveloppe">
+       <widget class="QPushButton" name="btnEnveloppe">
         <property name="text">
          <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>:/icones/data/icons/email.png</normalon>
+         </iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
         </property>
        </widget>
       </item>

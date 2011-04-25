@@ -17,7 +17,7 @@ signals:
     void BookCar();
     void ViewBookings();
     void LeaveComment();
-    void ReportProblem();
+    void ReportUnexpected();
 };
 
 #endif // MAINMENUPAGE_H

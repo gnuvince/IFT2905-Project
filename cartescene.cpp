@@ -186,6 +186,7 @@ CarteScene* CarteScene::readSceneFile(const QString &file)
         }
     } else if (f.error() != QFile::NoError) {
         qDebug() << QString(trUtf8("Erreur: Impossible de lire le fichier %1 : %2")).arg(file,f.errorString()); {
+
             f.close();
             delete scene;
             return 0;
