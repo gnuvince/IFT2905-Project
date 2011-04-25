@@ -32,7 +32,7 @@ class Station : public QObject
 {
     Q_OBJECT
 public:
-    enum Colonnes { COL_ID, COL_NOM, COL_DESCR, COL_COFF, COL_POS, COL_PHOTO, COL_CARTE, COL_DIST };
+    enum Colonnes { COL_ID, COL_NOM, COL_DESCR, COL_COFF, COL_POS, COL_PHOTO, COL_CARTE, COL_DIST, COL_INFO };
 
 public:
     explicit Station(uint id, QString nom, QString description, QString coffret, GeoPosition position, QPixmap stationImage, QPixmap mapImage, QObject *parent = 0);

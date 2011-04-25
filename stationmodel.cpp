@@ -22,6 +22,7 @@
 #include "geoposition.h"
 #include "station.h"
 #include <QDebug>
+#include <QPixmap>
 
 StationModel::StationModel(QObject *parent) :
     QAbstractTableModel(parent)
@@ -38,7 +39,11 @@ QVariant StationModel::fieldAt(const QModelIndex &index, int role) const
 
     if (column == Station::COL_DIST && role == Qt::DisplayRole) {
         qreal distance = s->getPosition().distanceFrom(currentPosition);
-        return QVariant(QString("%1 km").arg(distance, 0, 'f', 2));
+        return QString("%1 km").arg(distance, 0, 'f', 2);
+    }
+    if (column == Station::COL_INFO && role == Qt::DecorationRole) {
+        QPixmap pix(":/icones/data/icons/help.png");
+        return pix;
     }
 
     return s->field(column, role);

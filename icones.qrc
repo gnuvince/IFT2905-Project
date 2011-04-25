@@ -11,5 +11,6 @@
         <file>data/icons/arrow_left.png</file>
         <file>data/icons/arrow_right.png</file>
         <file>data/icons/tick.png</file>
+        <file>data/icons/help.png</file>
     </qresource>
 </RCC>

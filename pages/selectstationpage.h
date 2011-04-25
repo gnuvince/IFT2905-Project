@@ -19,6 +19,7 @@ signals:
 
 public slots:
     void stationSelected(QModelIndex index);
+    void showInformation(QModelIndex index);
 
 private:
     StationSortProxy *stationModel;

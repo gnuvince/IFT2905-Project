@@ -1,3 +1,5 @@
+#include <QMessageBox>
+
 #include "selectstationpage.h"
 #include "page.h"
 #include "stationsortproxy.h"
@@ -17,7 +19,10 @@ SelectStationPage::SelectStationPage(
     view->setSelectionMode(QAbstractItemView::SingleSelection);
     view->verticalHeader()->hide();
     view->resizeColumnToContents(1);
+    view->resizeColumnToContents(2);
     view->resizeRowsToContents();
+
+    connect(view, SIGNAL(clicked(QModelIndex)), this, SLOT(showInformation(QModelIndex)));
 
     QFont font = view->font();
     font.setPointSize(8);
@@ -44,3 +49,11 @@ void SelectStationPage::stationSelected(QModelIndex index) {
     btnNext->setEnabled(true);
 }
 
+
+void SelectStationPage::showInformation(QModelIndex index) {
+    if (index.column() == 2) {
+        QModelIndex index2 = index.model()->index(index.row(), 0);
+        QString stationName = index2.data().toString();
+        QMessageBox::information(this, tr("Info"), stationName, 0);
+    }
+}
