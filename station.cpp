@@ -30,13 +30,13 @@
 QStringList& Station::headers() {
     static QStringList _headers = QStringList()
             << trUtf8("id") <<
-               trUtf8("nom") <<
+               trUtf8("Station") <<
                trUtf8("description") <<
                trUtf8("coffret") <<
                trUtf8("position") <<
                trUtf8("photo") <<
                trUtf8("carte") <<
-               trUtf8("distance");
+               trUtf8("Distance");
     return _headers;
 }
 

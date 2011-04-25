@@ -26,7 +26,6 @@
 StationModel::StationModel(QObject *parent) :
     QAbstractTableModel(parent)
 {
-    currentPosition = new GeoPosition(45.525, -73.561);
 }
 
 QVariant StationModel::fieldAt(const QModelIndex &index, int role) const
@@ -39,7 +38,7 @@ QVariant StationModel::fieldAt(const QModelIndex &index, int role) const
 
     if (column == Station::COL_DIST && role == Qt::DisplayRole) {
         qreal distance = s->getPosition().distanceFrom(currentPosition);
-        return QVariant(QString("%1 km").arg(distance, 0, 'g', 2));
+        return QVariant(QString("%1 km").arg(distance, 0, 'f', 2));
     }
 
     return s->field(column, role);
@@ -218,4 +217,12 @@ QDataStream& operator>>(QDataStream &ds, StationModel &model)
     }
     model.endResetModel();
     return ds;
+}
+
+
+
+
+void StationModel::updateCurrentPosition(GeoPosition pos) {
+    currentPosition->setLat(pos.getLat());
+    currentPosition->setLon(pos.getLon());
 }

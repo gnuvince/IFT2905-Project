@@ -30,11 +30,13 @@ UserInterface::UserInterface(
     ui(new Ui::UserInterface)
 {
     ui->setupUi(this);
-    //ui->lblEnveloppe->setPixmap(QPixmap(":/icones/data/icons/email.png"));
-    //ui->lblEnveloppe->setCursor(QCursor(Qt::PointingHandCursor));
 
-    StationSortProxy *stationProxy = new StationSortProxy(this);
+    currentPosition = new GeoPosition(45.52, -73.58);
+    stationModel->updateCurrentPosition(*currentPosition);
+
+    stationProxy = new StationSortProxy(this);
     stationProxy->setSourceModel(stationModel);
+    stationProxy->setDynamicSortFilter(true);
     stationProxy->sort(1);
 
     pages = new QMap<PageName, Page*>;
@@ -77,6 +79,9 @@ UserInterface::UserInterface(
     connect(getPage(Page_SelectPosition), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
     connect(getPage(Page_SelectPosition), SIGNAL(Previous()), this, SLOT(gotoFindStationPage()));
     connect(getPage(Page_SelectPosition), SIGNAL(Next()), this, SLOT(gotoSelectStation()));
+    connect(getPage(Page_SelectPosition), SIGNAL(positionSelected(GeoPosition)), this, SLOT(setCurrentPosition(GeoPosition)));
+    connect(getPage(Page_SelectPosition), SIGNAL(positionSelected(GeoPosition)), stationModel, SLOT(updateCurrentPosition(GeoPosition)));
+    connect(getPage(Page_SelectPosition), SIGNAL(positionSelected(GeoPosition)), stationProxy, SLOT(invalidate()));
 
     // Connections for select station
     connect(getPage(Page_SelectStation), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
@@ -170,4 +175,9 @@ void UserInterface::gotoSelectCar() {
 
 void UserInterface::gotoConfirm() {
     gotoPage(Page_Confirm);
+}
+
+void UserInterface::setCurrentPosition(GeoPosition pos) {
+    currentPosition->setLat(pos.getLat());
+    currentPosition->setLon(pos.getLon());
 }

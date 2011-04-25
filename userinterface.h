@@ -9,6 +9,8 @@
 #include "pages/page.h"
 #include "station.h"
 #include "stationmodel.h"
+#include "stationsortproxy.h"
+#include "geoposition.h"
 
 enum PageName { Page_MainMenu,
                 Page_FindStation, Page_SelectPosition, Page_SelectStation, Page_SelectTime, Page_SelectCar, Page_Confirm,
@@ -34,6 +36,8 @@ private:
     QMap<PageName, Page*> *pages;
     Page* getPage(PageName name);
     StationModel *stationModel;
+    GeoPosition *currentPosition;
+    StationSortProxy *stationProxy;
 
 public slots:
     void gotoPage(PageName name);
@@ -48,6 +52,7 @@ public slots:
     void gotoUnexpected();
     void gotoBookings();
     void gotoEmailPage();
+    void setCurrentPosition(GeoPosition pos);
 };
 
 #endif // USERINTERFACE_H

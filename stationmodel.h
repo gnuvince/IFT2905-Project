@@ -22,6 +22,7 @@
 #include <QAbstractTableModel>
 #include <QMap>
 #include "station.h"
+#include "geoposition.h"
 
 class StationModel : public QAbstractTableModel
 {
@@ -53,6 +54,7 @@ private:
 signals:
 
 public slots:
+    void updateCurrentPosition(GeoPosition pos);
 
 private:
     QMap<qint64, Station*> stations;

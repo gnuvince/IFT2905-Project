@@ -15,6 +15,13 @@ SelectStationPage::SelectStationPage(
     view->setModel(stationModel);
     view->setSelectionBehavior(QAbstractItemView::SelectRows);
     view->setSelectionMode(QAbstractItemView::SingleSelection);
+    view->verticalHeader()->hide();
+    view->resizeColumnToContents(1);
+    view->resizeRowsToContents();
+
+    QFont font = view->font();
+    font.setPointSize(8);
+    view->setFont(font);
 
     QPushButton *btnPrevious = new QPushButton(this);
     btnPrevious->setIcon(QIcon(":/icones/data/icons/arrow_left.png"));

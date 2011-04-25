@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'userinterface.ui'
 **
-** Created: Fri Apr 15 11:47:49 2011
+** Created: Mon Apr 25 08:41:39 2011
 **      by: Qt User Interface Compiler version 4.7.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -17,8 +17,8 @@
 #include <QtGui/QHBoxLayout>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
-#include <QtGui/QPushButton>
 #include <QtGui/QMainWindow>
+#include <QtGui/QPushButton>
 #include <QtGui/QSpacerItem>
 #include <QtGui/QStackedWidget>
 #include <QtGui/QVBoxLayout>
@@ -53,9 +53,11 @@ public:
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         btnEnveloppe = new QPushButton(centralwidget);
-        btnEnveloppe->setFlat(1);
-        btnEnveloppe->setIcon(QIcon(":/icones/data/icons/email.png"));
-
+        btnEnveloppe->setObjectName(QString::fromUtf8("btnEnveloppe"));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/icones/data/icons/email.png"), QSize(), QIcon::Normal, QIcon::On);
+        btnEnveloppe->setIcon(icon);
+        btnEnveloppe->setFlat(true);
 
         horizontalLayout->addWidget(btnEnveloppe);
 
@@ -110,7 +112,7 @@ public:
     void retranslateUi(QMainWindow *UserInterface)
     {
         UserInterface->setWindowTitle(QApplication::translate("UserInterface", "Auto-Partage", 0, QApplication::UnicodeUTF8));
-        //lblEnveloppe->setText(QString());
+        btnEnveloppe->setText(QString());
         label_2->setText(QApplication::translate("UserInterface", "Auto-Partage", 0, QApplication::UnicodeUTF8));
         lblUserName->setText(QApplication::translate("UserInterface", "Tania", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
