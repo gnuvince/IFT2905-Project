@@ -18,8 +18,9 @@ SelectStationPage::SelectStationPage(
     view->setSelectionBehavior(QAbstractItemView::SelectRows);
     view->setSelectionMode(QAbstractItemView::SingleSelection);
     view->verticalHeader()->hide();
-    view->resizeColumnToContents(1);
+    view->hideColumn(0);
     view->resizeColumnToContents(2);
+    view->resizeColumnToContents(3);
     view->resizeRowsToContents();
 
     connect(view, SIGNAL(clicked(QModelIndex)), this, SLOT(showInformation(QModelIndex)));
@@ -51,7 +52,7 @@ void SelectStationPage::stationSelected(QModelIndex index) {
 
 
 void SelectStationPage::showInformation(QModelIndex index) {
-    if (index.column() == 2) {
+    if (index.column() == 3) {
         QModelIndex index2 = index.model()->index(index.row(), 0);
         QString stationName = index2.data().toString();
         QMessageBox::information(this, tr("Info"), stationName, 0);

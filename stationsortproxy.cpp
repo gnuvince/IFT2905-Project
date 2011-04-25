@@ -9,7 +9,8 @@ StationSortProxy::StationSortProxy(QObject *parent) :
 }
 
 bool StationSortProxy::filterAcceptsColumn(int source_column, const QModelIndex &source_parent) const {
-    return source_column == Station::COL_NOM
+    return source_column == Station::COL_ID
+        || source_column == Station::COL_NOM
         || source_column == Station::COL_DIST
         || source_column == Station::COL_INFO;
 }
