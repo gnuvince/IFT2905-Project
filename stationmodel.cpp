@@ -27,6 +27,7 @@
 StationModel::StationModel(QObject *parent) :
     QAbstractTableModel(parent)
 {
+    currentPosition = new GeoPosition;
 }
 
 QVariant StationModel::fieldAt(const QModelIndex &index, int role) const

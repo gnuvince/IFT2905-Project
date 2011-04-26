@@ -11,6 +11,7 @@
 #include "stationmodel.h"
 #include "stationsortproxy.h"
 #include "vehiculemodel.h"
+#include "usagermodel.h"
 #include "vehiculefilterproxy.h"
 #include "geoposition.h"
 
@@ -31,17 +32,21 @@ public:
     explicit UserInterface(
         StationModel *smodel,
         VehiculeModel *vmodel,
+        UsagerModel *umodel,
         QWidget *parent = 0);
     ~UserInterface();
 
 private:
     Ui::UserInterface *ui;
+    Usager *user;
     QMap<PageName, Page*> *pages;
+    void createPages();
     Page* getPage(PageName name);
     StationModel *stationModel;
     StationSortProxy *stationProxy;
     VehiculeModel *vehiculeModel;
     VehiculeFilterProxy *vehiculeProxy;
+    UsagerModel *usagerModel;
     GeoPosition *currentPosition;
 
 
@@ -61,6 +66,7 @@ public slots:
     void setCurrentPosition(GeoPosition pos);
     void gotoWriteComment();
     void showInfoStation(Station *station);
+    void setUser(qint64 id);
 };
 
 #endif // USERINTERFACE_H
