@@ -1,8 +1,12 @@
 #include "vehiculefilterproxy.h"
 #include "vehicule.h"
 
-VehiculeFilterProxy::VehiculeFilterProxy(QObject *parent) :
-    QSortFilterProxyModel(parent)
+#include <QDebug>
+
+VehiculeFilterProxy::VehiculeFilterProxy(ReservationModel *rmodel, Reservation *reservation, QObject *parent) :
+    QSortFilterProxyModel(parent),
+    reservationModel(rmodel),
+    reservation(reservation)
 {
 }
 
@@ -11,10 +15,19 @@ bool VehiculeFilterProxy::filterAcceptsColumn(int source_column, const QModelInd
     return source_column == Vehicule::COL_ID
         || source_column == Vehicule::COL_MARQUE
         || source_column == Vehicule::COL_MODELE
+        || source_column == Vehicule::COL_COULEUR
         || source_column == Vehicule::COL_INFO;
 }
 
 
 bool VehiculeFilterProxy::filterAcceptsRow(int source_row, const QModelIndex &source_parent) const {
-    return true;
+    QModelIndex index = sourceModel()->index(source_row, Vehicule::COL_ID);
+    qint64 vehiculeId = index.data().toInt();
+    foreach (Reservation *res, reservationModel->getReservations()) {
+        if (res->getVehicule() == vehiculeId && res->getStation() == reservation->getStation()
+                && reservationModel->testReservation(reservation)) {
+            return true;
+        }
+    }
+    return false;
 }

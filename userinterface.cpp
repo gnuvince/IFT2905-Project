@@ -41,8 +41,10 @@ UserInterface::UserInterface(
 {
     ui->setupUi(this);
 
-    setUser(2);
-    currentPosition = new GeoPosition(45.52, -73.58);
+    pages = new QMap<PageName, Page*>;
+
+    reservation = new Reservation(this);
+    currentPosition = new GeoPosition(0, 0);
     stationModel->updateCurrentPosition(*currentPosition);
 
     stationProxy = new StationSortProxy(this);
@@ -50,16 +52,30 @@ UserInterface::UserInterface(
     stationProxy->setDynamicSortFilter(true);
     stationProxy->sort(1);
 
-    vehiculeProxy = new VehiculeFilterProxy(this);
+    vehiculeProxy = new VehiculeFilterProxy(rmodel, reservation, this);
     vehiculeProxy->setSourceModel(vehiculeModel);
     vehiculeProxy->setDynamicSortFilter(true);
+}
 
+void UserInterface::createPages() {
+    pages->clear();
+    pages->insert(Page_MainMenu, new MainMenuPage(this));
+    pages->insert(Page_FindStation, new FindStationPage(this));
+    pages->insert(Page_SelectPosition, new SelectPositionPage(this));
+    pages->insert(Page_SelectStation, new SelectStationPage(stationProxy, this));
+    pages->insert(Page_SelectTime, new SelectTimePage(this));
+    pages->insert(Page_SelectCar, new SelectCarPage(vehiculeProxy, this));
+    pages->insert(Page_Confirm, new ConfirmPage(this));
+    pages->insert(Page_Bookings, new BookingsPage(this));
+    pages->insert(Page_Comments, new CommentsPage(this));           // comments main page
+    pages->insert(Page_WriteComment, new WriteCommentPage(this));   // comment editing
+    pages->insert(Page_Unexpected, new UnexpectedPage(this));
+    pages->insert(Page_Email, new MyMessagesPage(this));
 
-    reservationProxy = new ReservationProxyModel(this);
-    reservationProxy->setSourceModel(reservationModel);
-
-    pages = new QMap<PageName, Page*>;
-    createPages();
+    for (int i = 0; i < ui->stackedWidget->count(); ++i) {
+        QWidget *w = ui->stackedWidget->widget(i);
+        ui->stackedWidget->removeWidget(w);
+    }
 
     QMapIterator<PageName, Page*> iter(*pages);
     while (iter.hasNext()) {
@@ -96,16 +112,21 @@ UserInterface::UserInterface(
     connect(getPage(Page_SelectStation), SIGNAL(Previous()), this, SLOT(gotoSelectPosition()));
     connect(getPage(Page_SelectStation), SIGNAL(Next()), this, SLOT(gotoSelectTime()));
     connect(getPage(Page_SelectStation), SIGNAL(showInfoStation(Station*)), this, SLOT(showInfoStation(Station*)));
+    connect(getPage(Page_SelectStation), SIGNAL(selectedStation(qint64)), this, SLOT(setStationId(qint64)));
+    connect(getPage(Page_SelectStation), SIGNAL(selectedStation(qint64)), vehiculeProxy, SLOT(invalidate()));
 
     // Connections for select time
     connect(getPage(Page_SelectTime), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
     connect(getPage(Page_SelectTime), SIGNAL(Previous()), this, SLOT(gotoSelectStation()));
     connect(getPage(Page_SelectTime), SIGNAL(Next()), this, SLOT(gotoSelectCar()));
+    connect(getPage(Page_SelectTime), SIGNAL(selectedTime(QDateTime, QDateTime)), this, SLOT(setTimes(QDateTime, QDateTime)));
+    connect(getPage(Page_SelectTime), SIGNAL(selectedTime(QDateTime, QDateTime)), vehiculeProxy, SLOT(invalidate()));
 
     // Connections for select car
     connect(getPage(Page_SelectCar), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
     connect(getPage(Page_SelectCar), SIGNAL(Previous()), this, SLOT(gotoSelectTime()));
     connect(getPage(Page_SelectCar), SIGNAL(Next()), this, SLOT(gotoConfirm()));
+    connect(getPage(Page_SelectCar), SIGNAL(carSelected(qint64)), this, SLOT(setCarId(qint64)));
 
     // Connections for confirm
     connect(getPage(Page_Confirm), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
@@ -134,29 +155,19 @@ UserInterface::UserInterface(
     connect(getPage(Page_Email), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
 }
 
-void UserInterface::createPages() {
-    pages->insert(Page_MainMenu, new MainMenuPage(this));
-    pages->insert(Page_FindStation, new FindStationPage(this));
-    pages->insert(Page_SelectPosition, new SelectPositionPage(this));
-    pages->insert(Page_SelectStation, new SelectStationPage(stationProxy, this));
-    pages->insert(Page_SelectTime, new SelectTimePage(this));
-    pages->insert(Page_SelectCar, new SelectCarPage(vehiculeProxy, this));
-    pages->insert(Page_Confirm, new ConfirmPage(this));
-    pages->insert(Page_Bookings, new BookingsPage(this));
-    pages->insert(Page_Comments, new CommentsPage(this));           // comments main page
-    pages->insert(Page_WriteComment, new WriteCommentPage(this));   // comment editing
-    pages->insert(Page_Unexpected, new UnexpectedPage(this));
-    pages->insert(Page_Email, new MyMessagesPage(this));
-}
-
 UserInterface::~UserInterface()
 {
     delete ui;
 }
 
 void UserInterface::setUser(qint64 id) {
+    createPages();
     user = usagerModel->getUsager(id);
+    *currentPosition = user->getPosition();
+    stationModel->updateCurrentPosition(*currentPosition);
     ui->lblUserName->setText(user->getNom());
+    stationProxy->invalidate();
+    vehiculeProxy->invalidate();
 }
 
 Page* UserInterface::getPage(PageName name) {
@@ -228,4 +239,17 @@ void UserInterface::showInfoStation(Station *station) {
     ui->stackedWidget->addWidget(infoStationPage);
     ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(infoStationPage));
     connect(infoStationPage, SIGNAL(Previous()), this, SLOT(gotoSelectStation()));
+}
+
+void UserInterface::setTimes(QDateTime start, QDateTime end) {
+    reservation->setDebut(start);
+    reservation->setFin(end);
+}
+
+void UserInterface::setStationId(qint64 stationId) {
+    reservation->setStation(stationId);
+}
+
+void UserInterface::setCarId(qint64 carId) {
+    reservation->setVehicule(carId);
 }

@@ -13,7 +13,8 @@
 #include "vehiculemodel.h"
 #include "usagermodel.h"
 #include "vehiculefilterproxy.h"
-#include "reservationproxymodel.h"
+#include "reservation.h"
+#include "reservationmodel.h"
 #include "geoposition.h"
 
 enum PageName { Page_MainMenu,
@@ -52,6 +53,7 @@ private:
     ReservationModel *reservationModel;
     ReservationProxyModel *reservationProxy;
     GeoPosition *currentPosition;
+    Reservation *reservation;
 
 
 public slots:
@@ -70,6 +72,9 @@ public slots:
     void setCurrentPosition(GeoPosition pos);
     void gotoWriteComment();
     void showInfoStation(Station *station);
+    void setTimes(QDateTime start, QDateTime end);
+    void setStationId(qint64 stationId);
+    void setCarId(qint64 carId);
     void setUser(qint64 id);
 };
 

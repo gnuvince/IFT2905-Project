@@ -155,6 +155,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     UserInterface *userInterface = new UserInterface(smodel, vmodel, umodel, rmodel, this);
     connect(this, SIGNAL(interfaceUsagerId(qint64)), userInterface, SLOT(setUser(qint64)));
+    emit interfaceUsagerId(2);
     userInterface->show();
 }
 

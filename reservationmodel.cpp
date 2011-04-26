@@ -223,3 +223,12 @@ QDataStream& operator>>(QDataStream &ds, ReservationModel &model)
     model.endResetModel();
     return ds;
 }
+
+
+qint64 ReservationModel::getVehiculeStation(qint64 vehiculeId) {
+    foreach (Reservation* reservation, reservations) {
+        if (reservation->getVehicule() == vehiculeId)
+            return reservation->getStation();
+    }
+    return -1;
+}

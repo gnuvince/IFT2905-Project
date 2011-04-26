@@ -12,9 +12,11 @@ public:
     explicit SelectTimePage(QWidget *parent = 0);
 
 signals:
+    void selectedTime(QDateTime start, QDateTime end);
 
 public slots:
     void setMinimalEndDateTime(QDateTime time);
+    void emitDates();
 
 private:
     QDateTimeEdit *startTime;

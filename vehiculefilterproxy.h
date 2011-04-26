@@ -3,15 +3,22 @@
 
 #include <QSortFilterProxyModel>
 
+#include "reservation.h"
+#include "reservationmodel.h"
+
 class VehiculeFilterProxy : public QSortFilterProxyModel
 {
     Q_OBJECT
 public:
-    explicit VehiculeFilterProxy(QObject *parent = 0);
+    explicit VehiculeFilterProxy(ReservationModel *rmodel, Reservation *reservation, QObject *parent = 0);
 
 protected:
     bool filterAcceptsColumn(int source_column, const QModelIndex &source_parent) const;
     bool filterAcceptsRow(int source_row, const QModelIndex &source_parent) const;
+
+private:
+    ReservationModel *reservationModel;
+    Reservation *reservation;
 
 signals:
 
