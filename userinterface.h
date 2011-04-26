@@ -11,6 +11,7 @@
 #include "stationmodel.h"
 #include "stationsortproxy.h"
 #include "vehiculemodel.h"
+#include "usagermodel.h"
 #include "vehiculefilterproxy.h"
 #include "reservation.h"
 #include "reservationmodel.h"
@@ -33,18 +34,22 @@ public:
     explicit UserInterface(
         StationModel *smodel,
         VehiculeModel *vmodel,
+        UsagerModel *umodel,
         ReservationModel *rmodel,
         QWidget *parent = 0);
     ~UserInterface();
 
 private:
     Ui::UserInterface *ui;
+    Usager *user;
     QMap<PageName, Page*> *pages;
+    void createPages();
     Page* getPage(PageName name);
     StationModel *stationModel;
     StationSortProxy *stationProxy;
     VehiculeModel *vehiculeModel;
     VehiculeFilterProxy *vehiculeProxy;
+    UsagerModel *usagerModel;
     GeoPosition *currentPosition;
     Reservation *reservation;
 
@@ -68,6 +73,7 @@ public slots:
     void setTimes(QDateTime start, QDateTime end);
     void setStationId(qint64 stationId);
     void setCarId(qint64 carId);
+    void setUser(qint64 id);
 };
 
 #endif // USERINTERFACE_H
