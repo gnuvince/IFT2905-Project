@@ -153,7 +153,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //important tout le monde partage la scène !
     CarteWidget::setScene(scene);
 
-    UserInterface *userInterface = new UserInterface(smodel, vmodel, umodel, this);
+    UserInterface *userInterface = new UserInterface(smodel, vmodel, umodel, rmodel, this);
     connect(this, SIGNAL(interfaceUsagerId(qint64)), userInterface, SLOT(setUser(qint64)));
     userInterface->show();
 }
@@ -286,8 +286,6 @@ void MainWindow::changeInterfaceUsagerId(qint64 id)
     if (!u) {
         //normalement u est valide mais bon ..
         QMessageBox::warning(this, trUtf8("Usager invalide"), trUtf8("L'usager que vous avez sélectionné n'existe pas"),QMessageBox::Ok);
-    } else {
-        QMessageBox::information(this, trUtf8("Changement d'interface usager"), trUtf8("Lorsque vous recevez le signal MainWindow::interfaceUsagerId(qint64 id), vous devez afficher l'interface de l'usager correspondant.\n\nPar exemple, ceci est l'interface de l'usager %1 qui a l'id %2 ! Cette interface est minimaliste, mais elle est là :). La votre devrait être plus conséquente !").arg(u->getNom()).arg(id), QMessageBox::Ok);
     }
 }
 

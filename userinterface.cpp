@@ -19,6 +19,7 @@
 #include "station.h"
 #include "stationmodel.h"
 #include "stationsortproxy.h"
+#include "reservationproxymodel.h"
 
 #include <QDebug>
 
@@ -29,11 +30,13 @@ UserInterface::UserInterface(
     StationModel *smodel,
     VehiculeModel *vmodel,
     UsagerModel *umodel,
+    ReservationModel *rmodel,
     QWidget *parent) :
     QMainWindow(parent),
     stationModel(smodel),
     vehiculeModel(vmodel),
     usagerModel(umodel),
+    reservationModel(rmodel),
     ui(new Ui::UserInterface)
 {
     ui->setupUi(this);
@@ -50,6 +53,10 @@ UserInterface::UserInterface(
     vehiculeProxy = new VehiculeFilterProxy(this);
     vehiculeProxy->setSourceModel(vehiculeModel);
     vehiculeProxy->setDynamicSortFilter(true);
+
+
+    reservationProxy = new ReservationProxyModel(this);
+    reservationProxy->setSourceModel(reservationModel);
 
     pages = new QMap<PageName, Page*>;
     createPages();

@@ -13,6 +13,7 @@
 #include "vehiculemodel.h"
 #include "usagermodel.h"
 #include "vehiculefilterproxy.h"
+#include "reservationproxymodel.h"
 #include "geoposition.h"
 
 enum PageName { Page_MainMenu,
@@ -33,6 +34,7 @@ public:
         StationModel *smodel,
         VehiculeModel *vmodel,
         UsagerModel *umodel,
+        ReservationModel *rmodel,
         QWidget *parent = 0);
     ~UserInterface();
 
@@ -47,6 +49,8 @@ private:
     VehiculeModel *vehiculeModel;
     VehiculeFilterProxy *vehiculeProxy;
     UsagerModel *usagerModel;
+    ReservationModel *reservationModel;
+    ReservationProxyModel *reservationProxy;
     GeoPosition *currentPosition;
 
 
