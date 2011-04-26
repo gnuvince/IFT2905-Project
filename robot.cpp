@@ -168,6 +168,8 @@ void Robot::simulInitialise(QDateTime now)
     umodel->addUsager(new Usager(trUtf8("Sébastien"),GeoPosition(25.1,41.9),umodel));
     umodel->addUsager(new Usager(trUtf8("Nicolas"),GeoPosition(15.1,42.9),umodel));
     umodel->addUsager(new Usager(trUtf8("Maria"),GeoPosition(34.8,49.1),umodel));
+    umodel->addUsager(new Usager(trUtf8("Vincent"),GeoPosition(45.301944, -74.303889),umodel));
+    umodel->addUsager(new Usager(trUtf8("Eric"),GeoPosition(45.525, -73.877),umodel));
 
 
     //
