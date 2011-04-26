@@ -54,6 +54,7 @@ public slots:
     void gotoEmailPage();
     void setCurrentPosition(GeoPosition pos);
     void gotoWriteComment();
+    void showInfoStation(Station *station);
 };
 
 #endif // USERINTERFACE_H

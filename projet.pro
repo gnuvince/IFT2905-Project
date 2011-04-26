@@ -50,7 +50,8 @@ HEADERS += geoposition.h \
     pages/myrsvppage.h \
     pages/bookingspage.h \
     pages/mymessagespage.h \
-    pages/writecommentpage.h
+    pages/writecommentpage.h \
+    pages/infostationpage.h
 FORMS += mainwindow.ui \
     cartewidget.ui \
     userinterface.ui
@@ -89,7 +90,8 @@ SOURCES += geoposition.cpp \
     pages/unexpectedpage.cpp \
     pages/bookingspage.cpp \
     pages/mymessagespage.cpp \
-    pages/writecommentpage.cpp
+    pages/writecommentpage.cpp \
+    pages/infostationpage.cpp
 
 RESOURCES += \
     icones.qrc

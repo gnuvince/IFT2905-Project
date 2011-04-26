@@ -14,7 +14,9 @@
 #include "pages/bookingspage.h"
 #include "pages/mymessagespage.h"
 #include "pages/writecommentpage.h"
+#include "pages/infostationpage.h"
 
+#include "station.h"
 #include "stationmodel.h"
 #include "stationsortproxy.h"
 
@@ -89,6 +91,7 @@ UserInterface::UserInterface(
     connect(getPage(Page_SelectStation), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
     connect(getPage(Page_SelectStation), SIGNAL(Previous()), this, SLOT(gotoSelectPosition()));
     connect(getPage(Page_SelectStation), SIGNAL(Next()), this, SLOT(gotoSelectTime()));
+    connect(getPage(Page_SelectStation), SIGNAL(showInfoStation(Station*)), this, SLOT(showInfoStation(Station*)));
 
     // Connections for select time
     connect(getPage(Page_SelectTime), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
@@ -195,4 +198,11 @@ void UserInterface::gotoConfirm() {
 void UserInterface::setCurrentPosition(GeoPosition pos) {
     currentPosition->setLat(pos.getLat());
     currentPosition->setLon(pos.getLon());
+}
+
+void UserInterface::showInfoStation(Station *station) {
+    InfoStationPage *infoStationPage = new InfoStationPage(*station, this);
+    ui->stackedWidget->addWidget(infoStationPage);
+    ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(infoStationPage));
+    connect(infoStationPage, SIGNAL(Previous()), this, SLOT(gotoSelectStation()));
 }

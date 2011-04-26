@@ -3,6 +3,7 @@
 
 #include "stationsortproxy.h"
 
+#include "station.h"
 #include "page.h"
 #include <QtGui>
 
@@ -15,7 +16,7 @@ public:
         QWidget *parent = 0);
 
 signals:
-
+    void showInfoStation(Station *station);
 
 public slots:
     void stationSelected(QModelIndex index);

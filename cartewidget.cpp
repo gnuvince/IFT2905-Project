@@ -61,16 +61,14 @@ CarteWidget::CarteWidget(QWidget *parent) :
 
 bool CarteWidget::eventFilter(QObject *, QEvent *ev)
 {
-    if (ev->type() == QEvent::MouseButtonRelease) {
+    if (ev->type() == QEvent::MouseButtonDblClick) {
         QMouseEvent *mev = static_cast<QMouseEvent*>(ev);
-        if (mev->button() == Qt::RightButton) {
-            QPointF pos = ui->graphicsView->mapToScene(mev->pos());
-            flag->setPos(pos);
-            flag->setVisible(true);
-            _flagPos = CarteScene::PointToGPS(pos);
-            //pour etre propre on devrait emettre le signal mais bon ...
-            emit editFinished();
-        }
+        QPointF pos = ui->graphicsView->mapToScene(mev->pos());
+        flag->setPos(pos);
+        flag->setVisible(true);
+        _flagPos = CarteScene::PointToGPS(pos);
+        //pour etre propre on devrait emettre le signal mais bon ...
+        emit editFinished();
     }
     return false;
 }

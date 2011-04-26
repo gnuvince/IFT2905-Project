@@ -1,7 +1,9 @@
 #include <QMessageBox>
 
 #include "selectstationpage.h"
+#include "infostationpage.h"
 #include "page.h"
+#include "stationmodel.h"
 #include "stationsortproxy.h"
 #include "station.h"
 
@@ -54,7 +56,9 @@ void SelectStationPage::stationSelected(QModelIndex index) {
 void SelectStationPage::showInformation(QModelIndex index) {
     if (index.column() == 3) {
         QModelIndex index2 = index.model()->index(index.row(), 0);
-        QString stationName = index2.data().toString();
-        QMessageBox::information(this, tr("Info"), stationName, 0);
+        qint64 stationId = index2.data().toInt();
+        StationModel *model = (StationModel*)(stationModel->sourceModel());
+        Station *station = model->getStation(stationId);
+        emit showInfoStation(station);
     }
 }
