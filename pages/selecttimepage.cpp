@@ -55,9 +55,15 @@ SelectTimePage::SelectTimePage(QWidget *parent) :
     connect(btnPrevious, SIGNAL(clicked()), SIGNAL(Previous()));
     connect(btnMenu, SIGNAL(clicked()), SIGNAL(Menu()));
     connect(btnNext, SIGNAL(clicked()), SIGNAL(Next()));
+    connect(btnNext, SIGNAL(clicked()), this, SLOT(emitDates()));
 }
 
 void SelectTimePage::setMinimalEndDateTime(QDateTime time) {
     QDateTime fifteenMinutesPast = time.addSecs(15 * 60);
     endTime->setMinimumDateTime(fifteenMinutesPast);
+}
+
+
+void SelectTimePage::emitDates() {
+    emit selectedTime(startTime->dateTime(), endTime->dateTime());
 }

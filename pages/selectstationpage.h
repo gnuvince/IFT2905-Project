@@ -17,6 +17,7 @@ public:
 
 signals:
     void showInfoStation(Station *station);
+    void selectedStation(qint64 stationId);
 
 public slots:
     void stationSelected(QModelIndex index);

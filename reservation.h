@@ -24,6 +24,7 @@
 #include <QDateTime>
 #include <QStringList>
 
+
 class ReservationModel;
 
 class Reservation : public QObject
@@ -34,6 +35,7 @@ public:
     enum Colonnes { COL_ID, COL_DEBUT, COL_FIN, COL_VEHICULE, COL_USAGER, COL_STATION, COL_PERSO };
 
 public:
+    Reservation(QObject *parent=0) : QObject(parent) {}
     explicit Reservation(QDateTime debut, QDateTime fin, qint64 vehicule, qint64 usager, qint64 station, QObject *parent=0);
 
     QVariant field(uint column, int role) const;
@@ -59,6 +61,7 @@ public:
     static uint headerCount();
     static QVariant header(uint column);
 
+
 private:
     static qint64 idCount;
     qint64 id;
@@ -78,7 +81,6 @@ private:
     friend QDataStream& operator<<(QDataStream& ds, const ReservationModel &pos);
     friend QDataStream& operator>>(QDataStream& ds, ReservationModel &pos);
     //pour le déserialisateur seulement ...
-    Reservation(QObject *parent=0) : QObject(parent) {}
     Reservation(const Reservation &n);
 };
 

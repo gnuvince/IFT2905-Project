@@ -12,6 +12,8 @@
 #include "stationsortproxy.h"
 #include "vehiculemodel.h"
 #include "vehiculefilterproxy.h"
+#include "reservation.h"
+#include "reservationmodel.h"
 #include "geoposition.h"
 
 enum PageName { Page_MainMenu,
@@ -31,6 +33,7 @@ public:
     explicit UserInterface(
         StationModel *smodel,
         VehiculeModel *vmodel,
+        ReservationModel *rmodel,
         QWidget *parent = 0);
     ~UserInterface();
 
@@ -43,6 +46,7 @@ private:
     VehiculeModel *vehiculeModel;
     VehiculeFilterProxy *vehiculeProxy;
     GeoPosition *currentPosition;
+    Reservation *reservation;
 
 
 public slots:
@@ -61,6 +65,9 @@ public slots:
     void setCurrentPosition(GeoPosition pos);
     void gotoWriteComment();
     void showInfoStation(Station *station);
+    void setTimes(QDateTime start, QDateTime end);
+    void setStationId(qint64 stationId);
+    void setCarId(qint64 carId);
 };
 
 #endif // USERINTERFACE_H

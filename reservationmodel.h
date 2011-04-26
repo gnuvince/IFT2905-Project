@@ -22,6 +22,8 @@
 #include <QAbstractTableModel>
 #include <QMap>
 #include "reservation.h"
+#include "station.h"
+#include "vehicule.h"
 
 class ReservationProxyModel;
 
@@ -53,6 +55,8 @@ public:
     static int compareIntervalles(QDateTime A,QDateTime B,QDateTime C,QDateTime D);
 
     static const quint32 MAGIC_NUMBER = 0x182f3a41;
+
+    qint64 getVehiculeStation(qint64 vehiculeId);
 
 private:
     QVariant fieldAt(const QModelIndex &index, int role) const;

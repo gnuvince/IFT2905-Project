@@ -153,7 +153,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //important tout le monde partage la scène !
     CarteWidget::setScene(scene);
 
-    UserInterface *userInterface = new UserInterface(smodel, vmodel, this);
+    UserInterface *userInterface = new UserInterface(smodel, vmodel, rmodel, this);
     userInterface->show();
 }
 

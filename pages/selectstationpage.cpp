@@ -50,6 +50,9 @@ SelectStationPage::SelectStationPage(
 
 void SelectStationPage::stationSelected(QModelIndex index) {
     btnNext->setEnabled(true);
+
+    QModelIndex index2 = index.model()->index(index.row(), Station::COL_ID);
+    emit selectedStation(index2.data().toInt());
 }
 
 
