@@ -51,7 +51,8 @@ HEADERS += geoposition.h \
     pages/bookingspage.h \
     pages/mymessagespage.h \
     pages/writecommentpage.h \
-    pages/infostationpage.h
+    pages/infostationpage.h \
+    vehiculefilterproxy.h
 FORMS += mainwindow.ui \
     cartewidget.ui \
     userinterface.ui
@@ -91,7 +92,8 @@ SOURCES += geoposition.cpp \
     pages/bookingspage.cpp \
     pages/mymessagespage.cpp \
     pages/writecommentpage.cpp \
-    pages/infostationpage.cpp
+    pages/infostationpage.cpp \
+    vehiculefilterproxy.cpp
 
 RESOURCES += \
     icones.qrc

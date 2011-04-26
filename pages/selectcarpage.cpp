@@ -3,13 +3,22 @@
 
 #include "page.h"
 #include "selectcarpage.h"
+#include "vehiculefilterproxy.h"
 
-SelectCarPage::SelectCarPage(QWidget *parent) :
-    Page(parent)
+SelectCarPage::SelectCarPage(VehiculeFilterProxy *vproxy, QWidget *parent) :
+    Page(parent),
+    vehiculeProxy(vproxy)
 {
     addTitle(trUtf8("Choisir le véhicule\n(5 / 5)"));
 
     QTableView *view = new QTableView(this);
+    view->setModel(vehiculeProxy);
+    view->setSelectionBehavior(QAbstractItemView::SelectRows);
+    view->setSelectionMode(QAbstractItemView::SingleSelection);
+    view->verticalHeader()->hide();
+    view->hideColumn(0);
+    view->resizeColumnsToContents();
+    view->resizeRowsToContents();
     addWidget(view);
 
     QPushButton *btnPrevious = new QPushButton(this);

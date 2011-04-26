@@ -31,7 +31,7 @@ class Vehicule : public QObject
 {
     Q_OBJECT
 public:
-    enum Colonnes { COL_ID, COL_MARQUE, COL_MODELE, COL_COULEUR, COL_DESCRIPTION, COL_PHOTO, COL_PERSO };
+    enum Colonnes { COL_ID, COL_MARQUE, COL_MODELE, COL_COULEUR, COL_DESCRIPTION, COL_PHOTO, COL_INFO };
 
     explicit Vehicule(qint64 id,QString marque,QString modele,QString couleur,QString description,QPixmap photo, QObject *parent=0);
 

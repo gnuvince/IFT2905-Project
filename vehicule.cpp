@@ -31,11 +31,12 @@
 QStringList& Vehicule::headers() {
     static QStringList _headers = QStringList()
             << trUtf8("id")
-            << trUtf8("marque")
-            << trUtf8("modele")
+            << trUtf8("Marque")
+            << trUtf8("Modèle")
             << trUtf8("couleur")
             << trUtf8("description")
-            << trUtf8("photo");
+            << trUtf8("photo")
+            << trUtf8("Info");
     return _headers;
 }
 

@@ -10,6 +10,8 @@
 #include "station.h"
 #include "stationmodel.h"
 #include "stationsortproxy.h"
+#include "vehiculemodel.h"
+#include "vehiculefilterproxy.h"
 #include "geoposition.h"
 
 enum PageName { Page_MainMenu,
@@ -28,6 +30,7 @@ class UserInterface : public QMainWindow
 public:
     explicit UserInterface(
         StationModel *smodel,
+        VehiculeModel *vmodel,
         QWidget *parent = 0);
     ~UserInterface();
 
@@ -36,8 +39,11 @@ private:
     QMap<PageName, Page*> *pages;
     Page* getPage(PageName name);
     StationModel *stationModel;
-    GeoPosition *currentPosition;
     StationSortProxy *stationProxy;
+    VehiculeModel *vehiculeModel;
+    VehiculeFilterProxy *vehiculeProxy;
+    GeoPosition *currentPosition;
+
 
 public slots:
     void gotoPage(PageName name);

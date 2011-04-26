@@ -27,9 +27,11 @@
 
 UserInterface::UserInterface(
     StationModel *smodel,
+    VehiculeModel *vmodel,
     QWidget *parent) :
     QMainWindow(parent),
     stationModel(smodel),
+    vehiculeModel(vmodel),
     ui(new Ui::UserInterface)
 {
     ui->setupUi(this);
@@ -42,6 +44,10 @@ UserInterface::UserInterface(
     stationProxy->setDynamicSortFilter(true);
     stationProxy->sort(1);
 
+    vehiculeProxy = new VehiculeFilterProxy(this);
+    vehiculeProxy->setSourceModel(vehiculeModel);
+    vehiculeProxy->setDynamicSortFilter(true);
+
     pages = new QMap<PageName, Page*>;
 
     pages->insert(Page_MainMenu, new MainMenuPage(this));
@@ -49,7 +55,7 @@ UserInterface::UserInterface(
     pages->insert(Page_SelectPosition, new SelectPositionPage(this));
     pages->insert(Page_SelectStation, new SelectStationPage(stationProxy, this));
     pages->insert(Page_SelectTime, new SelectTimePage(this));
-    pages->insert(Page_SelectCar, new SelectCarPage(this));
+    pages->insert(Page_SelectCar, new SelectCarPage(vehiculeProxy, this));
     pages->insert(Page_Confirm, new ConfirmPage(this));
     pages->insert(Page_Bookings, new BookingsPage(this));
     pages->insert(Page_Comments, new CommentsPage(this));           // comments main page

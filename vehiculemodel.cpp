@@ -34,6 +34,10 @@ QVariant VehiculeModel::fieldAt(const QModelIndex &index, int role) const
     qint64 id = vehicules.keys()[row];
     Vehicule *v = vehicules[id];
 
+    if (column == Vehicule::COL_INFO && role == Qt::DecorationRole) {
+        return QPixmap(":/icones/data/icons/help.png");
+    }
+
     return v->field(column, role);
 }
 
@@ -41,6 +45,7 @@ QVariant VehiculeModel::data(const QModelIndex &index, int role) const
 {
     if (!index.isValid())
         return QVariant();
+
     return fieldAt(index, role);
 }
 

@@ -4,12 +4,16 @@
 #include <QtGui>
 
 #include "page.h"
+#include "vehiculefilterproxy.h"
 
 class SelectCarPage : public Page
 {
     Q_OBJECT
 public:
-    explicit SelectCarPage(QWidget *parent = 0);
+    explicit SelectCarPage(VehiculeFilterProxy *vproxy, QWidget *parent = 0);
+
+private:
+    VehiculeFilterProxy *vehiculeProxy;
 
 signals:
 
