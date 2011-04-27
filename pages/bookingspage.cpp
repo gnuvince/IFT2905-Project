@@ -1,5 +1,6 @@
 #include <QtGui>
 #include <QTableView>
+#include <QModelIndex>
 
 #include "page.h"
 #include "bookingspage.h"
@@ -51,4 +52,7 @@ BookingsPage::BookingsPage(
     addBottomButtons(0, btnMenu, 0);
 
     connect(btnMenu, SIGNAL(clicked()), SIGNAL(Menu()));
+    connect(past, SIGNAL(clicked(bool)), SIGNAL(includePastRes(bool)));
+    connect(current, SIGNAL(clicked(bool)), SIGNAL(includeCurrentRes(bool)));
+    connect(futur, SIGNAL(clicked(bool)), SIGNAL(includeFuturRes(bool)));
 }

@@ -149,6 +149,9 @@ void UserInterface::createPages() {
 
     // Connections for bookings
     connect(getPage(Page_Bookings), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
+    connect(getPage(Page_Bookings), SIGNAL(includePastRes(bool)), reservationProxy, SLOT(includePastRes(bool)));
+    connect(getPage(Page_Bookings), SIGNAL(includeCurrentRes(bool)), reservationProxy, SLOT(includeCurrentRes(bool)));
+    connect(getPage(Page_Bookings), SIGNAL(includeFuturRes(bool)), reservationProxy, SLOT(includeFuturRes(bool)));
 
     // Connections for comments
     connect(getPage(Page_Comments), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));

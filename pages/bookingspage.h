@@ -15,6 +15,9 @@ public:
             QWidget *parent = 0);
 
 signals:
+    void includePastRes(bool);
+    void includeCurrentRes(bool);
+    void includeFuturRes(bool);
 
 public slots:
 

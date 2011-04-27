@@ -20,10 +20,16 @@ protected:
 private:
     ReservationModel *reservationModel;
     Usager *user;
+    bool pastResIncluded;
+    bool currentResIncluded;
+    bool futurResIncluded;
 
 signals:
 
 public slots:
+    void includePastRes(bool p);
+    void includeCurrentRes(bool p);
+    void includeFuturRes(bool p);
 
 };
 

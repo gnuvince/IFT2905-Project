@@ -1,3 +1,4 @@
+#include <QDateTime>
 #include "reservationfilterproxy.h"
 #include "reservation.h"
 
@@ -25,12 +26,22 @@ bool ReservationFilterProxy::filterAcceptsRow(int source_row, const QModelIndex 
     if (user == 0)
         return false;
 
-    foreach (Reservation *res, reservationModel->getReservations()) {
-        qDebug() << "res user: " << res->getUsager();
-        qDebug() << "user id: " << user->getId();
-        qDebug() << "user name: " << user->getNom();
-        if (res->getUsager() == user->getId())
+
+    QModelIndex indexUser = sourceModel()->index(source_row, Reservation::COL_USAGER);
+    if (user->getId() == indexUser.data().toInt()) {
+        QDateTime now = QDateTime::currentDateTime();
+        QDateTime resStart = sourceModel()->index(source_row, Reservation::COL_DEBUT).data().toDateTime();
+        QDateTime resEnd = sourceModel()->index(source_row, Reservation::COL_FIN).data().toDateTime();
+
+        if (currentResIncluded && (now > resStart) && (now < resEnd)) {
             return true;
+        }
+        if (futurResIncluded && (now < resStart)) {
+            return true;
+        }
+        if (pastResIncluded && (now > resEnd)) {
+            return true;
+        }
     }
     return false;
 }
@@ -38,4 +49,16 @@ bool ReservationFilterProxy::filterAcceptsRow(int source_row, const QModelIndex 
 void ReservationFilterProxy::setUser(Usager *user) {
     qDebug() << "ReservationFilterProxy::setUser done";
     this->user = user;
+}
+
+void ReservationFilterProxy::includePastRes(bool p) {
+    this->pastResIncluded = p;
+}
+
+void ReservationFilterProxy::includeCurrentRes(bool p) {
+    this->currentResIncluded = p;
+}
+
+void ReservationFilterProxy::includeFuturRes(bool p) {
+    this->futurResIncluded = p;
 }
