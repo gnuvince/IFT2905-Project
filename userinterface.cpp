@@ -19,7 +19,8 @@
 #include "station.h"
 #include "stationmodel.h"
 #include "stationsortproxy.h"
-#include "reservationproxymodel.h"
+#include "reservation.h"
+#include "reservationfilterproxy.h"
 
 #include <QDebug>
 
@@ -55,6 +56,10 @@ UserInterface::UserInterface(
     vehiculeProxy = new VehiculeFilterProxy(rmodel, reservation, this);
     vehiculeProxy->setSourceModel(vehiculeModel);
     vehiculeProxy->setDynamicSortFilter(true);
+
+    reservationProxy = new ReservationFilterProxy(rmodel, reservation, user, this);
+    reservationProxy->setSourceModel(reservationModel);
+    reservationProxy->setDynamicSortFilter(true);
 }
 
 void UserInterface::createPages() {
@@ -66,7 +71,7 @@ void UserInterface::createPages() {
     pages->insert(Page_SelectTime, new SelectTimePage(this));
     pages->insert(Page_SelectCar, new SelectCarPage(vehiculeProxy, this));
     pages->insert(Page_Confirm, new ConfirmPage(this));
-    pages->insert(Page_Bookings, new BookingsPage(this));
+    pages->insert(Page_Bookings, new BookingsPage(reservationProxy, this));
     pages->insert(Page_Comments, new CommentsPage(this));           // comments main page
     pages->insert(Page_WriteComment, new WriteCommentPage(this));   // comment editing
     pages->insert(Page_Unexpected, new UnexpectedPage(this));

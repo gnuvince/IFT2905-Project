@@ -15,6 +15,7 @@
 #include "vehiculefilterproxy.h"
 #include "reservation.h"
 #include "reservationmodel.h"
+#include "reservationfilterproxy.h"
 #include "geoposition.h"
 
 enum PageName { Page_MainMenu,
@@ -51,7 +52,7 @@ private:
     VehiculeFilterProxy *vehiculeProxy;
     UsagerModel *usagerModel;
     ReservationModel *reservationModel;
-    ReservationProxyModel *reservationProxy;
+    ReservationFilterProxy *reservationProxy;
     GeoPosition *currentPosition;
     Reservation *reservation;
 
