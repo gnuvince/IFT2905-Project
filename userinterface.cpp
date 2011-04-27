@@ -15,6 +15,7 @@
 #include "pages/mymessagespage.h"
 #include "pages/writecommentpage.h"
 #include "pages/infostationpage.h"
+#include "pages/infocarpage.h"
 
 #include "station.h"
 #include "stationmodel.h"
@@ -127,6 +128,7 @@ void UserInterface::createPages() {
     connect(getPage(Page_SelectCar), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
     connect(getPage(Page_SelectCar), SIGNAL(Previous()), this, SLOT(gotoSelectTime()));
     connect(getPage(Page_SelectCar), SIGNAL(Next()), this, SLOT(gotoConfirm()));
+    connect(getPage(Page_SelectCar), SIGNAL(showInfoVehicule(Vehicule*)), this, SLOT(showInfoVehicule(Vehicule*)));
     connect(getPage(Page_SelectCar), SIGNAL(carSelected(qint64)), this, SLOT(setCarId(qint64)));
     connect(getPage(Page_SelectCar), SIGNAL(Next()), getPage(Page_Confirm), SLOT(setEditorText()));
 
@@ -243,6 +245,14 @@ void UserInterface::showInfoStation(Station *station) {
     ui->stackedWidget->addWidget(infoStationPage);
     ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(infoStationPage));
     connect(infoStationPage, SIGNAL(Previous()), this, SLOT(gotoSelectStation()));
+}
+
+
+void UserInterface::showInfoVehicule(Vehicule *vehicule) {
+    InfoCarPage *infoCarPage = new InfoCarPage(*vehicule, this);
+    ui->stackedWidget->addWidget(infoCarPage);
+    ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(infoCarPage));
+    connect(infoCarPage, SIGNAL(Previous()), this, SLOT(gotoSelectCar()));
 }
 
 void UserInterface::setTimes(QDateTime start, QDateTime end) {

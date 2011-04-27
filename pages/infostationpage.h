@@ -11,6 +11,7 @@ class InfoStationPage : public Page
     Q_OBJECT
 public:
     explicit InfoStationPage(Station &station, QWidget *parent = 0);
+    QLabel* titleLabel(QString title);
 
 signals:
 

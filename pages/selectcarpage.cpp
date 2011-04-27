@@ -3,6 +3,7 @@
 
 #include "page.h"
 #include "selectcarpage.h"
+#include "vehiculemodel.h"
 #include "vehiculefilterproxy.h"
 
 SelectCarPage::SelectCarPage(VehiculeFilterProxy *vproxy, QWidget *parent) :
@@ -34,6 +35,7 @@ SelectCarPage::SelectCarPage(VehiculeFilterProxy *vproxy, QWidget *parent) :
     connect(btnMenu, SIGNAL(clicked()), SIGNAL(Menu()));
     connect(btnNext, SIGNAL(clicked()), SIGNAL(Next()));
     connect(view, SIGNAL(clicked(QModelIndex)), this, SLOT(selectedCar(QModelIndex)));
+    connect(view, SIGNAL(clicked(QModelIndex)), this, SLOT(showInformation(QModelIndex)));
 }
 
 void SelectCarPage::selectedCar(QModelIndex index) {
@@ -41,4 +43,15 @@ void SelectCarPage::selectedCar(QModelIndex index) {
 
     QModelIndex index2 = index.model()->index(index.row(), Vehicule::COL_ID);
     emit carSelected(index2.data().toInt());
+}
+
+
+void SelectCarPage::showInformation(QModelIndex index) {
+    if (index.column() == 4) {
+        QModelIndex index2 = index.model()->index(index.row(), Vehicule::COL_ID);
+        qint64 vehiculeId = index2.data().toInt();
+        VehiculeModel *model = (VehiculeModel*)(vehiculeProxy->sourceModel());
+        Vehicule *vehicule = model->getVehicule(vehiculeId);
+        emit showInfoVehicule(vehicule);
+    }
 }

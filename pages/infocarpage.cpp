@@ -1,11 +1,9 @@
 #include <QtGui>
 
-#include "page.h"
-#include "station.h"
-#include "infostationpage.h"
+#include "infocarpage.h"
+#include "vehicule.h"
 
-
-QLabel* InfoStationPage::titleLabel(QString title) {
+QLabel* InfoCarPage::titleLabel(QString title) {
     QLabel *label = new QLabel(title);
     QFont font = label->font();
     font.setPointSize(8);
@@ -14,46 +12,36 @@ QLabel* InfoStationPage::titleLabel(QString title) {
     return label;
 }
 
-InfoStationPage::InfoStationPage(Station &station, QWidget *parent) :
+InfoCarPage::InfoCarPage(Vehicule &vehicule, QWidget *parent) :
     Page(parent),
-    station(station)
+    vehicule(vehicule)
 {
-    addTitle(trUtf8("Info-Station"));
+    addTitle(trUtf8("Info-Véhicule"));
 
     QVBoxLayout *layout = new QVBoxLayout(this);
 
-    QLabel *nameLabel = new QLabel(station.getNom(), this);
+    QString vehiculeName = QString("%1 %2").arg(vehicule.getMarque()).arg(vehicule.getModele());
+    QLabel *nameLabel = new QLabel(vehiculeName, this);
 
     QFont normalFont = nameLabel->font();
     normalFont.setPointSize(8);
 
     nameLabel->setWordWrap(true);
 
-    QLabel *descriptionLabel = new QLabel(station.getDescription(), this);
+    QLabel *descriptionLabel = new QLabel(vehicule.getDescription(), this);
     descriptionLabel->setFont(normalFont);
     descriptionLabel->setWordWrap(true);
 
-    QLabel *coffretLabel = new QLabel(station.getCoffret());
-    coffretLabel->setFont(normalFont);
-    coffretLabel->setWordWrap(true);
 
-    QPixmap photo = station.getPhoto().scaled(QSize(220, 1), Qt::KeepAspectRatioByExpanding);
+    QPixmap photo = vehicule.getPhoto().scaled(QSize(220, 1), Qt::KeepAspectRatioByExpanding);
     QLabel *photoLabel = new QLabel();
     photoLabel->setPixmap(photo);
-
-    QPixmap map = station.getCarte().scaled(QSize(220, 1), Qt::KeepAspectRatioByExpanding);;
-    QLabel *mapLabel = new QLabel();
-    mapLabel->setPixmap(map);
 
     layout->addWidget(nameLabel);
     layout->addWidget(titleLabel(trUtf8("Description:")));
     layout->addWidget(descriptionLabel);
-    layout->addWidget(titleLabel(trUtf8("Coffret:")));
-    layout->addWidget(coffretLabel);
     layout->addWidget(titleLabel(trUtf8("Photo:")));
     layout->addWidget(photoLabel);
-    layout->addWidget(titleLabel(trUtf8("Carte:")));
-    layout->addWidget(mapLabel);
 
     QWidget *widget = new QWidget(this);
     widget->setLayout(layout);

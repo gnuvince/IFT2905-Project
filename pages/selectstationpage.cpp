@@ -25,7 +25,6 @@ SelectStationPage::SelectStationPage(
     view->resizeColumnToContents(3);
     view->resizeRowsToContents();
 
-    connect(view, SIGNAL(clicked(QModelIndex)), this, SLOT(showInformation(QModelIndex)));
 
     QFont font = view->font();
     font.setPointSize(8);
@@ -46,6 +45,8 @@ SelectStationPage::SelectStationPage(
     connect(btnPrevious, SIGNAL(clicked()), SIGNAL(Previous()));
     connect(btnNext, SIGNAL(clicked()), SIGNAL(Next()));
     connect(view, SIGNAL(clicked(QModelIndex)), this, SLOT(stationSelected(QModelIndex)));
+    connect(view, SIGNAL(clicked(QModelIndex)), this, SLOT(showInformation(QModelIndex)));
+
 }
 
 void SelectStationPage::stationSelected(QModelIndex index) {
@@ -58,7 +59,7 @@ void SelectStationPage::stationSelected(QModelIndex index) {
 
 void SelectStationPage::showInformation(QModelIndex index) {
     if (index.column() == 3) {
-        QModelIndex index2 = index.model()->index(index.row(), 0);
+        QModelIndex index2 = index.model()->index(index.row(), Station::COL_ID);
         qint64 stationId = index2.data().toInt();
         StationModel *model = (StationModel*)(stationModel->sourceModel());
         Station *station = model->getStation(stationId);

@@ -71,6 +71,7 @@ public slots:
     void setCurrentPosition(GeoPosition pos);
     void gotoWriteComment();
     void showInfoStation(Station *station);
+    void showInfoVehicule(Vehicule *vehicule);
     void setTimes(QDateTime start, QDateTime end);
     void setStationId(qint64 stationId);
     void setCarId(qint64 carId);

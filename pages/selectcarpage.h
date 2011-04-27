@@ -6,6 +6,7 @@
 
 #include "page.h"
 #include "vehiculefilterproxy.h"
+#include "vehicule.h"
 
 class SelectCarPage : public Page
 {
@@ -19,9 +20,11 @@ private:
 
 signals:
     void carSelected(qint64 carId);
+    void showInfoVehicule(Vehicule *vehicule);
 
 public slots:
     void selectedCar(QModelIndex index);
+    void showInformation(QModelIndex index);
 
 };
 
