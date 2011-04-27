@@ -268,4 +268,5 @@ void UserInterface::resetReservation() {
 
 void UserInterface::saveReservation() {
     reservationModel->addReservation(reservation);
+    QMessageBox::information(this, trUtf8("Réservation complétée"), trUtf8("Votre réservation a été complété et enregistré avec succès."), QMessageBox::Ok);
 }
