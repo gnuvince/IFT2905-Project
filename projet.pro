@@ -47,13 +47,13 @@ HEADERS += geoposition.h \
     stationsortproxy.h \
     pages/commentspage.h \
     pages/unexpectedpage.h \
-    pages/myrsvppage.h \
     pages/bookingspage.h \
     pages/mymessagespage.h \
     pages/writecommentpage.h \
     pages/infostationpage.h \
     vehiculefilterproxy.h \
-    pages/infocarpage.h
+    pages/infocarpage.h \
+    reservationfilterproxy.h
 FORMS += mainwindow.ui \
     cartewidget.ui \
     userinterface.ui
@@ -95,7 +95,8 @@ SOURCES += geoposition.cpp \
     pages/writecommentpage.cpp \
     pages/infostationpage.cpp \
     vehiculefilterproxy.cpp \
-    pages/infocarpage.cpp
+    pages/infocarpage.cpp \
+    reservationfilterproxy.cpp
 
 RESOURCES += \
     icones.qrc

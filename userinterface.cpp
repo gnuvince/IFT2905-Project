@@ -20,6 +20,8 @@
 #include "station.h"
 #include "stationmodel.h"
 #include "stationsortproxy.h"
+#include "reservation.h"
+#include "reservationfilterproxy.h"
 
 #include <QDebug>
 
@@ -53,6 +55,11 @@ UserInterface::UserInterface(
     vehiculeProxy = new VehiculeFilterProxy(rmodel, this);
     vehiculeProxy->setSourceModel(vehiculeModel);
     vehiculeProxy->setDynamicSortFilter(true);
+
+    reservationProxy = new ReservationFilterProxy(this);
+    qDebug() << "new ReservationFilterProxy done";
+    reservationProxy->setSourceModel(reservationModel);
+    reservationProxy->setDynamicSortFilter(true);
 }
 
 void UserInterface::createPages() {
@@ -67,7 +74,8 @@ void UserInterface::createPages() {
                                                 vehiculeModel,
                                                 stationModel,
                                                 this));
-    pages->insert(Page_Bookings, new BookingsPage(this));
+    pages->insert(Page_Bookings, new BookingsPage(reservationProxy,
+                                                  this));
     pages->insert(Page_Comments, new CommentsPage(this));           // comments main page
     pages->insert(Page_WriteComment, new WriteCommentPage(this));   // comment editing
     pages->insert(Page_Unexpected, new UnexpectedPage(this));
@@ -141,6 +149,9 @@ void UserInterface::createPages() {
 
     // Connections for bookings
     connect(getPage(Page_Bookings), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
+    connect(getPage(Page_Bookings), SIGNAL(includePastRes(bool)), reservationProxy, SLOT(includePastRes(bool)));
+    connect(getPage(Page_Bookings), SIGNAL(includeCurrentRes(bool)), reservationProxy, SLOT(includeCurrentRes(bool)));
+    connect(getPage(Page_Bookings), SIGNAL(includeFuturRes(bool)), reservationProxy, SLOT(includeFuturRes(bool)));
 
     // Connections for comments
     connect(getPage(Page_Comments), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
@@ -167,8 +178,12 @@ UserInterface::~UserInterface()
 }
 
 void UserInterface::setUser(qint64 id) {
-    createPages();
     user = usagerModel->getUsager(id);
+    qDebug() << "active user identified";
+    reservationProxy->setUser(user);
+    qDebug() << "setUser done";
+    createPages();
+    qDebug() << "createPages done";
     *currentPosition = user->getPosition();
     stationModel->updateCurrentPosition(*currentPosition);
     ui->lblUserName->setText(user->getNom());
