@@ -232,3 +232,15 @@ qint64 ReservationModel::getVehiculeStation(qint64 vehiculeId) {
     }
     return -1;
 }
+
+bool ReservationModel::vehiculeAvailable(qint64 vehiculeId, qint64 stationId, QDateTime start, QDateTime end) {
+    foreach (Reservation *res, reservations) {
+        if (res->getVehicule() == vehiculeId) {
+            if (stationId != res->getStation() ||
+                compareIntervalles(res->getDebut(), res->getFin(), start, end) == 0) {
+                return false;
+            }
+        }
+    }
+    return true;
+}

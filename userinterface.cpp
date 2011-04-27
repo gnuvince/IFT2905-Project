@@ -42,7 +42,6 @@ UserInterface::UserInterface(
 
     pages = new QMap<PageName, Page*>;
 
-    reservation = new Reservation(QDateTime::currentDateTime(), QDateTime::currentDateTime(), 0, 0, 0, this);
     currentPosition = new GeoPosition(0, 0);
 
     stationProxy = new StationSortProxy(this);
@@ -50,7 +49,7 @@ UserInterface::UserInterface(
     stationProxy->setDynamicSortFilter(true);
     stationProxy->sort(1);
 
-    vehiculeProxy = new VehiculeFilterProxy(rmodel, reservation, this);
+    vehiculeProxy = new VehiculeFilterProxy(rmodel, this);
     vehiculeProxy->setSourceModel(vehiculeModel);
     vehiculeProxy->setDynamicSortFilter(true);
 }
@@ -63,8 +62,7 @@ void UserInterface::createPages() {
     pages->insert(Page_SelectStation, new SelectStationPage(stationProxy, this));
     pages->insert(Page_SelectTime, new SelectTimePage(this));
     pages->insert(Page_SelectCar, new SelectCarPage(vehiculeProxy, this));
-    pages->insert(Page_Confirm, new ConfirmPage(reservation,
-                                                usagerModel,
+    pages->insert(Page_Confirm, new ConfirmPage(usagerModel,
                                                 vehiculeModel,
                                                 stationModel,
                                                 this));
@@ -262,11 +260,9 @@ void UserInterface::setCarId(qint64 carId) {
 
 
 void UserInterface::resetReservation() {
-    reservation->setDebut(QDateTime::currentDateTime());
-    reservation->setFin(QDateTime::currentDateTime());
-    reservation->setStation(0);
-    reservation->setVehicule(0);
-    reservation->setUsager(user->getId());
+    reservation = new Reservation(QDateTime(), QDateTime(), 0, user->getId(), 0, this);
+    vehiculeProxy->setReservation(reservation);
+    dynamic_cast<ConfirmPage*>(getPage(Page_Confirm))->setReservation(reservation);
 }
 
 

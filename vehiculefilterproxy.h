@@ -10,7 +10,8 @@ class VehiculeFilterProxy : public QSortFilterProxyModel
 {
     Q_OBJECT
 public:
-    explicit VehiculeFilterProxy(ReservationModel *rmodel, Reservation *reservation, QObject *parent = 0);
+    explicit VehiculeFilterProxy(ReservationModel *rmodel, QObject *parent = 0);
+    void setReservation(Reservation *res);
 
 protected:
     bool filterAcceptsColumn(int source_column, const QModelIndex &source_parent) const;

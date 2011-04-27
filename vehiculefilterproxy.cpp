@@ -3,11 +3,11 @@
 
 #include <QDebug>
 
-VehiculeFilterProxy::VehiculeFilterProxy(ReservationModel *rmodel, Reservation *reservation, QObject *parent) :
+VehiculeFilterProxy::VehiculeFilterProxy(ReservationModel *rmodel, QObject *parent) :
     QSortFilterProxyModel(parent),
-    reservationModel(rmodel),
-    reservation(reservation)
+    reservationModel(rmodel)
 {
+    reservation = 0;
 }
 
 
@@ -21,13 +21,14 @@ bool VehiculeFilterProxy::filterAcceptsColumn(int source_column, const QModelInd
 
 
 bool VehiculeFilterProxy::filterAcceptsRow(int source_row, const QModelIndex &source_parent) const {
+    if (reservation == 0)
+        return false;
+
     QModelIndex index = sourceModel()->index(source_row, Vehicule::COL_ID);
     qint64 vehiculeId = index.data().toInt();
-    foreach (Reservation *res, reservationModel->getReservations()) {
-        if (res->getVehicule() == vehiculeId && res->getStation() == reservation->getStation()
-                && reservationModel->testReservation(reservation)) {
-            return true;
-        }
-    }
-    return false;
+    return reservationModel->vehiculeAvailable(vehiculeId, reservation->getStation(), reservation->getDebut(), reservation->getFin());
+}
+
+void VehiculeFilterProxy::setReservation(Reservation *res) {
+    reservation = res;
 }

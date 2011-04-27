@@ -14,11 +14,11 @@ class ConfirmPage : public Page
 {
     Q_OBJECT
 public:
-    explicit ConfirmPage(Reservation *reservation,
-                         UsagerModel *umodel,
+    explicit ConfirmPage(UsagerModel *umodel,
                          VehiculeModel *vmodel,
                          StationModel *smodel,
                          QWidget *parent = 0);
+    void setReservation(Reservation *res);
 
 private:
     Reservation *reservation;

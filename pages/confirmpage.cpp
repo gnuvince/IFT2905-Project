@@ -4,13 +4,11 @@
 #include "confirmpage.h"
 #include "vehicule.h"
 
-ConfirmPage::ConfirmPage(Reservation *reservation,
-                         UsagerModel *umodel,
+ConfirmPage::ConfirmPage(UsagerModel *umodel,
                          VehiculeModel *vmodel,
                          StationModel *smodel,
                          QWidget *parent) :
     Page(parent),
-    reservation(reservation),
     umodel(umodel),
     vmodel(vmodel),
     smodel(smodel)
@@ -57,4 +55,8 @@ void ConfirmPage::setEditorText() {
                 .arg(reservation->getDebut().toString("dd MMM yyyy hh:mm"))
                 .arg(reservation->getFin().toString("dd MMM yyyy hh:mm"))
     );
+}
+
+void ConfirmPage::setReservation(Reservation *res) {
+    reservation = res;
 }

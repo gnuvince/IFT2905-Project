@@ -57,6 +57,7 @@ public:
     static const quint32 MAGIC_NUMBER = 0x182f3a41;
 
     qint64 getVehiculeStation(qint64 vehiculeId);
+    bool vehiculeAvailable(qint64 vehiculeId, qint64 stationId, QDateTime start, QDateTime end);
 
 private:
     QVariant fieldAt(const QModelIndex &index, int role) const;
