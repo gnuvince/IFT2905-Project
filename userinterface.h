@@ -52,6 +52,7 @@ private:
     UsagerModel *usagerModel;
     GeoPosition *currentPosition;
     Reservation *reservation;
+    ReservationModel *reservationModel;
 
 
 public slots:
@@ -74,6 +75,8 @@ public slots:
     void setStationId(qint64 stationId);
     void setCarId(qint64 carId);
     void setUser(qint64 id);
+    void resetReservation();
+    void saveReservation();
 };
 
 #endif // USERINTERFACE_H

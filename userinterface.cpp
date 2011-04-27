@@ -35,15 +35,15 @@ UserInterface::UserInterface(
     stationModel(smodel),
     vehiculeModel(vmodel),
     usagerModel(umodel),
+    reservationModel(rmodel),
     ui(new Ui::UserInterface)
 {
     ui->setupUi(this);
 
     pages = new QMap<PageName, Page*>;
 
-    reservation = new Reservation(this);
+    reservation = new Reservation(QDateTime::currentDateTime(), QDateTime::currentDateTime(), 0, 0, 0, this);
     currentPosition = new GeoPosition(0, 0);
-    stationModel->updateCurrentPosition(*currentPosition);
 
     stationProxy = new StationSortProxy(this);
     stationProxy->setSourceModel(stationModel);
@@ -63,7 +63,11 @@ void UserInterface::createPages() {
     pages->insert(Page_SelectStation, new SelectStationPage(stationProxy, this));
     pages->insert(Page_SelectTime, new SelectTimePage(this));
     pages->insert(Page_SelectCar, new SelectCarPage(vehiculeProxy, this));
-    pages->insert(Page_Confirm, new ConfirmPage(this));
+    pages->insert(Page_Confirm, new ConfirmPage(reservation,
+                                                usagerModel,
+                                                vehiculeModel,
+                                                stationModel,
+                                                this));
     pages->insert(Page_Bookings, new BookingsPage(this));
     pages->insert(Page_Comments, new CommentsPage(this));           // comments main page
     pages->insert(Page_WriteComment, new WriteCommentPage(this));   // comment editing
@@ -88,6 +92,7 @@ void UserInterface::createPages() {
 
     // Connections for main menu
     connect(getPage(Page_MainMenu), SIGNAL(BookCar()), this, SLOT(gotoFindStationPage()));
+    connect(getPage(Page_MainMenu), SIGNAL(BookCar()), this, SLOT(resetReservation()));
     connect(getPage(Page_MainMenu), SIGNAL(ViewBookings()), this, SLOT(gotoBookings()));
     connect(getPage(Page_MainMenu), SIGNAL(LeaveComment()), this, SLOT(gotoCommentPage()));
     connect(getPage(Page_MainMenu), SIGNAL(ReportUnexpected()), this, SLOT(gotoUnexpected()));
@@ -125,11 +130,14 @@ void UserInterface::createPages() {
     connect(getPage(Page_SelectCar), SIGNAL(Previous()), this, SLOT(gotoSelectTime()));
     connect(getPage(Page_SelectCar), SIGNAL(Next()), this, SLOT(gotoConfirm()));
     connect(getPage(Page_SelectCar), SIGNAL(carSelected(qint64)), this, SLOT(setCarId(qint64)));
+    connect(getPage(Page_SelectCar), SIGNAL(Next()), getPage(Page_Confirm), SLOT(setEditorText()));
 
     // Connections for confirm
     connect(getPage(Page_Confirm), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
     connect(getPage(Page_Confirm), SIGNAL(Previous()), this, SLOT(gotoSelectCar()));
     connect(getPage(Page_Confirm), SIGNAL(Confirm()), this, SLOT(gotoMainMenu()));
+    connect(getPage(Page_Confirm), SIGNAL(Confirm()), this, SLOT(saveReservation()));
+
 
     // Connections for bookings
     connect(getPage(Page_Bookings), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
@@ -250,4 +258,18 @@ void UserInterface::setStationId(qint64 stationId) {
 
 void UserInterface::setCarId(qint64 carId) {
     reservation->setVehicule(carId);
+}
+
+
+void UserInterface::resetReservation() {
+    reservation->setDebut(QDateTime::currentDateTime());
+    reservation->setFin(QDateTime::currentDateTime());
+    reservation->setStation(0);
+    reservation->setVehicule(0);
+    reservation->setUsager(user->getId());
+}
+
+
+void UserInterface::saveReservation() {
+    reservationModel->addReservation(reservation);
 }

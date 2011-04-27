@@ -2,13 +2,27 @@
 
 #include "page.h"
 #include "confirmpage.h"
+#include "vehicule.h"
 
-ConfirmPage::ConfirmPage(QWidget *parent) :
-    Page(parent)
+ConfirmPage::ConfirmPage(Reservation *reservation,
+                         UsagerModel *umodel,
+                         VehiculeModel *vmodel,
+                         StationModel *smodel,
+                         QWidget *parent) :
+    Page(parent),
+    reservation(reservation),
+    umodel(umodel),
+    vmodel(vmodel),
+    smodel(smodel)
 {
     addTitle(trUtf8("Confirmer la réservation"));
 
-    QPlainTextEdit *editor = new QPlainTextEdit(this);
+
+    editor = new QPlainTextEdit(this);
+    editor->setReadOnly(true);
+    editor->setFont(QFont("Courier"));
+
+
     addWidget(editor);
 
     QPushButton *btnPrevious = new QPushButton(this);
@@ -22,4 +36,25 @@ ConfirmPage::ConfirmPage(QWidget *parent) :
     connect(btnPrevious, SIGNAL(clicked()), SIGNAL(Previous()));
     connect(btnMenu, SIGNAL(clicked()), SIGNAL(Menu()));
     connect(btnConfirm, SIGNAL(clicked()), SIGNAL(Confirm()));
+}
+
+void ConfirmPage::setEditorText() {
+    QString username = umodel->getUsager(reservation->getUsager())->getNom();
+    QString station = smodel->getStation(reservation->getStation())->getNom();
+    Vehicule *vehicule = vmodel->getVehicule(reservation->getVehicule());
+    QString vehiculeName = trUtf8("%1 %2 (%3)").arg(vehicule->getMarque())
+            .arg(vehicule->getModele()).arg(vehicule->getCouleur());
+
+    editor->setPlainText(
+                trUtf8("Usager  : %1\n"
+                       "Station : %2\n"
+                       "Véhicule: %3\n"
+                       "Départ  : %4\n"
+                       "Retour  : %5\n")
+                .arg(username)
+                .arg(station)
+                .arg(vehiculeName)
+                .arg(reservation->getDebut().toString("dd MMM yyyy hh:mm"))
+                .arg(reservation->getFin().toString("dd MMM yyyy hh:mm"))
+    );
 }
