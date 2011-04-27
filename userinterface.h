@@ -55,7 +55,7 @@ private:
     ReservationFilterProxy *reservationProxy;
     GeoPosition *currentPosition;
     Reservation *reservation;
-    ReservationModel *reservationModel;
+    //ReservationModel *reservationModel;
 
 
 public slots:

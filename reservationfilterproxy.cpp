@@ -3,12 +3,10 @@
 
 #include <QDebug>
 
-ReservationFilterProxy::ReservationFilterProxy(ReservationModel *rmodel, Reservation *reservation, Usager *user, QObject *parent) :
-    QSortFilterProxyModel(parent),
-    reservationModel(rmodel),
-    reservation(reservation),
-    user(user)
+ReservationFilterProxy::ReservationFilterProxy(QObject *parent) :
+    QSortFilterProxyModel(parent)
 {
+    user = 0;
 }
 
 
@@ -24,8 +22,8 @@ bool ReservationFilterProxy::filterAcceptsColumn(int source_column, const QModel
 
 
 bool ReservationFilterProxy::filterAcceptsRow(int source_row, const QModelIndex &source_parent) const {
-    QModelIndex index = sourceModel()->index(source_row, Reservation::COL_ID);
-    qint64 reservationId = index.data().toInt();
+    if (user == 0)
+        return false;
 
     foreach (Reservation *res, reservationModel->getReservations()) {
         qDebug() << "res user: " << res->getUsager();
@@ -35,4 +33,9 @@ bool ReservationFilterProxy::filterAcceptsRow(int source_row, const QModelIndex 
             return true;
     }
     return false;
+}
+
+void ReservationFilterProxy::setUser(Usager *user) {
+    qDebug() << "ReservationFilterProxy::setUser done";
+    this->user = user;
 }

@@ -7,16 +7,17 @@
 
 
 BookingsPage::BookingsPage(
-        ReservationFilterProxy *rmodel,
+        ReservationFilterProxy *rproxy,
         QWidget *parent) :
-    Page(parent),
-    reservationModel(rmodel)
+        Page(parent),
+        reservationProxy(rproxy)
 {
     addTitle(trUtf8("Mes réservations"));
 
     QTableView *bookings = new QTableView(this);
-    addWidget(bookings);
-    bookings->setModel(reservationModel);
+    qDebug() << "BookingsPage setModel(reservationProxy):" << reservationProxy;
+    bookings->setModel(reservationProxy);
+    qDebug() << "BookingsPage setModel done";
     bookings->setSelectionBehavior(QAbstractItemView::SelectRows);
     bookings->setSelectionMode(QAbstractItemView::SingleSelection);
     bookings->verticalHeader()->hide();
@@ -27,8 +28,8 @@ BookingsPage::BookingsPage(
     bookings->resizeColumnToContents(5);
     bookings->resizeColumnToContents(6);
     bookings->resizeRowsToContents();
+    addWidget(bookings);
 
-    connect(bookings, SIGNAL(clicked(QModelIndex)), this, SLOT(showInformation(QModelIndex)));
 
     QFont font = bookings->font();
     font.setPointSize(8);

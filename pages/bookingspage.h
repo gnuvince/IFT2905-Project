@@ -11,7 +11,7 @@ class BookingsPage : public Page
     Q_OBJECT
 public:
     explicit BookingsPage(
-            ReservationFilterProxy *rmodel,
+            ReservationFilterProxy *rproxy,
             QWidget *parent = 0);
 
 signals:
@@ -19,7 +19,7 @@ signals:
 public slots:
 
 private:
-    ReservationFilterProxy *reservationModel;
+    ReservationFilterProxy *reservationProxy;
 };
 
 #endif // BOOKINGSPAGE_H
