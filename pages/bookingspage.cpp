@@ -15,14 +15,14 @@ BookingsPage::BookingsPage(
 {
     addTitle(trUtf8("Mes réservations"));
 
-    QTableView *bookings = new QTableView(this);
+    bookings = new QTableView(this);
     bookings->setModel(reservationProxy);
     bookings->setSelectionBehavior(QAbstractItemView::SelectRows);
     bookings->setSelectionMode(QAbstractItemView::SingleSelection);
     bookings->verticalHeader()->hide();
     bookings->hideColumn(0);
-    //bookings->resizeColumnToContents(1);
-    //bookings->resizeColumnToContents(2);
+    bookings->resizeColumnToContents(1);
+    bookings->resizeColumnToContents(2);
     bookings->resizeColumnToContents(3);
     bookings->resizeColumnToContents(4);
     bookings->resizeColumnToContents(5);
@@ -59,4 +59,15 @@ BookingsPage::BookingsPage(
     connect(past, SIGNAL(clicked(bool)), SIGNAL(includePastRes(bool)));
     connect(current, SIGNAL(clicked(bool)), SIGNAL(includeCurrentRes(bool)));
     connect(futur, SIGNAL(clicked(bool)), SIGNAL(includeFuturRes(bool)));
+    connect(bookings->model(), SIGNAL(dataChanged(QModelIndex,QModelIndex)), SLOT(resizeCols()));
+}
+
+void BookingsPage::resizeCols() {
+    qDebug() << "resizingCols";
+    bookings->resizeColumnToContents(1);
+    bookings->resizeColumnToContents(2);
+    bookings->resizeColumnToContents(3);
+    bookings->resizeColumnToContents(4);
+    bookings->resizeColumnToContents(5);
+    bookings->resizeColumnToContents(6);
 }

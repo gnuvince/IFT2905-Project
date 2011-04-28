@@ -20,9 +20,11 @@ signals:
     void includeFuturRes(bool);
 
 public slots:
+    void resizeCols();
 
 private:
     ReservationFilterProxy *reservationProxy;
+    QTableView *bookings;
 };
 
 #endif // BOOKINGSPAGE_H
