@@ -20,14 +20,12 @@ SelectTimePage::SelectTimePage(QWidget *parent) :
     startTime->setDisplayFormat(QString(TIME_FORMAT));
     endTime->setDisplayFormat(QString(TIME_FORMAT));
 
-    connect(startTime, SIGNAL(dateTimeChanged(QDateTime)), this, SLOT(setMinimalEndDateTime(QDateTime)));
 
     QDateTime today;
     today = QDateTime::currentDateTime();
     QTime now = today.time();
     now.setHMS(now.hour()+1, 0, 0);
     today.setTime(now);
-    emit startTime->setDateTime(today);
 
     startLayout->addWidget(new QLabel(trUtf8("Départ:"), this));
     startLayout->addWidget(startTime);
@@ -56,11 +54,19 @@ SelectTimePage::SelectTimePage(QWidget *parent) :
     connect(btnMenu, SIGNAL(clicked()), SIGNAL(Menu()));
     connect(btnNext, SIGNAL(clicked()), SIGNAL(Next()));
     connect(btnNext, SIGNAL(clicked()), this, SLOT(emitDates()));
+
+    // Connections for time selectors
+    startTime->setMinimumDateTime(today);
+    startTime->setMaximumDateTime(today.addMonths(3));
+    connect(startTime, SIGNAL(dateTimeChanged(QDateTime)), this, SLOT(setMinimalEndDateTime(QDateTime)));
+    emit setMinimalEndDateTime(today);
 }
 
 void SelectTimePage::setMinimalEndDateTime(QDateTime time) {
-    QDateTime fifteenMinutesPast = time.addSecs(15 * 60);
-    endTime->setMinimumDateTime(fifteenMinutesPast);
+    QDateTime oneHourLater = time.addSecs(60 * 60);
+    QDateTime threeDaysLater = time.addDays(3);
+    endTime->setMinimumDateTime(oneHourLater);
+    endTime->setMaximumDateTime(threeDaysLater);
 }
 
 
