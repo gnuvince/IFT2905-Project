@@ -5,12 +5,13 @@
 
 #include "page.h"
 #include "station.h"
+#include "notemodel.h"
 
 class InfoStationPage : public Page
 {
     Q_OBJECT
 public:
-    explicit InfoStationPage(Station &station, QWidget *parent = 0);
+    explicit InfoStationPage(Station &station, NoteModel &noteModel, QWidget *parent = 0);
     QLabel* titleLabel(QString title);
 
 signals:

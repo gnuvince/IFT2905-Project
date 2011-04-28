@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'userinterface.ui'
 **
-** Created: Tue Apr 26 10:11:30 2011
+** Created: Thu Apr 28 13:27:40 2011
 **      by: Qt User Interface Compiler version 4.7.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -45,7 +45,7 @@ public:
     {
         if (UserInterface->objectName().isEmpty())
             UserInterface->setObjectName(QString::fromUtf8("UserInterface"));
-        UserInterface->resize(320, 400);
+        UserInterface->resize(330, 400);
         centralwidget = new QWidget(UserInterface);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         verticalLayout = new QVBoxLayout(centralwidget);

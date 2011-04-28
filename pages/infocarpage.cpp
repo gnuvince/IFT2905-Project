@@ -2,6 +2,8 @@
 
 #include "infocarpage.h"
 #include "vehicule.h"
+#include "note.h"
+#include "notemodel.h"
 
 QLabel* InfoCarPage::titleLabel(QString title) {
     QLabel *label = new QLabel(title);
@@ -12,7 +14,7 @@ QLabel* InfoCarPage::titleLabel(QString title) {
     return label;
 }
 
-InfoCarPage::InfoCarPage(Vehicule &vehicule, QWidget *parent) :
+InfoCarPage::InfoCarPage(Vehicule &vehicule, NoteModel &noteModel, QWidget *parent) :
     Page(parent),
     vehicule(vehicule)
 {
@@ -37,11 +39,23 @@ InfoCarPage::InfoCarPage(Vehicule &vehicule, QWidget *parent) :
     QLabel *photoLabel = new QLabel();
     photoLabel->setPixmap(photo);
 
+    QPlainTextEdit *comments = new QPlainTextEdit(this);
+    QString commentsString;
+    foreach (Note* note, noteModel.getNotes()) {
+        if (note->getType() == Note::TYPE_VEHICULE && note->getDestinataire() == vehicule.getId()) {
+            commentsString.append(QString("%1:\n%2\n\n").arg(note->getDate().toString("dd MMM yyyy")).arg(note->getDescription()));
+        }
+    }
+    comments->setPlainText(commentsString);
+    comments->setReadOnly(true);
+
     layout->addWidget(nameLabel);
     layout->addWidget(titleLabel(trUtf8("Description:")));
     layout->addWidget(descriptionLabel);
     layout->addWidget(titleLabel(trUtf8("Photo:")));
     layout->addWidget(photoLabel);
+    layout->addWidget(titleLabel(trUtf8("Commentaires:")));
+    layout->addWidget(comments);
 
     QWidget *widget = new QWidget(this);
     widget->setLayout(layout);

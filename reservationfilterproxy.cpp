@@ -16,9 +16,7 @@ bool ReservationFilterProxy::filterAcceptsColumn(int source_column, const QModel
         || source_column == Reservation::COL_DEBUT
         || source_column == Reservation::COL_FIN
         || source_column == Reservation::COL_VEHICULE
-        || source_column == Reservation::COL_USAGER
-        || source_column == Reservation::COL_STATION
-        || source_column == Reservation::COL_PERSO;
+        || source_column == Reservation::COL_STATION;
 }
 
 
@@ -26,12 +24,14 @@ bool ReservationFilterProxy::filterAcceptsRow(int source_row, const QModelIndex 
     if (user == 0)
         return false;
 
+    QModelIndex index = sourceModel()->index(source_row, Reservation::COL_ID);
+    qint64 reservationId = index.data().toInt();
+    Reservation *reservation = dynamic_cast<ReservationModel*>(sourceModel())->getReservation(reservationId);
 
-    QModelIndex indexUser = sourceModel()->index(source_row, Reservation::COL_USAGER);
-    if (user->getId() == indexUser.data().toInt()) {
+    if (reservation->getUsager() == user->getId()) {
         QDateTime now = QDateTime::currentDateTime();
-        QDateTime resStart = sourceModel()->index(source_row, Reservation::COL_DEBUT).data().toDateTime();
-        QDateTime resEnd = sourceModel()->index(source_row, Reservation::COL_FIN).data().toDateTime();
+        QDateTime resStart = reservation->getDebut();
+        QDateTime resEnd = reservation->getFin();
 
         if (currentResIncluded && (now > resStart) && (now < resEnd)) {
             return true;
@@ -53,12 +53,15 @@ void ReservationFilterProxy::setUser(Usager *user) {
 
 void ReservationFilterProxy::includePastRes(bool p) {
     this->pastResIncluded = p;
+    invalidate();
 }
 
 void ReservationFilterProxy::includeCurrentRes(bool p) {
     this->currentResIncluded = p;
+    invalidate();
 }
 
 void ReservationFilterProxy::includeFuturRes(bool p) {
     this->futurResIncluded = p;
+    invalidate();
 }

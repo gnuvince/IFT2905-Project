@@ -16,9 +16,7 @@ BookingsPage::BookingsPage(
     addTitle(trUtf8("Mes réservations"));
 
     QTableView *bookings = new QTableView(this);
-    qDebug() << "BookingsPage setModel(reservationProxy):" << reservationProxy;
     bookings->setModel(reservationProxy);
-    qDebug() << "BookingsPage setModel done";
     bookings->setSelectionBehavior(QAbstractItemView::SelectRows);
     bookings->setSelectionMode(QAbstractItemView::SingleSelection);
     bookings->verticalHeader()->hide();
@@ -29,8 +27,8 @@ BookingsPage::BookingsPage(
     bookings->resizeColumnToContents(5);
     bookings->resizeColumnToContents(6);
     bookings->resizeRowsToContents();
+    bookings->setAlternatingRowColors(true);
     addWidget(bookings);
-
 
     QFont font = bookings->font();
     font.setPointSize(8);
@@ -43,6 +41,11 @@ BookingsPage::BookingsPage(
     QCheckBox *past = new QCheckBox(trUtf8("Passées"), this);
     QCheckBox *current = new QCheckBox(trUtf8("Courantes"), this);
     QCheckBox *futur = new QCheckBox(trUtf8("Futures"), this);
+
+    emit past->setChecked(true);
+    emit current->setChecked(true);
+    emit futur->setChecked(true);
+
     options->addWidget(past);
     options->addWidget(current);
     options->addWidget(futur);

@@ -24,6 +24,7 @@ SelectStationPage::SelectStationPage(
     view->resizeColumnToContents(2);
     view->resizeColumnToContents(3);
     view->resizeRowsToContents();
+    view->setAlternatingRowColors(true);
 
 
     QFont font = view->font();

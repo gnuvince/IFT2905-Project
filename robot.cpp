@@ -171,6 +171,8 @@ void Robot::simulInitialise(QDateTime now)
     umodel->addUsager(new Usager(trUtf8("Vincent"),GeoPosition(45.301944, -74.303889),umodel));
     umodel->addUsager(new Usager(trUtf8("Eric"),GeoPosition(45.525, -73.877),umodel));
 
+    nmodel->addNote(new Note(4, QDateTime::currentDateTime(), Note::TYPE_STATION, 2, tr("Place noire et dangeureuse!!!"), this));
+
 
     //
     // chaque voiture se fait associer a une station

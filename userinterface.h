@@ -17,6 +17,7 @@
 #include "reservationmodel.h"
 #include "reservationfilterproxy.h"
 #include "geoposition.h"
+#include "notemodel.h"
 
 enum PageName { Page_MainMenu,
                 Page_FindStation, Page_SelectPosition, Page_SelectStation, Page_SelectTime, Page_SelectCar, Page_Confirm,
@@ -37,6 +38,7 @@ public:
         VehiculeModel *vmodel,
         UsagerModel *umodel,
         ReservationModel *rmodel,
+        NoteModel *nmodel,
         QWidget *parent = 0);
     ~UserInterface();
 
@@ -55,6 +57,7 @@ private:
     ReservationFilterProxy *reservationProxy;
     GeoPosition *currentPosition;
     Reservation *reservation;
+    NoteModel *noteModel;
     //ReservationModel *reservationModel;
 
 

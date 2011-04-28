@@ -2,6 +2,8 @@
 
 #include "page.h"
 #include "station.h"
+#include "note.h"
+#include "notemodel.h"
 #include "infostationpage.h"
 
 
@@ -14,7 +16,7 @@ QLabel* InfoStationPage::titleLabel(QString title) {
     return label;
 }
 
-InfoStationPage::InfoStationPage(Station &station, QWidget *parent) :
+InfoStationPage::InfoStationPage(Station &station, NoteModel &noteModel, QWidget *parent) :
     Page(parent),
     station(station)
 {
@@ -45,6 +47,16 @@ InfoStationPage::InfoStationPage(Station &station, QWidget *parent) :
     QLabel *mapLabel = new QLabel();
     mapLabel->setPixmap(map);
 
+    QPlainTextEdit *comments = new QPlainTextEdit(this);
+    QString commentsString;
+    foreach (Note* note, noteModel.getNotes()) {
+        if (note->getType() == Note::TYPE_STATION && note->getDestinataire() == station.getId()) {
+            commentsString.append(QString("%1:\n%2\n\n").arg(note->getDate().toString("dd MMM yyyy")).arg(note->getDescription()));
+        }
+    }
+    comments->setPlainText(commentsString);
+    comments->setReadOnly(true);
+
     layout->addWidget(nameLabel);
     layout->addWidget(titleLabel(trUtf8("Description:")));
     layout->addWidget(descriptionLabel);
@@ -54,6 +66,8 @@ InfoStationPage::InfoStationPage(Station &station, QWidget *parent) :
     layout->addWidget(photoLabel);
     layout->addWidget(titleLabel(trUtf8("Carte:")));
     layout->addWidget(mapLabel);
+    layout->addWidget(titleLabel(trUtf8("Commentaires:")));
+    layout->addWidget(comments);
 
     QWidget *widget = new QWidget(this);
     widget->setLayout(layout);

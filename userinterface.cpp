@@ -33,12 +33,14 @@ UserInterface::UserInterface(
     VehiculeModel *vmodel,
     UsagerModel *umodel,
     ReservationModel *rmodel,
+    NoteModel *nmodel,
     QWidget *parent) :
     QMainWindow(parent),
     stationModel(smodel),
     vehiculeModel(vmodel),
     usagerModel(umodel),
     reservationModel(rmodel),
+    noteModel(nmodel),
     ui(new Ui::UserInterface)
 {
     ui->setupUi(this);
@@ -256,7 +258,7 @@ void UserInterface::setCurrentPosition(GeoPosition pos) {
 }
 
 void UserInterface::showInfoStation(Station *station) {
-    InfoStationPage *infoStationPage = new InfoStationPage(*station, this);
+    InfoStationPage *infoStationPage = new InfoStationPage(*station, *noteModel, this);
     ui->stackedWidget->addWidget(infoStationPage);
     ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(infoStationPage));
     connect(infoStationPage, SIGNAL(Previous()), this, SLOT(gotoSelectStation()));
@@ -264,7 +266,7 @@ void UserInterface::showInfoStation(Station *station) {
 
 
 void UserInterface::showInfoVehicule(Vehicule *vehicule) {
-    InfoCarPage *infoCarPage = new InfoCarPage(*vehicule, this);
+    InfoCarPage *infoCarPage = new InfoCarPage(*vehicule, *noteModel, this);
     ui->stackedWidget->addWidget(infoCarPage);
     ui->stackedWidget->setCurrentIndex(ui->stackedWidget->indexOf(infoCarPage));
     connect(infoCarPage, SIGNAL(Previous()), this, SLOT(gotoSelectCar()));

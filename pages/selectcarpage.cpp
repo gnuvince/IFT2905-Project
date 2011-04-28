@@ -17,9 +17,11 @@ SelectCarPage::SelectCarPage(VehiculeFilterProxy *vproxy, QWidget *parent) :
     view->setSelectionBehavior(QAbstractItemView::SelectRows);
     view->setSelectionMode(QAbstractItemView::SingleSelection);
     view->verticalHeader()->hide();
-    view->hideColumn(Vehicule::COL_ID);
+    view->setColumnHidden(0, true);
     view->resizeColumnsToContents();
     view->resizeRowsToContents();
+    view->setAlternatingRowColors(true);
+
     addWidget(view);
 
     QPushButton *btnPrevious = new QPushButton(this);
