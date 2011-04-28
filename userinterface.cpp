@@ -59,7 +59,6 @@ UserInterface::UserInterface(
     vehiculeProxy->setDynamicSortFilter(true);
 
     reservationProxy = new ReservationFilterProxy(this);
-    qDebug() << "new ReservationFilterProxy done";
     reservationProxy->setSourceModel(reservationModel);
     reservationProxy->setDynamicSortFilter(true);
 }
@@ -181,11 +180,8 @@ UserInterface::~UserInterface()
 
 void UserInterface::setUser(qint64 id) {
     user = usagerModel->getUsager(id);
-    qDebug() << "active user identified";
     reservationProxy->setUser(user);
-    qDebug() << "setUser done";
     createPages();
-    qDebug() << "createPages done";
     *currentPosition = user->getPosition();
     stationModel->updateCurrentPosition(*currentPosition);
     ui->lblUserName->setText(user->getNom());

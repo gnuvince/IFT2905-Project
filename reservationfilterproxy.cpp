@@ -8,6 +8,9 @@ ReservationFilterProxy::ReservationFilterProxy(QObject *parent) :
     QSortFilterProxyModel(parent)
 {
     user = 0;
+    pastResIncluded = true;
+    currentResIncluded = true;
+    futurResIncluded = true;
 }
 
 
@@ -47,7 +50,6 @@ bool ReservationFilterProxy::filterAcceptsRow(int source_row, const QModelIndex 
 }
 
 void ReservationFilterProxy::setUser(Usager *user) {
-    qDebug() << "ReservationFilterProxy::setUser done";
     this->user = user;
 }
 
