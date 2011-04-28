@@ -15,7 +15,7 @@ WriteCommentPage::WriteCommentPage(QWidget *parent) :
     QComboBox *type = new QComboBox(this);
     type->addItem(trUtf8("Véhicule"));
     type->addItem(trUtf8("Station"));
-    type->addItem(trUtf8("Réservation"));
+    //type->addItem(trUtf8("Réservation"));
     subjectLayout->addWidget(subjectLabel);
     subjectLayout->addWidget(type);
     subjectsWidget->setLayout(subjectLayout);

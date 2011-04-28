@@ -21,7 +21,8 @@ BookingsPage::BookingsPage(
     bookings->setSelectionMode(QAbstractItemView::SingleSelection);
     bookings->verticalHeader()->hide();
     bookings->hideColumn(0);
-    bookings->resizeColumnToContents(2);
+    //bookings->resizeColumnToContents(1);
+    //bookings->resizeColumnToContents(2);
     bookings->resizeColumnToContents(3);
     bookings->resizeColumnToContents(4);
     bookings->resizeColumnToContents(5);
@@ -31,7 +32,7 @@ BookingsPage::BookingsPage(
     addWidget(bookings);
 
     QFont font = bookings->font();
-    font.setPointSize(8);
+    font.setPointSize(7);
     bookings->setFont(font);
 
     QPushButton *btnMenu = new QPushButton(trUtf8("Menu"), this);

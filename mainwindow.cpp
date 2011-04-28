@@ -154,11 +154,8 @@ MainWindow::MainWindow(QWidget *parent) :
     CarteWidget::setScene(scene);
 
     UserInterface *userInterface = new UserInterface(smodel, vmodel, umodel, rmodel, nmodel, this);
-    qDebug() << "new UserInterface done";
     connect(this, SIGNAL(interfaceUsagerId(qint64)), userInterface, SLOT(setUser(qint64)));
-    qDebug() << "connect interfaceUsagerId done";
     emit interfaceUsagerId(2);
-    qDebug() << "emit interfaceUsagerId done";
     userInterface->show();
 }
 

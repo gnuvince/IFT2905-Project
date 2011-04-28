@@ -10,7 +10,7 @@
 #include "pages/selectcarpage.h"
 #include "pages/confirmpage.h"
 #include "pages/commentspage.h"
-#include "pages/unexpectedpage.h"
+// #include "pages/unexpectedpage.h"
 #include "pages/bookingspage.h"
 #include "pages/mymessagespage.h"
 #include "pages/writecommentpage.h"
@@ -79,7 +79,7 @@ void UserInterface::createPages() {
                                                   this));
     pages->insert(Page_Comments, new CommentsPage(this));           // comments main page
     pages->insert(Page_WriteComment, new WriteCommentPage(this));   // comment editing
-    pages->insert(Page_Unexpected, new UnexpectedPage(this));
+    //pages->insert(Page_Unexpected, new UnexpectedPage(this));
     pages->insert(Page_Email, new MyMessagesPage(this));
 
     for (int i = 0; i < ui->stackedWidget->count(); ++i) {
