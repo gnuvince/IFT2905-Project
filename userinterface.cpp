@@ -77,9 +77,7 @@ void UserInterface::createPages() {
                                                 this));
     pages->insert(Page_Bookings, new BookingsPage(reservationProxy,
                                                   this));
-    pages->insert(Page_Comments, new CommentsPage(this));           // comments main page
-    pages->insert(Page_WriteComment, new WriteCommentPage(this));   // comment editing
-    //pages->insert(Page_Unexpected, new UnexpectedPage(this));
+    pages->insert(Page_WriteComment, new WriteCommentPage(user->getId(), noteModel, reservationModel, stationModel, vehiculeModel, this));
     pages->insert(Page_Email, new MyMessagesPage(this));
 
     for (int i = 0; i < ui->stackedWidget->count(); ++i) {
@@ -102,7 +100,8 @@ void UserInterface::createPages() {
     connect(getPage(Page_MainMenu), SIGNAL(BookCar()), this, SLOT(gotoFindStationPage()));
     connect(getPage(Page_MainMenu), SIGNAL(BookCar()), this, SLOT(resetReservation()));
     connect(getPage(Page_MainMenu), SIGNAL(ViewBookings()), this, SLOT(gotoBookings()));
-    connect(getPage(Page_MainMenu), SIGNAL(LeaveComment()), this, SLOT(gotoCommentPage()));
+    connect(getPage(Page_MainMenu), SIGNAL(LeaveComment()), this, SLOT(gotoWriteComment()));
+    connect(getPage(Page_MainMenu), SIGNAL(LeaveComment()), getPage(Page_WriteComment), SLOT(updateSubjects()));
     connect(getPage(Page_MainMenu), SIGNAL(ReportUnexpected()), this, SLOT(gotoUnexpected()));
 
     // Connections for find station
@@ -154,15 +153,7 @@ void UserInterface::createPages() {
     connect(getPage(Page_Bookings), SIGNAL(includeCurrentRes(bool)), reservationProxy, SLOT(includeCurrentRes(bool)));
     connect(getPage(Page_Bookings), SIGNAL(includeFuturRes(bool)), reservationProxy, SLOT(includeFuturRes(bool)));
 
-    // Connections for comments
-    connect(getPage(Page_Comments), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
-    connect(getPage(Page_Comments), SIGNAL(VehiculeComment()), this, SLOT(gotoWriteComment()));
-    connect(getPage(Page_Comments), SIGNAL(StationComment()), this, SLOT(gotoWriteComment()));
-    connect(getPage(Page_Comments), SIGNAL(ReservationComment()), this, SLOT(gotoWriteComment()));
-    //connect(getPage(Page_Comments), SIGNAL(ToUserComment()), this, SLOT(gotoWriteComment()));
-
     // Connections for writecomment
-    connect(getPage(Page_WriteComment), SIGNAL(Previous()), this, SLOT(gotoCommentPage()));
     connect(getPage(Page_WriteComment), SIGNAL(Menu()), this, SLOT(gotoMainMenu()));
     connect(getPage(Page_WriteComment), SIGNAL(Send()), this, SLOT(gotoMainMenu()));
 

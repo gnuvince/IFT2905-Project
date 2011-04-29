@@ -40,8 +40,7 @@ void ConfirmPage::setEditorText() {
     QString username = umodel->getUsager(reservation->getUsager())->getNom();
     QString station = smodel->getStation(reservation->getStation())->getNom();
     Vehicule *vehicule = vmodel->getVehicule(reservation->getVehicule());
-    QString vehiculeName = trUtf8("%1 %2 (%3)").arg(vehicule->getMarque())
-            .arg(vehicule->getModele()).arg(vehicule->getCouleur());
+
 
     editor->setPlainText(
                 trUtf8("Usager  : %1\n"
@@ -51,7 +50,7 @@ void ConfirmPage::setEditorText() {
                        "Retour  : %5\n")
                 .arg(username)
                 .arg(station)
-                .arg(vehiculeName)
+                .arg(vehicule->getName())
                 .arg(reservation->getDebut().toString("dd MMM yyyy hh:mm"))
                 .arg(reservation->getFin().toString("dd MMM yyyy hh:mm"))
     );

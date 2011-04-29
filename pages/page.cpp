@@ -26,6 +26,8 @@ void Page::addBottomButtons(QPushButton *left, QPushButton *middle, QPushButton 
     QHBoxLayout *bottomLayout = new QHBoxLayout;
     if (left != 0)
         bottomLayout->addWidget(left);
+    else
+        bottomLayout->addWidget(new QWidget(this));
     bottomLayout->addStretch();
 
     bottomLayout->addWidget(middle);
@@ -33,6 +35,8 @@ void Page::addBottomButtons(QPushButton *left, QPushButton *middle, QPushButton 
     bottomLayout->addStretch();
     if (right!= 0)
         bottomLayout->addWidget(right);
+    else
+        bottomLayout->addWidget(new QWidget(this));
 
     QWidget *widget = new QWidget;
     widget->setLayout(bottomLayout);

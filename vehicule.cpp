@@ -46,6 +46,10 @@ Vehicule::Vehicule(qint64 id,QString marque,QString modele,QString couleur,QStri
 {
 }
 
+QString Vehicule::getName() const {
+    return QString("%1 %2 (%3)").arg(marque).arg(modele).arg(couleur);
+}
+
 QVariant Vehicule::field(uint column, int role) const
 {
 

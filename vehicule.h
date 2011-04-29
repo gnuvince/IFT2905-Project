@@ -55,6 +55,8 @@ public:
     QPixmap getPhoto() const { return photo; }
     //void setPhoto(const QPixmap &photo) { if (!photo.isNull()) this->photo = photo; }
 
+    QString getName() const;
+
     static uint headerCount();
     static QVariant header(uint column);
 
