@@ -40,20 +40,20 @@ void ConfirmPage::setEditorText() {
     QString username = umodel->getUsager(reservation->getUsager())->getNom();
     QString station = smodel->getStation(reservation->getStation())->getNom();
     Vehicule *vehicule = vmodel->getVehicule(reservation->getVehicule());
+    QString confirmMessage = trUtf8("RÉSERVATION\n"
+                                    "===========\n"
+                                    "Usager  : %1\n"
+                                    "Station : %2\n"
+                                    "Véhicule: %3\n"
+                                    "Départ  : %4\n"
+                                    "Retour  : %5\n")
+            .arg(username)
+            .arg(station)
+            .arg(vehicule->getName())
+            .arg(reservation->getDebut().toString("dd MMM yyyy hh:mm"))
+            .arg(reservation->getFin().toString("dd MMM yyyy hh:mm"));
 
-
-    editor->setPlainText(
-                trUtf8("Usager  : %1\n"
-                       "Station : %2\n"
-                       "Véhicule: %3\n"
-                       "Départ  : %4\n"
-                       "Retour  : %5\n")
-                .arg(username)
-                .arg(station)
-                .arg(vehicule->getName())
-                .arg(reservation->getDebut().toString("dd MMM yyyy hh:mm"))
-                .arg(reservation->getFin().toString("dd MMM yyyy hh:mm"))
-    );
+    editor->setPlainText(confirmMessage);
 }
 
 void ConfirmPage::setReservation(Reservation *res) {

@@ -78,7 +78,7 @@ void UserInterface::createPages() {
     pages->insert(Page_Bookings, new BookingsPage(reservationProxy,
                                                   this));
     pages->insert(Page_WriteComment, new WriteCommentPage(user->getId(), noteModel, reservationModel, stationModel, vehiculeModel, this));
-    pages->insert(Page_Email, new MyMessagesPage(this));
+    pages->insert(Page_Email, new MyMessagesPage(user->getId(), noteModel, this));
 
     for (int i = 0; i < ui->stackedWidget->count(); ++i) {
         QWidget *w = ui->stackedWidget->widget(i);
@@ -95,6 +95,7 @@ void UserInterface::createPages() {
 
     // Connections for email
     connect(ui->btnEnveloppe, SIGNAL(clicked()), this, SLOT(gotoEmailPage()));
+    connect(ui->btnEnveloppe, SIGNAL(clicked()), getPage(Page_Email), SLOT(updateMessages()));
 
     // Connections for main menu
     connect(getPage(Page_MainMenu), SIGNAL(BookCar()), this, SLOT(gotoFindStationPage()));
@@ -282,5 +283,12 @@ void UserInterface::resetReservation() {
 
 void UserInterface::saveReservation() {
     reservationModel->addReservation(reservation);
+    QString confirmMessage = dynamic_cast<ConfirmPage*>(getPage(Page_Confirm))->editor->toPlainText();
+    noteModel->addNote(new Note(user->getId(),
+                                QDateTime::currentDateTime(),
+                                Note::TYPE_USAGER,
+                                user->getId(),
+                                confirmMessage,
+                                this));
     QMessageBox::information(this, trUtf8("Réservation complétée"), trUtf8("Votre réservation a été complété et enregistré avec succès."), QMessageBox::Ok);
 }

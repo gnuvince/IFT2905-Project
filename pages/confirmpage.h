@@ -19,13 +19,14 @@ public:
                          StationModel *smodel,
                          QWidget *parent = 0);
     void setReservation(Reservation *res);
+    QPlainTextEdit *editor;
+
 
 private:
     Reservation *reservation;
     UsagerModel *umodel;
     VehiculeModel *vmodel;
     StationModel *smodel;
-    QPlainTextEdit *editor;
 
 
 signals:
