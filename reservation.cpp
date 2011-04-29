@@ -33,11 +33,11 @@ qint64 Reservation::idCount = 0;
 QStringList& Reservation::headers() {
     static QStringList _headers = QStringList()
             << trUtf8("id")
-            << trUtf8("debut")
-            << trUtf8("fin")
-            << trUtf8("vehicule")
+            << trUtf8("Début")
+            << trUtf8("Fin")
+            << trUtf8("Véhicule")
             << trUtf8("usager")
-            << trUtf8("station");
+            << trUtf8("Station");
     return _headers;
 }
 

@@ -21,12 +21,8 @@ BookingsPage::BookingsPage(
     bookings->setSelectionMode(QAbstractItemView::SingleSelection);
     bookings->verticalHeader()->hide();
     bookings->hideColumn(0);
-    bookings->resizeColumnToContents(1);
-    bookings->resizeColumnToContents(2);
-    bookings->resizeColumnToContents(3);
-    bookings->resizeColumnToContents(4);
-    bookings->resizeColumnToContents(5);
-    bookings->resizeColumnToContents(6);
+    bookings->hideColumn(2);
+    bookings->hideColumn(4);
     bookings->resizeRowsToContents();
     bookings->setAlternatingRowColors(true);
     addWidget(bookings);
@@ -63,11 +59,7 @@ BookingsPage::BookingsPage(
 }
 
 void BookingsPage::resizeCols() {
-    qDebug() << "resizingCols";
     bookings->resizeColumnToContents(1);
-    bookings->resizeColumnToContents(2);
     bookings->resizeColumnToContents(3);
-    bookings->resizeColumnToContents(4);
     bookings->resizeColumnToContents(5);
-    bookings->resizeColumnToContents(6);
 }

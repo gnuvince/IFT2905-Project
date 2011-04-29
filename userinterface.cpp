@@ -58,7 +58,7 @@ UserInterface::UserInterface(
     vehiculeProxy->setSourceModel(vehiculeModel);
     vehiculeProxy->setDynamicSortFilter(true);
 
-    reservationProxy = new ReservationFilterProxy(this);
+    reservationProxy = new ReservationFilterProxy(stationModel, vehiculeModel, this);
     reservationProxy->setSourceModel(reservationModel);
     reservationProxy->setDynamicSortFilter(true);
 }

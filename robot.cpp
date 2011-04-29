@@ -56,7 +56,6 @@ bool Robot::tenteUneReservation(QDateTime debut,QDateTime fin,qint64 vId,qint64 
     QList<Reservation*> disponibles = proxy->getFilteredReservations();
 
     if( disponibles.count()==0 ) {
-        //qDebug()<<"Aucun vehicule disponible! (pas de vehicule du tout)";
         return false;
     }
 
@@ -245,7 +244,6 @@ void Robot::updateTime(QDateTime now)
         if( (nb+1)%10==0 ) qApp->processEvents();
         if( nb>10 ) break;
     }
-    qDebug() << "robot genere"<<nb<<"ajouteReservationAuHasard";
 
     //
     // Envoi d'une note d'un usager à un autre
@@ -256,7 +254,6 @@ void Robot::updateTime(QDateTime now)
         if( (nb+1)%10==0 ) qApp->processEvents();
         if( nb>10 ) break;
     }
-    qDebug() << "robot genere"<<nb<<"ajouteNotePersonnelleAuHasard";
 
     // a la fin... se rappeller de l'heure
     last=now;

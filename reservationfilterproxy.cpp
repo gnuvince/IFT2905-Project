@@ -1,11 +1,18 @@
 #include <QDateTime>
 #include "reservationfilterproxy.h"
 #include "reservation.h"
+#include "stationmodel.h"
+#include "vehiculemodel.h"
 
 #include <QDebug>
 
-ReservationFilterProxy::ReservationFilterProxy(QObject *parent) :
-    QSortFilterProxyModel(parent)
+ReservationFilterProxy::ReservationFilterProxy(
+    StationModel *smodel,
+    VehiculeModel *vmodel,
+    QObject *parent) :
+    QSortFilterProxyModel(parent),
+    stationModel(smodel),
+    vehiculeModel(vmodel)
 {
     user = 0;
     pastResIncluded = true;
@@ -15,11 +22,41 @@ ReservationFilterProxy::ReservationFilterProxy(QObject *parent) :
 
 
 bool ReservationFilterProxy::filterAcceptsColumn(int source_column, const QModelIndex &source_parent) const {
-    return source_column == Reservation::COL_ID
-        || source_column == Reservation::COL_DEBUT
-        || source_column == Reservation::COL_FIN
-        || source_column == Reservation::COL_VEHICULE
-        || source_column == Reservation::COL_STATION;
+    return true;
+}
+
+QVariant ReservationFilterProxy::data(const QModelIndex &index, int role) const {
+    if (!index.isValid() || role != Qt::DisplayRole)
+        return QVariant();
+
+    qint64 vid, sid;
+
+    QVariant data = sourceModel()->data(index);
+
+    switch (index.column()) {
+    case Reservation::COL_DEBUT:
+        return data.toDateTime().toString("dd MMM yyyy hh:mm");
+
+    case Reservation::COL_STATION:
+        sid = data.toInt();
+        return stationModel->getStation(sid)->getNom();
+
+    case Reservation::COL_VEHICULE:
+        vid = data.toInt();
+        return vehiculeModel->getVehicule(vid)->getName();
+
+    default:
+        return QVariant();
+    }
+}
+
+
+QVariant ReservationFilterProxy::headerData(int section, Qt::Orientation orientation, int role) const {
+    return sourceModel()->headerData(section, orientation, role);
+}
+
+Qt::ItemFlags ReservationFilterProxy::flags(const QModelIndex &index) const {
+    return Qt::ItemIsEnabled | Qt::ItemIsSelectable;
 }
 
 
