@@ -1,0 +1,73 @@
+Utilisateur: Tania Beaulieu
+Examinateur: Vincent Foley-Bourgon
+
+L'utilisateur a été présenté avec 3 scénarios.  Voici les notes du test
+usager.
+
+
+SCÉNARIO 1
+==========
+
+Tâche: trouver les informations relatives à la station St-Sacrement.
+
+Résultats:
+    - L'usager a trouvé bizarre qu'on lui demande de trouver de
+      l'information, mais qu'aucun des boutons ne suggère qu'ils
+      donnent de l'information.
+    - Une fois dans l'écran des stations, l'usager a eu de la
+      difficulté à trouver la bonne station, car elle sont ordonnées
+      par ordre de distance plutôt que par ordre alphabétique.
+    - L'usager a facilement compris qu'il fallait cliquer sur le '?'
+      pour obtenir les informations de la station.
+
+Suggestions:
+    - Il pourrait être utile d'ajouter un mode exploration/information
+      qui permettrait aux utilisateurs d'avoir de l'information sur
+      les stations.
+    - L'ajout d'un tri des colonnes permettrait de plus facilement
+      trouver une station particulière.
+
+
+
+SCÉNARIO 2
+==========
+
+Tâche: réserver une voiture dans une station à moins d'un kilomètre de
+votre appartement.
+
+Résultats:
+    - L'usager a facilement trouvé le bouton dans le menu principal
+      pour effectuer une réservation.
+    - L'usager a facilement reconnu le rôle des boutons fléchés pour
+      revenir en arrière et passer à l'étape suivante.
+    - L'usager a trouvé que la carte était trop lente à utiliser pour
+      être agréable à utiliser.  De plus, les noms de rues sont très
+      difficiles à lire.
+    - L'usager a facilement trouvé la station la plus proche de chez
+      elle.
+    - L'usager n'a pas su qu'une copie de sa réservation lui avait été
+      envoyé par le système de notes.
+
+Suggestions:
+    - Il faudrait indiquer plus clairement qu'une copie de la
+      réservation a été envoyé.
+    - L'interface de réservation est généralement claire et facile à
+      utiliser.
+
+
+SCÉNARIO 3
+==========
+
+Tâche: laisser un commentaire sur la station où vous avez fait une
+réservation.
+
+Résultats:
+    - L'usager a facilement trouvé le bouton dans le menu principal
+      pour laisser un commentaire.
+    - L'usager a été un peu confuse, car la liste des stations ne
+      contenait qu'une seule station.
+
+Suggestions:
+    - Il faudrait indiquer dans l'interface que l'usager peut
+      commenter uniquement sur les stations et les véhicules
+      qu'il a réservé.
